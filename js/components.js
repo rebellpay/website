@@ -74,7 +74,7 @@ const sharedHeader = `
   <div class="nav-inner"> 
     <div class="logo">
         <a href="./index.html">
-            <img src="./_RebellPay_logotype.png" alt="Rebell Pay">
+            <img src="_RebellPay_logotype.png" alt="Rebell Pay">
         </a>
     </div>
     <button class="menu-toggle" id="mobile-menu-btn"><span></span><span></span><span></span></button>
@@ -146,3 +146,4 @@ if (document.readyState === 'loading') {
     injectComponents();
 
 }
+
