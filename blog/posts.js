@@ -1,4 +1,12 @@
+```js
 const blogPostsData = [
+  {
+    "title": "Konto bankowe dla software house Web3",
+    "date": "2026-02-04",
+    "excerpt": "Jakie konto bankowe wybrać dla software house’u Web3? Na co zwrócić uwagę przy AML/KYC, rozliczeniach z giełdami i obsłudze płatności krypto/fiat. Praktyczne wskazówki.",
+    "link": "blog/2026-02-04-konto-bankowe-dla-software-house-web3.html",
+    "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1600&q=80"
+  },
   {
     "title": "Nowy wpis na blogu - Tytuł najnowszego wpisu",
     "date": "2026-02-06",
@@ -14,17 +22,17 @@ const blogPostsData = [
     "image": "https://example.com/new-post-image.jpg"
   },
   {
-    "title": "Potwierdzenie legalności środków z kryptowalut do kredytu",
-    "date": "2026-02-06",
-    "excerpt": "Jak udokumentować pochodzenie środków z krypto (SoF/SoW) dla doradcy i banku? Checklistę dokumentów, txid i on-ramp/off-ramp masz tutaj.",
-    "link": "blog/2026-02-06-potwierdzenie-legalnosci-srodkow-z-kryptowalut-dla-doradcy-kredytowego.html",
-    "image": "https://images.unsplash.com/photo-1641939939078-91f159c9f50d?auto=format&fit=crop&w=1600&q=80"
-  },
-  {
     "title": "Potwierdzenie legalności środków z kryptowalut dla doradcy kredytowego",
     "date": "2026-02-03",
     "excerpt": "Dowiedz się, jak przygotować dokumentację SoF/SoW z krypto dla banku. Praktyczny poradnik Rebell Pay o potwierdzaniu legalności środków. Sprawdź checklistę!",
     "link": "blog/2026-02-03-potwierdzenie-legalnosci-srodkow-z-krypto-do-kredytu.html",
+    "image": "https://images.unsplash.com/photo-1641939939078-91f159c9f50d?auto=format&fit=crop&w=1600&q=80"
+  },
+  {
+    "title": "Potwierdzenie legalności środków z kryptowalut do kredytu",
+    "date": "2026-02-03",
+    "excerpt": "Jak udokumentować pochodzenie środków z krypto (SoF/SoW) dla doradcy i banku? Checklistę dokumentów, txid i on-ramp/off-ramp masz tutaj.",
+    "link": "blog/2026-02-03-potwierdzenie-legalnosci-srodkow-z-kryptowalut-dla-doradcy-kredytowego.html",
     "image": "https://images.unsplash.com/photo-1641939939078-91f159c9f50d?auto=format&fit=crop&w=1600&q=80"
   },
   {
@@ -60,20 +68,21 @@ const blogPostsData = [
     "date": "2026-02-02",
     "excerpt": "Rynek kryptowalut osiąga nowe szczyty. Sprawdź, co to oznacza dla inwestorów.",
     "link": "blog/post-1.html",
-    "image": "https://images.unsplash.com/photo-1518546305927-5a555bb7020d?auto=format&fit=crop&w=400"
+    "image": "https://images.unsplash.com/photo-1518546305927-5a555bb7020d?auto=format&fit=crop&w=400&q=80"
   },
   {
     "title": "Aktualizacja platformy Rebell Pay",
     "date": "2026-02-01",
     "excerpt": "Wprowadzamy szybsze przelewy SEPA Instant dla wszystkich klientów biznesowych.",
     "link": "blog/post-2.html",
-    "image": "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=400"
+    "image": "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=400&q=80"
   },
   {
     "title": "Ethereum i nowe protokoły L2",
     "date": "2026-01-30",
     "excerpt": "Jak skalowalność sieci wpływa na koszty transakcyjne w Rebell Pay?",
     "link": "blog/post-3.html",
-    "image": "https://images.unsplash.com/photo-1622790698141-94e30457ef12?auto=format&fit=crop&w=400"
+    "image": "https://images.unsplash.com/photo-1622790698141-94e30457ef12?auto=format&fit=crop&w=400&q=80"
   }
 ];
+```
