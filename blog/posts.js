@@ -14,17 +14,17 @@ const blogPostsData = [
     "image": "https://example.com/new-post-image.jpg"
   },
   {
+    "title": "Potwierdzenie legalności środków z kryptowalut do kredytu",
+    "date": "2026-02-06",
+    "excerpt": "Jak udokumentować pochodzenie środków z krypto (SoF/SoW) dla doradcy i banku? Checklistę dokumentów, txid i on-ramp/off-ramp masz tutaj.",
+    "link": "blog/2026-02-06-potwierdzenie-legalnosci-srodkow-z-kryptowalut-dla-doradcy-kredytowego.html",
+    "image": "https://images.unsplash.com/photo-1641939939078-91f159c9f50d?auto=format&fit=crop&w=1600&q=80"
+  },
+  {
     "title": "Potwierdzenie legalności środków z kryptowalut dla doradcy kredytowego",
     "date": "2026-02-03",
     "excerpt": "Dowiedz się, jak przygotować dokumentację SoF/SoW z krypto dla banku. Praktyczny poradnik Rebell Pay o potwierdzaniu legalności środków. Sprawdź checklistę!",
     "link": "blog/2026-02-03-potwierdzenie-legalnosci-srodkow-z-krypto-do-kredytu.html",
-    "image": "https://images.unsplash.com/photo-1641939939078-91f159c9f50d?auto=format&fit=crop&w=1600&q=80"
-  },
-  {
-    "title": "Potwierdzenie legalności środków z kryptowalut do kredytu",
-    "date": "2026-02-03",
-    "excerpt": "Jak udokumentować pochodzenie środków z krypto (SoF/SoW) dla doradcy i banku? Checklistę dokumentów, txid i on-ramp/off-ramp masz tutaj.",
-    "link": "blog/2026-02-03-potwierdzenie-legalnosci-srodkow-z-kryptowalut-dla-doradcy-kredytowego.html",
     "image": "https://images.unsplash.com/photo-1641939939078-91f159c9f50d?auto=format&fit=crop&w=1600&q=80"
   },
   {
