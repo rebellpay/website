@@ -1,5 +1,12 @@
 const blogPostsData = [
   {
+    "title": "Nowy wpis na blogu",
+    "date": "2026-02-05",
+    "excerpt": "To jest najnowszy wpis dodany na blogu. Zapraszamy do lektury!",
+    "link": "blog/new-post.html",
+    "image": "https://example.com/new-post-image.jpg"
+  },
+  {
     "title": "Potwierdzenie legalności środków z kryptowalut dla doradcy kredytowego",
     "date": "2026-02-03",
     "excerpt": "Dowiedz się, jak przygotować dokumentację SoF/SoW z krypto dla banku. Praktyczny poradnik Rebell Pay o potwierdzaniu legalności środków. Sprawdź checklistę!",
@@ -7,27 +14,27 @@ const blogPostsData = [
     "image": "https://images.unsplash.com/photo-1641939939078-91f159c9f50d?auto=format&fit=crop&w=1600&q=80"
   },
   {
-  "title": "Potwierdzenie legalności środków z kryptowalut do kredytu",
-  "date": "2026-02-03",
-  "excerpt": "Jak udokumentować pochodzenie środków z krypto (SoF/SoW) dla doradcy i banku? Checklistę dokumentów, txid i on-ramp/off-ramp masz tutaj.",
-  "link": "blog/2026-02-03-potwierdzenie-legalnosci-srodkow-z-kryptowalut-dla-doradcy-kredytowego.html",
-  "image": "https://images.unsplash.com/photo-1641939939078-91f159c9f50d?auto=format&fit=crop&w=1600&q=80"
-},
+    "title": "Potwierdzenie legalności środków z kryptowalut do kredytu",
+    "date": "2026-02-03",
+    "excerpt": "Jak udokumentować pochodzenie środków z krypto (SoF/SoW) dla doradcy i banku? Checklistę dokumentów, txid i on-ramp/off-ramp masz tutaj.",
+    "link": "blog/2026-02-03-potwierdzenie-legalnosci-srodkow-z-kryptowalut-dla-doradcy-kredytowego.html",
+    "image": "https://images.unsplash.com/photo-1641939939078-91f159c9f50d?auto=format&fit=crop&w=1600&q=80"
+  },
   {
-  "title": "Czy bank [Nazwa Banku] blokuje przelewy z Binance/Kraken?",
-  "date": "2026-02-03",
-  "excerpt": "Czy [Nazwa Banku] wstrzymuje przelewy do/od Binance i Kraken? Wyjaśniamy najczęstsze powody (AML/KYC) i dajemy checklistę weryfikacji.",
-  "link": "blog/2026-02-03-czy-bank-nazwa-banku-blokuje-przelewy-z-binance-kraken.html",
-  "image": "https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=1600&q=80"
-},
+    "title": "Czy bank [Nazwa Banku] blokuje przelewy z Binance/Kraken?",
+    "date": "2026-02-03",
+    "excerpt": "Czy [Nazwa Banku] wstrzymuje przelewy do/od Binance i Kraken? Wyjaśniamy najczęstsze powody (AML/KYC) i dajemy checklistę weryfikacji.",
+    "link": "blog/2026-02-03-czy-bank-nazwa-banku-blokuje-przelewy-z-binance-kraken.html",
+    "image": "https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=1600&q=80"
+  },
   {
-  "title": "Ethereum Whitepaper 2026: EVM, gaz i smart kontrakty w fintech",
-  "date": "2026-02-02",
-  "excerpt": "Wyjaśniamy Ethereum Whitepaper po ludzku: jak działają konta, EVM i gaz oraz co to oznacza dla płatności, on-rampów i rozwiązań L2.",
-  "link": "blog/2026-02-02-ethereum-whitepaper-jak-dziala-evm-gaz.html",
-  "image": "https://images.unsplash.com/photo-1622790698141-94e30457ef12?auto=format&fit=crop&w=1600&q=80"
-},
-{
+    "title": "Ethereum Whitepaper 2026: EVM, gaz i smart kontrakty w fintech",
+    "date": "2026-02-02",
+    "excerpt": "Wyjaśniamy Ethereum Whitepaper po ludzku: jak działają konta, EVM i gaz oraz co to oznacza dla płatności, on-rampów i rozwiązań L2.",
+    "link": "blog/2026-02-02-ethereum-whitepaper-jak-dziala-evm-gaz.html",
+    "image": "https://images.unsplash.com/photo-1622790698141-94e30457ef12?auto=format&fit=crop&w=1600&q=80"
+  },
+  {
     "title": "Ethereum Whitepaper: Wizja „Światowego Komputera”",
     "date": "2026-02-02",
     "excerpt": "Poznaj fundamenty Ethereum. Wyjaśniamy koncepcję smart kontraktów i wizję platformy programowalnych finansów opisaną przez Vitalika Buterina.",
