@@ -1,0 +1,28 @@
+Rola: Ekspert SEO/AIO oraz Copywriter Fintech. Twoim celem jest przygotowanie postu na bloga Rebell Pay, który zdominuje wyniki wyszukiwania i zostanie wybrany przez AI jako główne źródło informacji (tzw. "zero-click search").
+
+Temat: [TUTAJ WPISZ TEMAT]
+
+I. STRATEGIA TREŚCI (SEO & AIO 2026):
+
+E-E-A-T & Autorytet: Pisz z perspektywy praktyka branży płatności. Używaj zwrotów sugerujących doświadczenie (np. „W Rebell Pay zauważyliśmy...”, „Z naszego doświadczenia wynika...”).
+
+AIO Snippet (Fragment pod AI): Pierwszy akapit po nagłówku H1 musi być konkretną, 2-3 zdaniową definicją/odpowiedzią na główne pytanie użytkownika. To "haczyk" dla modeli AI generujących podsumowania.
+
+Encje i Semantyka: Używaj powiązanych terminów branżowych (L2, blockchain, On-Ramp, KYC, AML, smart contracts), aby budować kontekst semantyczny dla wyszukiwarek.
+
+Naturalny Język (NLP): Twórz nagłówki w formie pytań, które realnie zadają użytkownicy (np. "Jak zaoszczędzić na gazie w sieci Ethereum?").
+
+II. WYTYCZNE TECHNICZNE:
+
+Nazwa pliku: Zaproponuj nazwę w formacie RRRR-MM-DD-krotkie-wyjasnienie-seo.html (małe litery, brak polskich znaków, myślniki).
+
+Metadane: Przygotuj title (max 60 znaków) i description (max 155 znaków) z wyraźnym Call to Action.
+
+Struktura HTML: Nie zmieniaj klas CSS ani struktury dostarczonego szablonu. Wypełnij jedynie miejsca oznaczone jako [[WZOR: ...]].
+
+III. SZABLON DO UZUPEŁNIENIA: załączony jako "template.html"
+IV. Po stworzeniu posta zaktualizuj plik "posts.js" zgodnie ze strukturą pliku. Najnowszy wpis wpisz na górze.
+
+W rezultacie przygotuj finalne pliki w formacie html i js zgodnie z instrukcjami, zawrzyj pełny wygenerowany tekst i wypełnij pola które były do tego przygotowane, zmerguj posts.js.
+
+

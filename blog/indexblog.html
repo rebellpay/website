@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Blog Rebell Pay | Wszystkie wpisy</title>
+  <style>
+    /* Tylko style specyficzne dla układu postów */
+    body { font-family: 'Inter', sans-serif; margin: 0; background: #fff; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+    
+    .blog-hero { padding: 80px 0 60px; text-align: center; background: #f8fafc; }
+    .blog-hero h1 { font-size: 48px; color: #0f172a; margin: 0; }
+    
+    .blog-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 32px; padding: 60px 0; }
+    .blog-card { 
+        background: #fff; border: 1px solid #f1f5f9; border-radius: 24px; 
+        overflow: hidden; text-decoration: none; color: inherit; transition: 0.3s; 
+        display: flex; flex-direction: column;
+    }
+    .blog-card:hover { transform: translateY(-5px); box-shadow: 0 20px 25px -5px rgba(0,0,0,0.05); border-color: #2563eb; }
+    .blog-img { width: 100%; height: 200px; object-fit: cover; }
+    .blog-body { padding: 24px; flex-grow: 1; display: flex; flex-direction: column; }
+    .blog-date { font-size: 12px; color: #64748b; margin-bottom: 10px; font-weight: 600; }
+    .blog-card h4 { margin: 0 0 12px 0; font-size: 22px; color: #0f172a; }
+    .blog-card p { font-size: 15px; color: #64748b; margin-bottom: 20px; flex-grow: 1; }
+    .read-more { color: #2563eb; font-weight: 700; font-size: 14px; }
+  </style>
+</head>
+<body>
+
+<div id="shared-header-placeholder"></div>
+
+<main>
+    <section class="blog-hero">
+        <div class="container">
+            <h1>Blog Rebell Pay</h1>
+            <p>Najświeższe analizy i nowości ze świata krypto.</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="blog-grid" id="full-blog-container">
+            </div>
+    </div>
+</main>
+
+<div id="shared-footer-placeholder"></div>
+
+<script src="posts.js"></script>
+<script src="../js/components.js"></script>
+
+<script>
+    // Renderowanie wszystkich postów z pliku posts.js
+    window.addEventListener('load', function() {
+        const container = document.getElementById('full-blog-container');
+        if (typeof blogPostsData !== 'undefined') {
+            container.innerHTML = blogPostsData.map(post => {
+                // Skoro jesteśmy w folderze /blog/, usuwamy przedrostek "blog/" z linku
+                const cleanLink = post.link.replace('blog/', '');
+                
+                return `
+                    <a href="${cleanLink}" class="blog-card">
+                        <img src="${post.image}" class="blog-img" alt="${post.title}">
+                        <div class="blog-body">
+                            <div class="blog-date">${post.date}</div>
+                            <h4>${post.title}</h4>
+                            <p>${post.excerpt}</p>
+                            <span class="read-more">Czytaj artykuł →</span>
+                        </div>
+                    </a>
+                `;
+            }).join('');
+        }
+    });
+</script>
+
+</body>
+</html>

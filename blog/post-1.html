@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tytuł Posta | Rebell Pay Blog</title>
+  <style>
+    /* KOPIUJEMY ROOT I PODSTAWOWE STYLE Z INDEX.HTML */
+    :root {
+      --navy: #0f172a; --blue: #2563eb; --accent: #38bdf8; --success: #10b981;
+      --text-main: #1e293b; --text-muted: #64748b; --bg-light: #f8fafc;
+      --white: #ffffff; --radius: 16px; --shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.05);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Inter', sans-serif; color: var(--text-main); line-height: 1.6; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+    /* HEADER (Zgodny z index.html) */
+    header { padding: 15px 0; position: sticky; top: 0; background: rgba(255,255,255,0.95); backdrop-filter: blur(10px); z-index: 1000; border-bottom: 1px solid #f1f5f9; }
+    .nav-inner { display: flex; justify-content: space-between; align-items: center; }
+    .logo img { height: 40px; display: block; }
+    .nav-actions { display: flex; gap: 12px; align-items: center; }
+    .btn { padding: 12px 24px; border-radius: var(--radius); font-weight: 600; cursor: pointer; transition: 0.3s; text-decoration: none; font-size: 14px; }
+    .btn-primary { background: var(--blue); color: white; border: none; }
+    .btn-outline { border: 1px solid #e2e8f0; color: var(--navy); }
+
+    /* TREŚĆ POSTA */
+    .post-wrapper { padding: 60px 0; background: white; }
+    .post-header { max-width: 800px; margin: 0 auto 40px; text-align: center; }
+    .post-header h1 { font-size: clamp(32px, 5vw, 48px); color: var(--navy); margin-bottom: 20px; letter-spacing: -0.02em; }
+    .post-meta { color: var(--text-muted); font-size: 14px; text-transform: uppercase; font-weight: 700; margin-bottom: 10px; display: block; }
+    .featured-image { width: 100%; max-height: 500px; object-fit: cover; border-radius: 32px; margin-bottom: 40px; box-shadow: var(--shadow); }
+    .post-content { max-width: 750px; margin: 0 auto; font-size: 18px; color: var(--text-main); }
+    .post-content p { margin-bottom: 24px; }
+
+    /* FOOTER (Zgodny z index.html) */
+    footer { padding: 60px 0; border-top: 1px solid #f1f5f9; font-size: 14px; color: var(--text-muted); background: #fff; margin-top: 80px; }
+    .footer-links-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 40px; }
+    .footer-links a { color: var(--text-muted); text-decoration: none; display: block; margin-bottom: 10px; }
+    .aml-notice { font-size: 12px; border-top: 1px solid #f1f5f9; margin-top: 30px; padding-top: 20px; }
+    
+    /* HAMBURGER DLA MOBILE */
+    .menu-toggle { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; }
+    .menu-toggle span { display: block; width: 25px; height: 3px; background: var(--navy); border-radius: 2px; }
+    @media (max-width: 992px) {
+      .menu-toggle { display: flex; }
+      .nav-actions { display: none; position: absolute; top: 100%; left: 0; right: 0; background: white; flex-direction: column; padding: 20px; box-shadow: var(--shadow); }
+      .nav-actions.active { display: flex; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container nav-inner">
+    <div class="logo"><a href="../index.html"><img src="../_RebellPay_logotype.png" alt="Rebell Pay"></a></div>
+    <button class="menu-toggle" id="mobile-menu-btn"><span></span><span></span><span></span></button>
+    <div class="nav-actions" id="nav-actions">
+      <a href="../index.html#blog" class="btn">Powrót do Bloga</a>
+      <a href="https://calendly.com/pawel-karczewski-rebellpay/30min" class="btn btn-primary">Bezpłatna Konsultacja</a>
+    </div>
+  </div>
+</header>
+
+<main class="post-wrapper">
+  <div class="container">
+    <div class="post-header">
+      <span class="post-meta">2 lutego 2026 • Analiza Rynku</span>
+      <h1>Bitcoin przekracza barierę 100,000 USD</h1>
+    </div>
+    
+    <img src="https://images.unsplash.com/photo-1518546305927-5a555bb7020d?auto=format&fit=crop&w=1200" class="featured-image" alt="BTC News">
+
+    <article class="post-content">
+      <p>To historyczny moment dla całego ekosystemu finansowego. Bitcoin po raz pierwszy w historii przekroczył barierę 100 tysięcy dolarów, potwierdzając swoją pozycję jako "cyfrowe złoto".</p>
+      <p>Wzrost ten jest napędzany przez rosnącą adopcję instytucjonalną oraz zatwierdzenie nowych instrumentów finansowych na światowych giełdach. Dla użytkowników Rebell Pay oznacza to ogromne możliwości realizacji zysków.</p>
+      <p>W Rebell Pay dbamy o to, abyś mógł wypłacić swoje zyski (Off-Ramp) szybko i bezpiecznie, korzystając z przelewów SEPA Instant, nawet przy tak dużych ruchach rynkowych.</p>
+    </article>
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-links-grid">
+        <div>
+            <div class="logo"><img src="../_RebellPay_logotype.png" alt="Rebell Pay" style="height: 30px; margin-bottom: 20px;"></div>
+            <p>Profesjonalne rozwiązania On-Ramp i Off-Ramp.</p>
+        </div>
+        <div class="footer-links">
+            <h4 style="color: var(--navy); margin-bottom: 15px;">Firma</h4>
+            <a href="../index.html">O nas</a>
+            <a href="../index.html#services">Usługi</a>
+        </div>
+        <div class="footer-links">
+            <h4 style="color: var(--navy); margin-bottom: 15px;">Prawne</h4>
+            <a href="#">Regulamin</a>
+            <a href="#">Polityka prywatności</a>
+        </div>
+        <div class="footer-links">
+            <h4 style="color: var(--navy); margin-bottom: 15px;">Kontakt</h4>
+            <p>support@rebellpay.com</p>
+            <p>Warszawa, Polska</p>
+        </div>
+    </div>
+    <div class="aml-notice">
+        <strong>Informacja AML:</strong> Usługi świadczone zgodnie z ustawą o przeciwdziałaniu praniu pieniędzy.
+    </div>
+  </div>
+</footer>
+
+<script>
+    // Logika menu mobilnego dla podstron
+    const mobileBtn = document.getElementById('mobile-menu-btn');
+    const navActions = document.getElementById('nav-actions');
+    mobileBtn.addEventListener('click', () => navActions.classList.toggle('active'));
+</script>
+
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ethereum Whitepaper: EVM, gaz i konta – poradnik | Rebell Pay Blog</title>
+  <meta name="description" content="Wyjaśniamy Ethereum Whitepaper: EVM, gaz, konta i transakcje. Co to oznacza dla L2, stablecoinów, on-rampów i płatności w fintech.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* Style specyficzne dla treści posta */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Inter', sans-serif; color: #1e293b; line-height: 1.6; background-color: #fff; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+    
+    .post-wrapper { padding: 60px 0; background: white; }
+    .post-header { max-width: 800px; margin: 0 auto 40px; text-align: center; }
+    .post-header h1 { font-size: clamp(32px, 5vw, 48px); color: #0f172a; margin-bottom: 20px; letter-spacing: -0.02em; }
+    .post-meta { color: #64748b; font-size: 14px; text-transform: uppercase; font-weight: 700; margin-bottom: 10px; display: block; }
+    
+    .featured-image { width: 100%; max-height: 500px; object-fit: cover; border-radius: 32px; margin-bottom: 40px; box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.05); }
+    
+    .post-content { max-width: 750px; margin: 0 auto; font-size: 18px; color: #1e293b; }
+    .post-content p { margin-bottom: 24px; }
+    .post-content h2 { margin: 40px 0 20px; color: #0f172a; }
+    .post-content ul { margin-bottom: 24px; padding-left: 20px; }
+    .post-content li { margin-bottom: 10px; }
+  </style>
+
+<script src="../js/components.js" defer></script>
+</head>
+<body>
+
+<div id="shared-header-placeholder"></div>
+
+<main class="post-wrapper">
+  <div class="container">
+    <div class="post-header">
+      <span class="post-meta">2026-02-02 • Krypto & Fintech</span>
+      <h1>Ethereum Whitepaper 2026: EVM, gaz i smart kontrakty w fintech</h1>
+    </div>
+    
+    <img src="https://images.unsplash.com/photo-1622790698141-94e30457ef12?auto=format&fit=crop&w=1600&q=80" class="featured-image" alt="Symboliczne przedstawienie Ethereum, smart kontraktów i infrastruktury płatniczej">
+
+    <article class="post-content">
+      <p>Ethereum Whitepaper opisuje Ethereum jako blockchain do uruchamiania smart kontraktów w EVM: transakcje aktualizują globalny stan, a koszt obliczeń to gaz płacony w ETH. Dla fintech to fundament programowalnych rozliczeń (np. stablecoiny, escrow, payouty), ale też obowiązek projektowania pod opłaty (gaz/EIP‑1559) i skalowanie (L2 Scaling), szczególnie gdy celujesz w UX zbliżony do SEPA Instant i on‑ramp/off‑ramp.</p>
+      
+      <h2>Co obiecuje Ethereum Whitepaper i jak to przekłada się na finanse?</h2>
+      <p>Whitepaper Vitalika Buterina proponuje prostą zmianę paradygmatu: zamiast „łańcucha przelewów” dostajemy platformę, na której kod jest częścią rozliczenia. To otwiera drzwi do DeFi, automatycznych rozliczeń B2B, subskrypcji, rozliczeń warunkowych i tokenizacji aktywów. Z perspektywy Rebell Pay widzimy, że największa wartość pojawia się wtedy, gdy smart kontrakty upraszczają proces (mniej pośredników, mniej ręcznych kroków), a nie wtedy, gdy dodają złożoność. Dlatego w ocenie użyteczności Ethereum patrzymy przede wszystkim na: przewidywalność kosztu (gaz), bezpieczeństwo modelu autoryzacji (podpisy, uprawnienia), oraz to, czy dany przypadek użycia da się zintegrować z realnym światem finansów — np. wypłatami w stablecoinach, on‑rampem/off‑rampem i natychmiastową księgowością porównywalną do SEPA Instant.</p>
+
+      <h2>Jak działają konta, transakcje i gaz w Ethereum?</h2>
+      <ul>
+        <li><strong>Dwa typy kont:</strong> Konto użytkownika (EOA) podpisuje transakcje kluczem prywatnym, a konto kontraktu zawiera kod i przechowuje stan. Dla produktów fintech to rozdział: autoryzacja (podpis) vs. logika rozliczenia (kontrakt), co ma znaczenie w modelu non-custodial i przy wdrożeniach z MPC/Smart Accounts.</li>
+        <li><strong>Gaz i opłaty (EIP‑1559):</strong> Gaz to „limit pracy” EVM, który chroni sieć przed nadużyciami i wymusza przewidywalność kosztów. W praktyce opłata to m.in. base fee (spalana) + priority fee, a złożone interakcje ze smart kontraktami kosztują więcej niż prosty transfer. Dla płatności masowych liczy się optymalizacja: batchowanie, ograniczanie wywołań kontraktów i wybór L2.</li>
+        <li><strong>L2 Scaling i finalność:</strong> Żeby zejść z kosztem do poziomu oczekiwanego w płatnościach, większość ruchu przenosi się na rollupy (L2), które publikują dane/rozliczenie do L1. To zmienia ekonomię transakcji i UX (mosty/bridges, czas wypłaty na L1), ale umożliwia skalę potrzebną do realnych zastosowań płatniczych i on‑chain settlement.</li>
+      </ul>
+
+      <h2>Jak Rebell Pay wykorzystuje te zasady w praktyce płatniczej?</h2>
+      <p>Z perspektywy Rebell Pay kluczowe jest „inżynieryjne” podejście do whitepaper: projektujemy przepływy tak, by minimalizować koszt gazu, nie psuć konwersji i trzymać ryzyko smart kontraktów w ryzach. W praktyce oznacza to preferowanie L2 (rollupy) dla wolumenów, batchowanie transakcji, ograniczanie interakcji z kontraktami oraz wprowadzanie twardych zabezpieczeń: kontrola uprawnień (allowances), monitoring zdarzeń on‑chain, limity ekspozycji i procedury reagowania. Tam, gdzie użytkownik ma być właścicielem środków (non-custodial), kładziemy nacisk na UX bezpieczeństwa: czytelne komunikaty podpisu, minimalne uprawnienia, edukację i automatyczne ostrzeżenia o ryzykach. Dopiero na takiej bazie programowalność Ethereum staje się przewagą — a nie źródłem kosztów i reklamacji.</p>
+
+      <p>Jeśli oceniasz produkt na Ethereum, zacznij od trzech pytań: jaki masz budżet gazu, jak skalujesz na L2 i jak upraszczasz bezpieczeństwo podpisu — dopiero potem dobieraj smart kontrakty do modelu biznesowego.</p>
+    </article>
+  </div>
+</main>
+
+<div id="shared-footer-placeholder"></div>
+
+</body>
+</html>
