@@ -1,4 +1,12 @@
+```js
 const blogPostsData = [
+  {
+    "title": "Wypłata z krypto a blokada konta w banku — jak uniknąć?",
+    "date": "2026-02-04",
+    "excerpt": "Planujesz wypłatę z krypto na konto bankowe? Sprawdź, co najczęściej uruchamia blokadę (AML/KYC), jak przygotować SoF/SoW i jak bezpiecznie przejść weryfikację.",
+    "link": "blog/2026-02-04-wyplata-z-krypto-a-blokada-konta-w-banku-jak-uniknac.html",
+    "image": "https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=1600&q=80"
+  },
   {
     "title": "Potwierdzenie legalności środków z kryptowalut dla doradcy kredytowego",
     "date": "2026-02-03",
@@ -63,3 +71,4 @@ const blogPostsData = [
     "image": "https://images.unsplash.com/photo-1622790698141-94e30457ef12?auto=format&fit=crop&w=400"
   }
 ];
+```
