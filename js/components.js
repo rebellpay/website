@@ -78,7 +78,7 @@ const sharedHeader = `
   <div class="nav-inner"> 
     <div class="logo">
         <a href="index.html">
-            <img src="_RebellPay_logotype.png" alt="Rebell Pay">
+            <img src="/_RebellPay_logotype.png" alt="Rebell Pay">
         </a>
     </div>
     <button class="menu-toggle" id="mobile-menu-btn"><span></span><span></span><span></span></button>
@@ -95,7 +95,7 @@ const sharedFooter = `
 <footer>
   <div class="footer-links-grid">
         <div>
-            <div class="logo"><img src="_RebellPay_logotype.png" alt="Rebell Pay" style="height: 30px; margin-bottom: 20px;"></div>
+            <div class="logo"><img src="../_RebellPay_logotype.png" alt="Rebell Pay" style="height: 30px; margin-bottom: 20px;"></div>
             <p>Profesjonalne rozwiązania On-Ramp i Off-Ramp dla wymagających klientów.</p>
         </div>
         <div class="footer-links">
@@ -155,3 +155,4 @@ if (document.readyState === 'loading') {
     injectComponents();
 
 }
+
