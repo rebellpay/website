@@ -73,15 +73,15 @@ const sharedHeader = `
 <header>
   <div class="nav-inner"> 
     <div class="logo">
-        <a href="{BASE}index.html">
+        <a href="./index.html">
             <img src="./_RebellPay_logotype.png" alt="Rebell Pay">
         </a>
     </div>
     <button class="menu-toggle" id="mobile-menu-btn"><span></span><span></span><span></span></button>
     <div class="nav-actions" id="nav-actions">
-      <a href="{BASE}blog/indexblog.html" class="btn">Blog</a>
+      <a href="./blog/indexblog.html" class="btn">Blog</a>
       <a href="https://calendly.com/pawel-karczewski-rebellpay/30min" class="btn btn-primary">Bezpłatna Konsultacja</a>
-      <a href="{BASE}index.html#app" class="btn btn-outline">Pobierz App</a>
+      <a href="./index.html#app" class="btn btn-outline">Pobierz App</a>
     </div>
   </div>
 </header>
@@ -144,4 +144,5 @@ if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', injectComponents);
 } else {
     injectComponents();
+
 }
