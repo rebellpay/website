@@ -2,9 +2,9 @@ const blogPostsData = [
    {
     "title": "Czy bank może zablokować przelew z regulowanej instytucji VASP?",
     "date": "2026-02-04",
-    "excerpt": "Czy przelew z regulowanej instytucji VASP może zostać wstrzymany przez bank? Wyjaśniamy najczęstsze powody (AML/KYC), kiedy bank żąda dokumentów i jak przygotować się na weryfikację.",
+    "excerpt": "Wyjaśniamy, kiedy bank może wstrzymać przelew z regulowanej instytucji VASP, jakie są najczęstsze powody (AML/KYC) i jak przygotować dokumenty, by uniknąć blokady.",
     "link": "blog/2026-02-04-czy-bank-moze-zablokowac-przelew-z-regulowanej-instytucji-vasp.html",
-    "image": "https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=1600&q=80"
+    "image": "blog/img/Czy bank może zablok.jpeg"
   },
    {
   "title": "Potwierdzenie legalności środków z kryptowalut do kredytu",
