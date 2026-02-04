@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Czy bank może zablokować przelew z regulowanej instytucji VASP? | Rebell Pay Blog</title>
+  <meta name="description" content="Sprawdź, kiedy bank może wstrzymać przelew z VASP i co zrobić, by go odblokować. Pobierz checklistę i działaj skutecznie.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* Style specyficzne dla treści posta */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Inter', sans-serif; color: #1e293b; line-height: 1.6; background-color: #fff; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+       
+    .post-wrapper { padding: 120px 0 60px; background: white; }
+    
+    .post-header { max-width: 800px; margin: 0 auto 40px; text-align: center; }
+    .post-header h1 { font-size: clamp(32px, 5vw, 48px); color: #0f172a; margin-bottom: 20px; letter-spacing: -0.02em; }
+    .post-meta { color: #64748b; font-size: 14px; text-transform: uppercase; font-weight: 700; margin-bottom: 10px; display: block; }
+    
+    .featured-image { width: 100%; max-height: 500px; object-fit: cover; border-radius: 32px; margin-bottom: 40px; box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.05); }
+    
+    .post-content { max-width: 750px; margin: 0 auto; font-size: 18px; color: #1e293b; }
+    .post-content p { margin-bottom: 24px; }
+    .post-content h2 { margin: 40px 0 20px; color: #0f172a; }
+    .post-content ul { margin-bottom: 24px; padding-left: 20px; }
+    .post-content li { margin-bottom: 10px; }
+
+        @media (max-width: 992px) {
+      .post-wrapper { padding-top: 100px; }
+    }
+  </style>
+
+<script src="../js/components.js" defer></script>
+</head>
+<body>
+
+<div id="shared-header-placeholder"></div>
+
+<main class="post-wrapper">
+  <div class="container">
+    <div class="post-header">
+      <span class="post-meta">2026-02-04 • Płatności & Krypto Compliance</span>
+      <h1>Czy bank może zablokować przelew z regulowanej instytucji VASP?</h1>
+    </div>
+    
+    <img src="blog/img/Czy bank może zablok.jpeg" class="featured-image" alt="Blokada przelewu z regulowanej instytucji VASP do banku — AML, KYC i weryfikacja źródła środków">
+
+    <article class="post-content">
+      <p>Tak — bank może wstrzymać lub odrzucić przelew przychodzący nawet z regulowanej instytucji VASP, jeżeli zadziałają procedury AML/KYC, screening sankcyjny lub ocena ryzyka transakcji. Regulacja VASP zmniejsza ryzyko, ale nie znosi obowiązków banku ani jego prawa do dodatkowej weryfikacji źródła środków i celu płatności.</p>
+      
+      <h2>Dlaczego bank w ogóle wstrzymuje przelew z VASP, skoro to „regulowana” instytucja?</h2>
+      <p>Z naszego doświadczenia wynika, że kluczowe jest zrozumienie, iż bank i VASP działają w dwóch reżimach zgodności, które muszą się „spiąć” na poziomie konkretnej transakcji — nie tylko na poziomie licencji. Bank jest instytucją obowiązaną i ma własny model ryzyka: analizuje dane nadawcy/beneficjenta, opis przelewu, historię rachunku, jurysdykcje, a także sygnały z systemów monitoringu transakcji (transaction monitoring) i list sankcyjnych. W praktyce bank może zakwalifikować przelew z on-rampu/off-rampu krypto jako podwyższone ryzyko, jeśli widzi np. częste wpłaty/wypłaty, nietypowe kwoty, brak spójnego uzasadnienia ekonomicznego albo powiązania z sieciami blockchain (L1/L2) i adresami, które w analizie on-chain wyglądają na „zbyt blisko” ryzykownych przepływów. Nawet jeśli transakcja wychodzi z regulowanego VASP, bank może poprosić o dodatkowe KYC/EDD (Enhanced Due Diligence), potwierdzenie źródła środków (SoF) i źródła majątku (SoW), a czasem o dokumenty związane z konkretną aktywnością: trading, mining, staking, wypłaty z protokołów smart contracts czy przepływy z bridge’ów między L2.</p>
+
+      <h2>Kiedy bank najczęściej blokuje lub „mrozi” przelew z VASP? (najważniejsze powody)</h2>
+      <ul>
+        <li><strong>AML/KYC i ocena ryzyka transakcji</strong>:</strong> Bank może wstrzymać przelew, gdy transakcja nie pasuje do profilu klienta (np. nowy rachunek, brak historii, nagły wzrost wolumenów), brakuje spójnego celu płatności lub wymagane jest EDD. Często dotyczy to cash-outu z giełdy/VASP po aktywności na blockchain (L1/L2), w tym po użyciu bridge, DEX czy protokołów DeFi opartych o smart contracts.</li>
+        <li><strong>Screening sankcyjny i „name matching”</strong>:</strong> Automatyczne filtry mogą oznaczyć przelew do ręcznej weryfikacji, gdy dane nadawcy/beneficjenta, adres, bank pośredniczący lub jurysdykcja zahaczają o listy sankcyjne (OFAC/UE/ONZ) albo pojawia się niejednoznaczne dopasowanie (fałszywy pozytyw). Wystarczy podobieństwo nazw, skrótów lub brak pełnych danych w polach przelewu.</li>
+        <li><strong>Braki w danych i dokumentacji (compliance „higiena”)</strong>:</strong> Blokady powodują też prozaiczne rzeczy: niepełne dane nadawcy, niejasny tytuł przelewu, brak potwierdzeń pochodzenia środków (np. historia transakcji, wyciągi, potwierdzenia zakupu), rozbieżności między danymi w banku i w VASP, albo „łańcuch” środków, którego nie da się logicznie wyjaśnić (np. środki przyszły z kilku źródeł: CEX → self-custody → DEX → bridge L2 → CEX/VASP → bank).</li>
+      </ul>
+
+      <h2>Co rekomendujemy w Rebell Pay, żeby przelew z VASP przeszedł bez blokady?</h2>
+      <p>W Rebell Pay zauważyliśmy, że najszybciej odblokowują się sprawy, w których klient od początku przygotował „pakiet dowodowy” pod AML i potrafi w 2–3 zdaniach opisać ekonomiczny sens transakcji. Praktycznie: zadbaj o spójne dane KYC (tożsamość, adres, beneficjent rzeczywisty), używaj czytelnego opisu przelewu (np. „wypłata środków z platformy VASP – sprzedaż aktywów cyfrowych”), a gdy bank pyta o źródło środków, dostarcz zestaw: potwierdzenia wpłat na VASP (on-ramp), historię transakcji/tradingu, wyciągi bankowe oraz — jeśli było self-custody — linki do transakcji w eksploratorze (hash/txid) i krótką mapę przepływu (skąd → dokąd → dlaczego). Jeśli środki przechodziły przez L2, bridge lub smart contracts, opisz to prosto: jaki protokół, w jakim celu, jakie kwoty, i pokaż spójność czasową. Najczęstszy błąd to nadmiar terminów bez wyjaśnienia albo brak jednej, logicznej narracji. Bank nie musi „rozumieć DeFi” — musi móc udokumentować, że zidentyfikował ryzyko i je zamknął.</p>
+
+      <p>Jeżeli bank wstrzyma przelew z regulowanego VASP, nie zakładaj od razu złej woli — potraktuj to jak standardową kontrolę AML: dostarcz kompletne SoF/SoW, doprecyzuj cel transakcji i zadbaj o spójność danych, a w większości przypadków sprawę da się skutecznie domknąć.</p>
+    </article>
+  </div>
+</main>
+
+<div id="shared-footer-placeholder"></div>
+
+</body>
+</html>
