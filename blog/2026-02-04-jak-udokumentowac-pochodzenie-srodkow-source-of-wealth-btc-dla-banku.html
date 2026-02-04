@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jak udokumentować Source of Wealth z BTC dla banku | Rebell Pay Blog</title>
+  <meta name="description" content="Sprawdź, jak udokumentować pochodzenie środków z BTC (SoW/SoF) dla banku. Pobierz checklistę i przygotuj paczkę dowodów.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* Style specyficzne dla treści posta */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Inter', sans-serif; color: #1e293b; line-height: 1.6; background-color: #fff; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+       
+    .post-wrapper { padding: 120px 0 60px; background: white; }
+    
+    .post-header { max-width: 800px; margin: 0 auto 40px; text-align: center; }
+    .post-header h1 { font-size: clamp(32px, 5vw, 48px); color: #0f172a; margin-bottom: 20px; letter-spacing: -0.02em; }
+    .post-meta { color: #64748b; font-size: 14px; text-transform: uppercase; font-weight: 700; margin-bottom: 10px; display: block; }
+    
+    .featured-image { width: 100%; max-height: 500px; object-fit: cover; border-radius: 32px; margin-bottom: 40px; box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.05); }
+    
+    .post-content { max-width: 750px; margin: 0 auto; font-size: 18px; color: #1e293b; }
+    .post-content p { margin-bottom: 24px; }
+    .post-content h2 { margin: 40px 0 20px; color: #0f172a; }
+    .post-content ul { margin-bottom: 24px; padding-left: 20px; }
+    .post-content li { margin-bottom: 10px; }
+
+        @media (max-width: 992px) {
+      .post-wrapper { padding-top: 100px; }
+    }
+  </style>
+
+<script src="../js/components.js" defer></script>
+</head>
+<body>
+
+<div id="shared-header-placeholder"></div>
+
+<main class="post-wrapper">
+  <div class="container">
+    <div class="post-header">
+      <span class="post-meta">2026-02-04 • AML / Compliance</span>
+      <h1>Jak udokumentować pochodzenie środków (Source of Wealth) z BTC dla banku?</h1>
+    </div>
+    
+    <img src="/images/blog/source-of-wealth-btc-bank-rebell-pay.jpg" class="featured-image" alt="Dokumentowanie Source of Wealth z BTC dla banku: transakcje, wyciągi i ślady on-chain">
+
+    <article class="post-content">
+      <p>Aby udokumentować pochodzenie środków (Source of Wealth / Source of Funds) z BTC dla banku, przygotuj spójną „ścieżkę pieniędzy” łączącą: źródło kapitału (np. wynagrodzenie), zakup BTC na on-rampie (giełda/kantor), przepływy on-chain (TXID) oraz finalny cash-out na rachunek. Banki w ramach KYC/AML oczekują, że każdy etap da się zweryfikować dokumentami off-chain i dowodami z blockchain (adresy, hashe transakcji, daty, kwoty).</p>
+      
+      <h2>Dlaczego bank w ogóle pyta o Source of Wealth (SoW) przy BTC?</h2>
+      <p>Z naszego doświadczenia w branży płatności wynika, że pytania o SoW/SoF pojawiają się najczęściej przy: większych wpływach z giełd, regularnych przelewach od podmiotów krypto, nagłej zmianie profilu transakcji, zasileniach z zagranicy lub przy próbie wykonania dużego przelewu wychodzącego. Bank nie „ocenia” samego Bitcoina — weryfikuje ryzyko AML (pranie pieniędzy), zgodność z KYC, a czasem też obowiązki podatkowe i sankcyjne. W praktyce chodzi o odpowiedź na dwa pytania: skąd miałeś kapitał (Source of Wealth) oraz skąd konkretnie pochodzą środki użyte w tej transakcji/przelewie (Source of Funds). Jeśli kupowałeś BTC dawno temu, dochodzi jeszcze temat archiwalnych dowodów: potwierdzeń z giełdy, historii wpłat, CSV z transakcjami, a także spójnego mapowania adresów w blockchain explorerze (L1 Bitcoin, czasem przepływy przez rozwiązania L2 jak Lightning, albo mosty/bridge’y i smart contracts, gdy środki przechodziły przez inne sieci).</p>
+
+      <h2>Jakie dokumenty i dane przygotować? (checklista SoW/SoF dla BTC)</h2>
+      <ul>
+        <li><strong>Dowód źródła kapitału (SoW):</strong> umowa o pracę/B2B, PIT/roczne rozliczenie, wyciągi z konta potwierdzające wpływy, umowa sprzedaży udziałów/akcji/nieruchomości, spadek/darowizna (z potwierdzeniem), dokumenty potwierdzające oszczędności lub działalność gospodarczą. Klucz: wskazać realne, legalne źródło, z którego mogłeś sfinansować zakup BTC.</li>
+        <li><strong>Dowód zakupu BTC (on-ramp) i historii na platformie:</strong> potwierdzenia przelewów na giełdę/kantor, faktury/rachunki (jeśli były), zrzuty ekranu/wyciągi PDF, eksport CSV z historii transakcji, identyfikator użytkownika na giełdzie oraz potwierdzenie KYC na tej platformie. Bank zwykle chce zobaczyć: datę zakupu, kwotę fiat, kurs, wolumen BTC i to, że środki weszły z Twojego rachunku.</li>
+        <li><strong>Ślady on-chain i powiązanie adresów (chain of custody):</strong> lista własnych adresów BTC (lub z portfela sprzętowego), TXID-y wypłat z giełdy, linki do blockchain explorera, zestawienie wpływów/wypływów z datami i kwotami oraz dowód, że kontrolujesz portfel (np. podpis wiadomości w portfelu lub screen z aplikacji pokazujący adres + saldo). Jeśli używałeś mikserów, coinjoin, peel chain, swapów cross-chain, DeFi/smart contracts lub bridge’y — przygotuj dodatkowe wyjaśnienie, bo to podnosi ocenę ryzyka AML.</li>
+      </ul>
+
+      <h2>Jak Rebell Pay pomaga przygotować „paczkę dowodową” do banku?</h2>
+      <p>W Rebell Pay zauważyliśmy, że najszybciej przechodzą weryfikacje te przypadki, w których klient dostarcza bankowi nie „zrzuty z portfela”, tylko uporządkowaną narrację i spójne załączniki: oś czasu (timeline), tabelę transakcji (fiat → BTC → transfery → sprzedaż), oraz jednoznaczne powiązanie: konto bankowe ↔ on-ramp (giełda) ↔ adresy on-chain ↔ cash-out. Pomagamy też ułożyć odpowiedź językiem zgodnym z praktyką AML: rozróżniamy SoW vs SoF, opisujemy rolę VASP (giełdy), wskazujemy źródła danych (wyciągi bankowe, potwierdzenia, CSV), a przy wątkach technicznych (L2/Lightning, swapy, smart contracts) doprecyzowujemy, jak udokumentować transfery mimo innej warstwy rozliczeniowej. Efekt: mniej „ping-pongu” mailowego z bankiem i mniejsze ryzyko blokady środków z powodu braków formalnych.</p>
+
+      <p>Jeśli chcesz, przygotuj: 1) historię wpłat na giełdę, 2) export CSV transakcji, 3) listę adresów i TXID — a następnie opisz w 5–7 zdaniach pełną ścieżkę środków; to najczęściej wystarcza, by bank zaakceptował pochodzenie środków z BTC.</p>
+    </article>
+  </div>
+</main>
+
+<div id="shared-footer-placeholder"></div>
+
+</body>
+</html>
