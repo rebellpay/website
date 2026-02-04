@@ -1,5 +1,12 @@
 const blogPostsData = [
   {
+    "title": "Nowy wpis na blogu - Tytuł najnowszego wpisu",
+    "date": "2026-02-06",
+    "excerpt": "To jest opis najnowszego wpisu dodanego na blogu. Zachęcamy do lektury!",
+    "link": "blog/new-post.html",
+    "image": "https://example.com/new-post-image.jpg"
+  },
+  {
     "title": "Nowy wpis na blogu",
     "date": "2026-02-05",
     "excerpt": "To jest najnowszy wpis dodany na blogu. Zapraszamy do lektury!",
