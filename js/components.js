@@ -73,15 +73,15 @@ const sharedHeader = `
 <header>
   <div class="nav-inner"> 
     <div class="logo">
-        <a href="./index.html">
+        <a href="../index.html">
             <img src="_RebellPay_logotype.png" alt="Rebell Pay">
         </a>
     </div>
     <button class="menu-toggle" id="mobile-menu-btn"><span></span><span></span><span></span></button>
     <div class="nav-actions" id="nav-actions">
-      <a href="./blog/indexblog.html" class="btn">Blog</a>
+      <a href="../indexblog.html" class="btn">Blog</a>
       <a href="https://calendly.com/pawel-karczewski-rebellpay/30min" class="btn btn-primary">Bezpłatna Konsultacja</a>
-      <a href="./index.html#app" class="btn btn-outline">Pobierz App</a>
+      <a href="../index.html#app" class="btn btn-outline">Pobierz App</a>
     </div>
   </div>
 </header>
@@ -91,13 +91,13 @@ const sharedFooter = `
 <footer>
   <div class="footer-links-grid">
         <div>
-            <div class="logo"><img src="{BASE}_RebellPay_logotype.png" alt="Rebell Pay" style="height: 30px; margin-bottom: 20px;"></div>
+            <div class="logo"><img src="../_RebellPay_logotype.png" alt="Rebell Pay" style="height: 30px; margin-bottom: 20px;"></div>
             <p>Profesjonalne rozwiązania On-Ramp i Off-Ramp dla wymagających klientów.</p>
         </div>
         <div class="footer-links">
             <h4>Firma</h4>
-            <a href="{BASE}index.html">O nas</a>
-            <a href="{BASE}index.html#services">Usługi</a>
+            <a href="../index.html">O nas</a>
+            <a href="../index.html#services">Usługi</a>
         </div>
         <div class="footer-links">
             <h4>Prawne</h4>
@@ -146,4 +146,5 @@ if (document.readyState === 'loading') {
     injectComponents();
 
 }
+
 
