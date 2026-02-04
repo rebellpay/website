@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rebell Pay | Profesjonalny On-Ramp i Off-Ramp</title>
+  
+<style>
+    :root {
+      --navy: #0f172a;
+      --blue: #2563eb;
+      --accent: #38bdf8;
+      --success: #10b981;
+      --text-main: #1e293b;
+      --text-muted: #64748b;
+      --bg-light: #f8fafc;
+      --white: #ffffff;
+      --radius: 16px;
+      --shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.05);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      color: var(--text-main);
+      background: var(--white);
+      line-height: 1.6;
+      /* Padding-top zostanie dodany automatycznie przez components.js */
+    }
+
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+    .btn { /* Ogólne style przycisków mogą zostać, jeśli są używane w sekcjach */
+      padding: 12px 24px;
+      border-radius: var(--radius);
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.3s;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 14px;
+      text-align: center;
+    }
+
+    .btn-primary { background: var(--blue); color: white; border: none; }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(37, 99, 235, 0.3); }
+    .btn-outline { border: 1px solid #e2e8f0; color: var(--navy); }
+    .btn-outline:hover { background: #f8fafc; }
+
+    /* HERO & CALCULATOR */
+    .hero { padding: 60px 0 80px; background: radial-gradient(circle at 10% 20%, #f1f5ff 0%, #ffffff 50%); }
+    .hero-grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 60px; align-items: center; }
+    .hero-content h1 { font-size: clamp(34px, 4vw, 50px); font-weight: 850; letter-spacing: -0.04em; line-height: 1.1; margin-bottom: 24px; color: var(--navy); }
+    .hero-content p { font-size: 18px; color: var(--text-muted); max-width: 540px; }
+
+    @media (max-width: 992px) {
+      .hero-content { text-align: center; }
+      .hero-content p { margin-left: auto; margin-right: auto; }
+      .hero-cta-wrapper { display: flex; justify-content: center; }
+    }
+
+    .calc-card { 
+        background: var(--white); 
+        padding: 32px; 
+        border-radius: 24px; 
+        box-shadow: var(--shadow); 
+        border: 1px solid #f1f5f9; 
+        max-width: 460px; 
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .input-group { background: var(--bg-light); border-radius: 12px; padding: 16px; margin-bottom: 12px; border: 1px solid #e2e8f0; }
+    .input-label { font-size: 11px; color: var(--text-muted); text-transform: uppercase; font-weight: 700; margin-bottom: 8px; display: block; }
+    .input-row { display: flex; justify-content: space-between; align-items: center; gap: 10px; }
+    .input-val-field { background: transparent; border: none; font-size: 22px; font-weight: 700; color: var(--navy); width: 100%; outline: none; }
+    input::-webkit-outer-spin-button, input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+    .currency-pill { display: flex; align-items: center; gap: 8px; background: white; padding: 4px 12px; border-radius: 999px; font-weight: 600; font-size: 14px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); min-width: 90px; }
+
+    /* CAROUSEL FIXED */
+    .carousel-container { overflow: hidden; padding: 40px 0; background: white; position: relative; width: 100%; }
+    .carousel-track { 
+        display: flex; 
+        width: calc(250px * 18); 
+        animation: scroll 40s linear infinite; 
+    }
+    .exchange-logo { 
+        width: 250px; 
+        height: 60px; 
+        display: flex; 
+        align-items: center; 
+        justify-content: center; 
+        padding: 0 40px; 
+        filter: grayscale(1); 
+        opacity: 0.6; 
+    }
+    .exchange-logo img { max-width: 100%; max-height: 40px; object-fit: contain; }
+    @keyframes scroll { 0% { transform: translateX(0); } 100% { transform: translateX(calc(-250px * 9)); } }
+
+    /* SECTIONS */
+    section { padding: 100px 0; }
+    .section-tag { color: var(--blue); font-weight: 700; text-transform: uppercase; font-size: 12px; margin-bottom: 12px; display: block; }
+    .section-title { font-size: 36px; font-weight: 800; margin-bottom: 48px; color: var(--navy); }
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
+    .card { padding: 40px; border-radius: 24px; border: 1px solid #f1f5f9; background: var(--white); height: 100%; transition: 0.3s; }
+    .card:hover { border-color: var(--blue); transform: translateY(-5px); }
+    .card ul { list-style: none; margin-top: 20px; }
+    .card li { margin-bottom: 14px; display: flex; align-items: center; gap: 12px; font-size: 15px; }
+
+    /* HOW IT WORKS SECTION */
+    .process-grid { 
+        display: grid; 
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+        gap: 24px; 
+        margin-top: 40px; 
+    }
+    .process-step { 
+        background: var(--white); 
+        padding: 40px 32px; 
+        border-radius: 24px; 
+        border: 1px solid #f1f5f9; 
+        transition: 0.3s;
+        text-align: center;
+    }
+    .process-step:hover { 
+        border-color: var(--blue); 
+        transform: translateY(-5px);
+        box-shadow: var(--shadow);
+    }
+    .step-icon {
+        width: 64px;
+        height: 64px;
+        background: #eff6ff;
+        border-radius: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 24px;
+        color: var(--blue);
+    }
+    .process-step h4 { margin-bottom: 12px; color: var(--navy); font-size: 18px; font-weight: 700; }
+    .process-step p { font-size: 14px; color: var(--text-muted); line-height: 1.5; }
+
+    .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; }
+    .stat-item { background: var(--white); padding: 30px; border-radius: 24px; border: 1px solid #f1f5f9; text-align: center; }
+    .stat-value { font-size: 32px; font-weight: 850; color: var(--blue); display: block; }
+
+    .app-section { background: var(--bg-light); border-radius: 40px; padding: 80px 60px; display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+    .app-content { text-align: center; } 
+    .app-preview { background: transparent; height: 380px; border-radius: 30px; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+    .app-screen { width: 190px; height: 320px; background: #1e293b; border: 6px solid #334155; border-radius: 20px; }
+
+   /* CONSULTATION SECTION UPDATED */
+    .pricing-box { background: var(--navy); color: white; border-radius: 32px; padding: 60px; }
+    .consult-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+    .price-tag { font-size: 64px; font-weight: 900; color: var(--accent); margin: 20px 0; }
+    
+    .consult-photo-container { 
+        height: 380px; 
+        border-radius: 30px; 
+        overflow: hidden; 
+        display: flex; 
+        align-items: center; 
+        justify-content: center; 
+        background: #ffffff; /* Dodajemy białe tło, aby rozjaśnić przezroczyste PNG */
+        box-shadow: inset 0 0 40px rgba(0,0,0,0.05); /* Delikatny cień dla głębi */
+    }
+    .consult-photo-container img { 
+        width: 100%; 
+        height: 100%; 
+        object-fit: cover; 
+        filter: none !important; /* Upewniamy się, że nie ma żadnych filtrów */
+        opacity: 1 !important;   /* Upewniamy się, że nie ma przezroczystości */
+    }
+
+
+
+/* BLOG SECTION */
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+    margin-top: 40px;
+}
+.blog-card {
+    background: var(--white);
+    border: 1px solid #f1f5f9;
+    border-radius: 20px;
+    padding: 24px;
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+.blog-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--blue);
+    box-shadow: var(--shadow);
+}
+.blog-date {
+    font-size: 12px;
+    color: var(--text-muted);
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+.blog-card h4 {
+    font-size: 18px;
+    margin-bottom: 12px;
+    color: var(--navy);
+}
+.blog-card p {
+    font-size: 14px;
+    color: var(--text-muted);
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+.blog-link {
+    color: var(--blue);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+
+
+.blog-card {
+    padding: 0; /* Usuwamy wewnętrzny padding, żeby zdjęcie dotykało krawędzi */
+    overflow: hidden;
+}
+
+.blog-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.blog-card:hover .blog-image {
+    transform: scale(1.05);
+}
+
+.blog-content {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.blog-card {
+    cursor: pointer;
+    position: relative;
+}
+.blog-card-link {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+
+
+    /* FOOTER */
+    footer { padding: 60px 0; border-top: 1px solid #f1f5f9; font-size: 14px; color: var(--text-muted); background: #fff; }
+    .footer-links-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 40px; margin-bottom: 40px; }
+    .footer-links a { color: var(--text-muted); text-decoration: none; display: block; margin-bottom: 10px; }
+    .footer-links a:hover { color: var(--blue); }
+    .aml-notice { font-size: 12px; line-height: 1.6; border-top: 1px solid #f1f5f9; margin-top: 30px; padding-top: 20px; }
+  </style>
+</head>
+<body>
+<div id="shared-header-placeholder"></div>
+
+<main>
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <span class="section-tag">Zaufany Partner On & Off-Ramp</span>
+        <h1>Instytucjonalny standard wymiany aktywów.</h1>
+        <p>Zapewniamy płynność między światem cyfrowym a tradycyjnym systemem bankowym. Szybko, bezpiecznie i na przejrzystych warunkach.</p>
+        <div class="hero-cta-wrapper" style="margin-top: 40px;">
+          <a href="https://calendly.com/pawel-karczewski-rebellpay/30min" class="btn btn-primary" style="padding: 16px 32px;">Bezpłatna konsultacja (30 min)</a>
+        </div>
+      </div>
+      
+      <div class="hero-visual">
+        <div class="calc-card">
+          <div style="display: flex; justify-content: space-between; margin-bottom: 20px; font-weight: 700; font-size: 14px;">
+            <span>Konwerter walut</span>
+            <span id="rate-status" style="color: var(--success)">● Kursy Live</span>
+          </div>
+          
+          <div class="input-group">
+            <span class="input-label">Wpłacasz</span>
+            <div class="input-row">
+              <input type="number" id="calc-pay" class="input-val-field" value="100000">
+              <div class="currency-pill"><img src="https://cryptologos.cc/logos/usd-coin-usdc-logo.png" width="18"> USDC</div>
+            </div>
+          </div>
+          
+          <div style="height: 10px;"></div>
+          
+          <div class="input-group">
+            <span class="input-label">Otrzymujesz (szacunkowo)</span>
+            <div class="input-row">
+              <input type="number" id="calc-receive" class="input-val-field">
+              <div class="currency-pill"><span style="color: var(--blue); font-weight: 900;">€</span> EUR</div>
+            </div>
+          </div>
+
+          <div style="text-align: center; margin-bottom: 15px;">
+            <p style="font-size: 11px; color: var(--text-muted);">
+                Obsługiwane waluty: <strong>BTC, ETH, USDC, LTC </strong> i wiele innych.
+            </p>
+          </div>
+          
+          <a href="https://calendly.com/pawel-karczewski-rebellpay/30min" class="btn btn-primary" style="width: 100%; padding: 16px;">Zapytaj o wycenę indywidualną</a>
+          
+          <div style="margin-top: 15px; text-align: center;">
+            <p id="current-rate-info" style="font-size: 12px; color: var(--navy); font-weight: 700;">Kurs: -- USDC / EUR</p>
+            <p style="font-size: 10px; color: var(--text-muted); margin-top: 5px;">Cennik orientacyjny. Uwzględnia prowizję 0,5%.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container" style="text-align: center; padding-top: 60px;">
+    <span class="section-tag">Globalny Ekosystem</span>
+    <h2 style="font-size: 28px; font-weight: 800; color: var(--navy); margin-bottom: 10px;">Obsługujemy wszystkich</h2>
+    <p style="color: var(--text-muted); max-width: 600px; margin: 0 auto 20px;">Wsparcie we wpłacie (On-Ramp) i wypłacie (Off-Ramp) środków ze wszystkich kluczowych giełd.</p>
+  </div>
+
+  <div class="carousel-container">
+    <div class="carousel-track">
+      <div class="exchange-logo"><img src="logoex/logo-binance.svg" alt="Binance"></div>
+      <div class="exchange-logo"><img src="logoex/logo-coinbase.svg" alt="Coinbase"></div>
+      <div class="exchange-logo"><img src="logoex/logo-zondacrypto.svg" alt="Zondacrypto"></div>
+      <div class="exchange-logo"><img src="logoex/logo-kraken.svg" alt="Kraken"></div>
+      <div class="exchange-logo"><img src="logoex/logo-bingx.svg" alt="BingX"></div>
+      <div class="exchange-logo"><img src="logoex/logo-bybit.svg" alt="Bybit"></div>
+      <div class="exchange-logo"><img src="logoex/logo-bitget.svg" alt="Bitget"></div>
+      <div class="exchange-logo"><img src="logoex/logo-okx.svg" alt="OKX"></div>
+      <div class="exchange-logo"><img src="logoex/logo-kucoin.svg" alt="KuCoin"></div>
+      <div class="exchange-logo"><img src="logoex/logo-binance.svg" alt="Binance"></div>
+      <div class="exchange-logo"><img src="logoex/logo-coinbase.svg" alt="Coinbase"></div>
+      <div class="exchange-logo"><img src="logoex/logo-zondacrypto.svg" alt="Zondacrypto"></div>
+      <div class="exchange-logo"><img src="logoex/logo-kraken.svg" alt="Kraken"></div>
+      <div class="exchange-logo"><img src="logoex/logo-bingx.svg" alt="BingX"></div>
+      <div class="exchange-logo"><img src="logoex/logo-bybit.svg" alt="Bybit"></div>
+      <div class="exchange-logo"><img src="logoex/logo-bitget.svg" alt="Bitget"></div>
+      <div class="exchange-logo"><img src="logoex/logo-okx.svg" alt="OKX"></div>
+      <div class="exchange-logo"><img src="logoex/logo-kucoin.svg" alt="KuCoin"></div>
+    </div>
+  </div>
+
+  <section id="segments" style="background: var(--bg-light);">
+    <div class="container">
+      <span class="section-tag">Rozwiązania Szyte na Miarę</span>
+      <h2 class="section-title">Dla kogo jest Rebell Pay?</h2>
+      <div class="grid-2">
+        <div class="card">
+            <div style="font-size: 32px; margin-bottom: 20px;">👤</div>
+            <h3>Inwestorzy Indywidualni (HNWI)</h3>
+            <p style="color: var(--text-muted);">Zabezpiecz swoje zyski i przenieś kapitał do tradycyjnego systemu bez ryzyka blokady konta.</p>
+            <ul>
+              <li><span style="color: var(--success)">✓</span> <strong>Dyskrecja:</strong> Pełna ochrona bankowa i prywatność.</li>
+              <li><span style="color: var(--success)">✓</span> <strong>Dokumentacja:</strong> Oficjalne potwierdzenie źródła środków.</li>
+              <li><span style="color: var(--success)">✓</span> <strong>White-Glove:</strong> Dedykowany opiekun dla Twoich transakcji.</li>
+            </ul>
+        </div>
+        <div class="card">
+            <div style="font-size: 32px; margin-bottom: 20px;">🏢</div>
+            <h3>Klienci Biznesowi & OTC</h3>
+            <p style="color: var(--text-muted);">Zoptymalizuj przepływy swojej firmy dzięki nowoczesnej infrastrukturze płynności.</p>
+            <ul>
+              <li><span style="color: var(--success)">✓</span> <strong>Wysokie wolumeny:</strong> Płynność OTC bez wpływu na kurs rynkowy.</li>
+              <li><span style="color: var(--success)">✓</span> <strong>On-Ramp:</strong> Możliwość zasilenia portfeli bezpośrednio z konta fiat.</li>
+              <li><span style="color: var(--success)">✓</span> <strong>Audyt:</strong> Pełna transparentność i zgodność księgowa.</li>
+            </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="container">
+      <span class="section-tag">Zakres Usług</span>
+      <h2 class="section-title">Kompleksowa obsługa On-Ramp i Off-Ramp</h2>
+      <div class="grid-2">
+        <div class="card">
+          <h4>📥 Fiat to Crypto (On-Ramp)</h4>
+          <p style="color: var(--text-muted); margin-bottom: 20px;">Zasilaj swoje portfele błyskawicznie i bez limitów:</p>
+          <ul>
+            <li><span style="color: var(--blue)">⚡</span> <strong>SEPA Instant & SEPA:</strong> Przelewy w EUR w czasie rzeczywistym.</li>
+            <li><span style="color: var(--blue)">⚡</span> <strong>Blik:</strong> Szybkie płatności mobilne (PLN).</li>
+            <li><span style="color: var(--blue)">⚡</span> <strong>Karty Visa i Mastercard:</strong> Kupuj krypto w kilka sekund.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h4>📤 Crypto to Fiat (Off-Ramp)</h4>
+          <p style="color: var(--text-muted); margin-bottom: 20px;">Bezpieczna zamiana aktywów na waluty tradycyjne:</p>
+          <ul>
+            <li><span style="color: var(--blue)">⚡</span> <strong>SEPA / SEPA Instant:</strong> Wypłata na dowolne konto w Europie.</li>
+            <li><span style="color: var(--blue)">⚡</span> <strong>PayOut to Card:</strong> Środki bezpośrednio na Twoją kartę płatniczą.</li>
+            <li><span style="color: var(--blue)">⚡</span> <strong>Pełna dokumentacja:</strong> Raporty AML akceptowane przez banki.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="process" style="background: var(--bg-light);">
+    <div class="container">
+      <span class="section-tag">Prosta ścieżka</span>
+      <h2 class="section-title">Jak wygląda współpraca?</h2>
+      <div class="process-grid">
+        <div class="process-step">
+          <div class="step-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+          </div>
+          <h4>Krok 1: <br> Umowa + KYC/KYB</h4>
+          <p>Podpisujemy umowę ramową i przeprowadzamy weryfikację tożsamości, aby zapewnić pełne bezpieczeństwo transakcji zgodnie z ustawą AML.</p>
+        </div>
+        <div class="process-step">
+          <div class="step-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+          </div>
+          <h4>Krok 2: <br> Source of Funds</h4>
+          <p>Weryfikujemy źródło pochodzenia środków w niezbędnym zakresie – dbamy o zgodność, nie utrudniając procesu.</p>
+        </div>
+        <div class="process-step">
+          <div class="step-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+          </div>
+          <h4>Krok 3: <br> Wpłata aktywów</h4>
+          <p>Przesyłasz nam środki, które chcesz wymienić (Fiat lub Krypto), na nasze zabezpieczone rachunki lub portfele.</p>
+        </div>
+        <div class="process-step">
+          <div class="step-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+          </div>
+          <h4>Krok 4: <br> Finalizacja</h4>
+          <p>Wysyłamy wymienione środki bezpośrednio na Twój wskazany adres portfela krypto,  rachunek bankowy IBAN lub kartę.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="trust">
+    <div class="container">
+      <span class="section-tag">Skala działalności</span>
+      <h2 class="section-title">Nasza skala operacyjna</h2>
+      <div class="stats-grid">
+        <div class="stat-item"><span class="stat-value">2 450+</span><span class="stat-label">Obsłużonych Klientów</span></div>
+        <div class="stat-item"><span class="stat-value" id="volume-counter">1 310 000 €</span><span class="stat-label">Wolumen w 2026</span></div>
+        <div class="stat-item"><span class="stat-value">4 lata</span><span class="stat-label">Działalności na rynku </span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="app">
+    <div class="container">
+      <div class="app-section">
+        <div class="app-content">
+          <span class="section-tag">Self-Service 24/7</span>
+          <h2>Aplikacja Rebell Business</h2>
+          <p style="color: var(--text-muted); margin: 20px 0 30px;">Zarządzaj transakcjami, śledź kursy i generuj raporty bezpośrednio z telefonu.</p>
+          <div style="display: flex; gap: 20px; flex-wrap: nowrap; justify-content: center; align-items: center;">
+            <a href="https://play.google.com/store/apps/details?id=com.elixirgroup.rebellpaybusiness&hl=pl" target="_blank">
+                <img src="app/GooglePlay.svg" width="170" alt="Google Play">
+            </a>
+            <a href="https://apps.apple.com/pl/app/rebell-pay-business/id6744999878" target="_blank">
+                <img src="app/AppleStore.svg" width="170" alt="App Store">
+            </a>
+          </div>
+        </div>
+        <div class="app-preview">
+          <img src="app/RPBusiness.jpg" alt="Rebell Pay Business App Mockup" style="width:100%; height:auto;  max-width: 110%;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="consultation">
+    <div class="container">
+      <div class="pricing-box">
+        <div class="consult-grid">
+          <div class="consult-content">
+            <span class="section-tag" style="color: var(--accent);">Bezpłatna Konsultacja</span>
+            <h2 style="color: white; margin-bottom: 20px;">Poznaj swoje indywidualne warunki</h2>
+            <div class="price-tag">Porozmawiajmy</div>
+            <a href="https://calendly.com/pawel-karczewski-rebellpay/30min" class="btn btn-primary" style="background: var(--accent); color: var(--navy); padding: 16px 32px; margin-top: 20px;">Zarezerwuj termin rozmowy</a>
+          </div>
+          <div class="consult-photo-container">
+            <img src="app/contact.png" alt="Prezes Rebell Pay">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+
+
+<section id="blog" style="background: #fff;">
+  <div class="container">
+    <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 40px;">
+      <div>
+        <span class="section-tag">Aktualności</span>
+        <h2 class="section-title" style="margin-bottom: 0;">Rynek pod lupą</h2>
+      </div>
+      <a href="/blog/indexblog.html" class="btn btn-outline">Zobacz wszystkie wpisy</a>
+    </div>
+    
+    <div class="blog-grid" id="blog-container">
+      <p>Ładowanie najnowszych wiadomości...</p>
+    </div>
+  </div>
+</section>
+
+
+<div id="shared-footer-placeholder"></div>
+
+<script src="/js/components.js"></script>
+
+<script src="/blog/posts.js"></script>
+
+<script>
+    // 1. LOGIKA WOLUMENU (Zostaje bez zmian)
+    function updateVolume() {
+        const base = 1310000;
+        const now = new Date();
+        const start = new Date(2026, 0, 1);
+        const hours = Math.floor((now - start) / 3600000);
+        const growth = hours * 12500;
+        const subGrowth = ( (now.getMinutes() * 60) + now.getSeconds() ) / 3600 * 12500;
+        const el = document.getElementById('volume-counter');
+        if(el) el.innerText = Math.floor(base + growth + subGrowth).toLocaleString('pl-PL') + " €";
+    }
+    setInterval(updateVolume, 3000);
+    updateVolume();
+
+    // LOGIKA KALKULATORA
+    (function() {
+        const payInput = document.getElementById('calc-pay');
+        const receiveInput = document.getElementById('calc-receive');
+        const rateInfo = document.getElementById('current-rate-info');
+        
+        let currentMarketRate = 0.9250;
+        const COMMISSION = 0.005;
+
+        async function fetchRate() {
+            try {
+                const response = await fetch('https://api.kraken.com/0/public/Ticker?pair=USDCEUR');
+                const data = await response.json();
+                if (data.result) {
+                    const pairKey = Object.keys(data.result)[0];
+                    currentMarketRate = parseFloat(data.result[pairKey].c[0]);
+                    updateUI();
+                }
+            } catch (e) {
+                try {
+                    const resp = await fetch('https://api.binance.com/api/v3/ticker/price?symbol=USDCEUR');
+                    const d = await resp.json();
+                    currentMarketRate = parseFloat(d.price);
+                    updateUI();
+                } catch (err) { console.error("Rate error"); }
+            }
+        }
+
+        function updateUI() {
+            rateInfo.innerText = `Kurs: ${currentMarketRate.toFixed(4)} USDC / EUR`;
+            updateReceive();
+        }
+
+        function updateReceive() {
+            const val = parseFloat(payInput.value);
+            if (!isNaN(val) && val > 0) {
+                receiveInput.value = (val * currentMarketRate * (1 - COMMISSION)).toFixed(2);
+            } else { receiveInput.value = ''; }
+        }
+
+        function updatePay() {
+            const val = parseFloat(receiveInput.value);
+            if (!isNaN(val) && val > 0) {
+                payInput.value = ((val / (currentMarketRate * (1 - COMMISSION)))).toFixed(2);
+            } else { payInput.value = ''; }
+        }
+
+        payInput.addEventListener('input', updateReceive);
+        receiveInput.addEventListener('input', updatePay);
+
+        fetchRate();
+        setInterval(fetchRate, 60000);
+    })();
+
+
+    // 3. LOGIKA BLOGA
+    function loadBlogPosts() {
+    const container = document.getElementById('blog-container');
+    if (!container) return;
+    
+    if (typeof blogPostsData !== 'undefined' && blogPostsData.length > 0) {
+        const displayPosts = blogPostsData.slice(0, 3);
+        container.innerHTML = displayPosts.map(post => `
+            <div class="blog-card">
+                <a href="${post.link}" class="blog-card-link">
+                    <div style="overflow: hidden;">
+                        <img src="${post.image}" class="blog-image" alt="${post.title}">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-date">${post.date}</div>
+                        <h4>${post.title}</h4>
+                        <p>${post.excerpt}</p>
+                        <span class="blog-link">Czytaj więcej →</span>
+                    </div>
+                </a>
+            </div>
+        `).join('');
+    }
+}
+    
+    // Uruchamiamy bloga z małym opóźnieniem lub po załadowaniu danych
+    window.addEventListener('load', loadBlogPosts);
+</script>
+</body>
+</html>
