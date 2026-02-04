@@ -1,5 +1,12 @@
 const blogPostsData = [
    {
+  "title": "Potwierdzenie legalności środków z kryptowalut do kredytu",
+  "date": "2026-02-03",
+  "excerpt": "Jak udokumentować pochodzenie środków z krypto (SoF/SoW) dla doradcy i banku? Checklistę dokumentów, txid i on-ramp/off-ramp masz tutaj.",
+  "link": "blog/2026-02-03-potwierdzenie-legalnosci-srodkow-z-kryptowalut-dla-doradcy-kredytowego.html",
+  "image": "https://images.unsplash.com/photo-1641939939078-91f159c9f50d?auto=format&fit=crop&w=1600&q=80"
+},
+   {
     "title": "Wypłata z krypto a blokada konta w banku: jak uniknąć?",
     "date": "2026-02-04",
     "excerpt": "Jak wypłacać środki z kryptowalut i zminimalizować ryzyko blokady konta? Wyjaśniamy powody (AML/KYC), dobre praktyki i checklistę dokumentów.",
@@ -19,13 +26,7 @@ const blogPostsData = [
     "link": "blog/2026-02-03-potwierdzenie-legalnosci-srodkow-z-krypto-do-kredytu.html",
     "image": "https://images.unsplash.com/photo-1641939939078-91f159c9f50d?auto=format&fit=crop&w=1600&q=80"
   },
-  {
-  "title": "Potwierdzenie legalności środków z kryptowalut do kredytu",
-  "date": "2026-02-03",
-  "excerpt": "Jak udokumentować pochodzenie środków z krypto (SoF/SoW) dla doradcy i banku? Checklistę dokumentów, txid i on-ramp/off-ramp masz tutaj.",
-  "link": "blog/2026-02-03-potwierdzenie-legalnosci-srodkow-z-kryptowalut-dla-doradcy-kredytowego.html",
-  "image": "https://images.unsplash.com/photo-1641939939078-91f159c9f50d?auto=format&fit=crop&w=1600&q=80"
-},
+  
   {
   "title": "Czy bank [Nazwa Banku] blokuje przelewy z Binance/Kraken?",
   "date": "2026-02-03",
