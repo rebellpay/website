@@ -1,5 +1,12 @@
 const blogPostsData = [
   {
+    "title": "Jak udokumentować pochodzenie środków (Source of Wealth) z BTC dla banku?",
+    "date": "2026-02-04",
+    "excerpt": "Praktyczny przewodnik SoW/SoF dla BTC: jakie dokumenty przygotować dla banku, jak opisać historię transakcji i jakie dowody (txid, giełda, on-ramp/off-ramp) dołączyć.",
+    "link": "blog/2026-02-04-jak-udokumentowac-pochodzenie-srodkow-source-of-wealth-btc-dla-banku.html",
+    "image": "https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=1600&q=80"
+  },
+  {
     "title": "Wypłata z krypto a blokada konta w banku: jak uniknąć?",
     "date": "2026-02-04",
     "excerpt": "Jak wypłacać środki z kryptowalut i zminimalizować ryzyko blokady konta? Wyjaśniamy powody (AML/KYC), dobre praktyki i checklistę dokumentów.",
