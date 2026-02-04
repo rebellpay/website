@@ -1,4 +1,3 @@
-```js
 const blogPostsData = [
   {
     "title": "Wypłata z krypto a blokada konta w banku — jak uniknąć?",
@@ -71,4 +70,3 @@ const blogPostsData = [
     "image": "https://images.unsplash.com/photo-1622790698141-94e30457ef12?auto=format&fit=crop&w=400"
   }
 ];
-```
