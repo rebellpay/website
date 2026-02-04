@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Wypłata z krypto a blokada konta – jak uniknąć? | Rebell Pay Blog</title>
+  <meta name="description" content="Sprawdź, jak wypłacać krypto do banku bez blokady konta. Lista kontrolna KYC/AML + praktyczne kroki. Pobierz checklistę!">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* Style specyficzne dla treści posta */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Inter', sans-serif; color: #1e293b; line-height: 1.6; background-color: #fff; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+    
+    .post-wrapper { padding: 60px 0; background: white; }
+    .post-header { max-width: 800px; margin: 0 auto 40px; text-align: center; }
+    .post-header h1 { font-size: clamp(32px, 5vw, 48px); color: #0f172a; margin-bottom: 20px; letter-spacing: -0.02em; }
+    .post-meta { color: #64748b; font-size: 14px; text-transform: uppercase; font-weight: 700; margin-bottom: 10px; display: block; }
+    
+    .featured-image { width: 100%; max-height: 500px; object-fit: cover; border-radius: 32px; margin-bottom: 40px; box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.05); }
+    
+    .post-content { max-width: 750px; margin: 0 auto; font-size: 18px; color: #1e293b; }
+    .post-content p { margin-bottom: 24px; }
+    .post-content h2 { margin: 40px 0 20px; color: #0f172a; }
+    .post-content ul { margin-bottom: 24px; padding-left: 20px; }
+    .post-content li { margin-bottom: 10px; }
+  </style>
+
+<script src="../js/components.js" defer></script>
+</head>
+<body>
+
+<div id="shared-header-placeholder"></div>
+
+<main class="post-wrapper">
+  <div class="container">
+    <div class="post-header">
+      <span class="post-meta">2026-02-04 • Krypto i bankowość</span>
+      <h1>Wypłata z krypto a blokada konta w banku – jak jej uniknąć?</h1>
+    </div>
+    
+    <img src="/blog/images/wyplata-z-krypto-blokada-konta-bank-aml-kyc.jpg" class="featured-image" alt="Wypłata z kryptowalut do banku: przelew, AML/KYC i ryzyko blokady konta">
+
+    <article class="post-content">
+      <p>Blokada konta po wypłacie z krypto najczęściej wynika z automatycznych reguł AML (przeciwdziałanie praniu pieniędzy) i braku spójnej „historii pochodzenia środków” (source of funds) widocznej dla banku. Żeby jej uniknąć, przelew powinien pochodzić z legalnego on-rampu z KYC, mieć jednoznaczny tytuł/ciąg dokumentów (transakcja giełda → konto) i nie przypominać wzorców wysokiego ryzyka (duże skoki kwot, mixing, adresy z alertami). </p>
+      
+      <h2>Dlaczego banki blokują konta po wpływie z giełdy krypto lub kantoru?</h2>
+      <p>Z naszego doświadczenia w branży płatności wynika, że bank nie „karze za krypto” jako takie — reaguje na ryzyko regulacyjne. Instytucje finansowe działają w reżimie KYC/AML, a ich systemy monitoringu transakcji (transaction monitoring) analizują m.in. nagłe wpływy, nietypowe zachowanie klienta, powiązania z podmiotami zewnętrznymi oraz sygnały z narzędzi analityki blockchain (heurystyki, ryzyko adresu, powiązania z mixingiem). W Rebell Pay zauważyliśmy, że problemy najczęściej zaczynają się wtedy, gdy na konto wpływa duża kwota „znikąd” (z perspektywy banku), a klient nie potrafi szybko przedstawić dokumentów potwierdzających pochodzenie środków lub ścieżkę transakcji (np. L1/L2, bridge, smart contracts). Bank ma wtedy obowiązek wyjaśnić źródło środków, a czasem — tymczasowo wstrzymać dyspozycje, do czasu zakończenia weryfikacji.</p>
+
+      <h2>Jak wypłacić z krypto do banku bez blokady? 3 kroki, które działają</h2>
+      <ul>
+        <li><strong>Wybierz „czysty” off-ramp/on-ramp z pełnym KYC i dokumentami</strong>:</strong> Wpłata powinna pochodzić od regulowanego podmiotu (giełda, kantor, instytucja płatnicza), który wystawia potwierdzenia transakcji. Unikaj wypłat z niezweryfikowanych źródeł P2P, „pośredników” bez licencji, a także schematów, gdzie środki przechodzą przez wiele portfeli. Im krótsza i bardziej logiczna ścieżka (fiat → giełda → sprzedaż → przelew), tym mniejsze ryzyko flagi w AML.</li>
+        <li><strong>Zadbaj o „source of funds” (SoF) i „source of wealth” (SoW) zanim zrobisz przelew</strong>:</strong> Przygotuj pakiet: potwierdzenie wpłaty fiat na giełdę, historię transakcji na giełdzie (buy/sell), potwierdzenie wypłaty na konto bankowe, oraz — gdy bank pyta głębiej — dowód skąd miałeś kapitał (umowa, faktury, PIT, wyciąg). Jeśli używasz L2 (np. Arbitrum/Optimism/Base) lub bridge, zachowaj txid i linki do eksploratorów (Etherscan/arbiscan). To przyspiesza weryfikację i obniża ryzyko blokady.</li>
+        <li><strong>Nie zachowuj się jak „profil wysokiego ryzyka” w oczach monitoringu</strong>:</strong> Najczęstsze czerwone flagi to: duże jednorazowe wpływy bez historii, częste przelewy w krótkim czasie, natychmiastowe wypłaty dalej (tzw. pass-through), rozbijanie wpłat na wiele małych (structuring/smurfing), kontakt z adresami powiązanymi z mixingiem (np. Tornado-like patterns), kasynami online lub rynkami wysokiego ryzyka. Jeśli testujesz wypłatę na nowym banku — zacznij od mniejszej kwoty, a dopiero potem zwiększaj wolumen, budując spójny wzorzec.</li>
+      </ul>
+
+      <h2>Co rekomendujemy w Rebell Pay (praktyczna checklista)</h2>
+      <p>Jeśli Twoim celem jest stabilna wypłata z krypto do banku bez stresu, potraktuj to jak proces compliance, a nie „jednorazowy przelew”. W Rebell Pay rekomendujemy prostą zasadę: jeden jasny off-ramp z KYC, pełna dokumentacja SoF/SoW oraz powtarzalny schemat transakcji. Gdy korzystasz z DeFi, smart contracts, DEX-ów lub mostów między łańcuchami (bridges), dokumentuj ścieżkę: adresy, txid, daty, kwoty, oraz ekrany z historii (zrzuty, eksport CSV). Dzięki temu, jeśli bank zada pytanie o AML, odpowiadasz w 24–48h kompletem dowodów, zamiast „szukać po walletach”.</p>
+
+      <p>Najważniejsze: im bardziej przewidywalny i udokumentowany jest Twój przepływ (on-ramp → blockchain → sprzedaż → przelew), tym mniejsza szansa na blokadę konta — a jeśli do niej dojdzie, tym szybciej ją zdejmiesz, dostarczając spójne KYC/AML i potwierdzenia transakcji.</p>
+    </article>
+  </div>
+</main>
+
+<div id="shared-footer-placeholder"></div>
+
+</body>
+</html>
