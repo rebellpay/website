@@ -77,7 +77,7 @@ const sharedHeader = `
 <header>
   <div class="nav-inner"> 
     <div class="logo">
-        <a href="/index.html">
+        <a href="index.html">
             <img src="_RebellPay_logotype.png" alt="Rebell Pay">
         </a>
     </div>
@@ -153,4 +153,5 @@ if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', injectComponents);
 } else {
     injectComponents();
+
 }
