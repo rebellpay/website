@@ -1,8 +1,8 @@
 const blogPostsData = [
   {
-    "title": "Wypłata z krypto a blokada konta w banku — jak uniknąć?",
+    "title": "Wypłata z krypto a blokada konta w banku: jak uniknąć?",
     "date": "2026-02-04",
-    "excerpt": "Planujesz wypłatę z krypto na konto bankowe? Sprawdź, co najczęściej uruchamia blokadę (AML/KYC), jak przygotować SoF/SoW i jak bezpiecznie przejść weryfikację.",
+    "excerpt": "Jak wypłacać środki z kryptowalut i zminimalizować ryzyko blokady konta? Wyjaśniamy powody (AML/KYC), dobre praktyki i checklistę dokumentów.",
     "link": "blog/2026-02-04-wyplata-z-krypto-a-blokada-konta-w-banku-jak-uniknac.html",
     "image": "https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=1600&q=80"
   },
@@ -53,20 +53,20 @@ const blogPostsData = [
     "date": "2026-02-02",
     "excerpt": "Rynek kryptowalut osiąga nowe szczyty. Sprawdź, co to oznacza dla inwestorów.",
     "link": "blog/post-1.html",
-    "image": "https://images.unsplash.com/photo-1518546305927-5a555bb7020d?auto=format&fit=crop&w=400"
+    "image": "https://images.unsplash.com/photo-1518546305927-5a555bb7020d?auto=format&fit=crop&w=400&q=80"
   },
   {
     "title": "Aktualizacja platformy Rebell Pay",
     "date": "2026-02-01",
     "excerpt": "Wprowadzamy szybsze przelewy SEPA Instant dla wszystkich klientów biznesowych.",
     "link": "blog/post-2.html",
-    "image": "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=400"
+    "image": "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=400&q=80"
   },
   {
     "title": "Ethereum i nowe protokoły L2",
     "date": "2026-01-30",
     "excerpt": "Jak skalowalność sieci wpływa na koszty transakcyjne w Rebell Pay?",
     "link": "blog/post-3.html",
-    "image": "https://images.unsplash.com/photo-1622790698141-94e30457ef12?auto=format&fit=crop&w=400"
+    "image": "https://images.unsplash.com/photo-1622790698141-94e30457ef12?auto=format&fit=crop&w=400&q=80"
   }
 ];
