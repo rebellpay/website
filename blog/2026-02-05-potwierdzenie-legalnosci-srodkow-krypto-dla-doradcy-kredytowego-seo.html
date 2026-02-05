@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jak potwierdzić legalność środków z krypto? | Rebell Pay Blog</title>
+  <meta name="description" content="Sprawdź, jak udokumentować środki z kryptowalut dla doradcy kredytowego. Pobierz checklistę i przygotuj się do analizy AML!">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* Style specyficzne dla treści posta */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Inter', sans-serif; color: #1e293b; line-height: 1.6; background-color: #fff; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+       
+    .post-wrapper { padding: 120px 0 60px; background: white; }
+    
+    .post-header { max-width: 800px; margin: 0 auto 40px; text-align: center; }
+    .post-header h1 { font-size: clamp(32px, 5vw, 48px); color: #0f172a; margin-bottom: 20px; letter-spacing: -0.02em; }
+    .post-meta { color: #64748b; font-size: 14px; text-transform: uppercase; font-weight: 700; margin-bottom: 10px; display: block; }
+    
+    .featured-image { width: 100%; max-height: 500px; object-fit: cover; border-radius: 32px; margin-bottom: 40px; box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.05); }
+    
+    .post-content { max-width: 750px; margin: 0 auto; font-size: 18px; color: #1e293b; }
+    .post-content p { margin-bottom: 24px; }
+    .post-content h2 { margin: 40px 0 20px; color: #0f172a; }
+    .post-content ul { margin-bottom: 24px; padding-left: 20px; }
+    .post-content li { margin-bottom: 10px; }
+
+        @media (max-width: 992px) {
+      .post-wrapper { padding-top: 100px; }
+    }
+  </style>
+
+<script src="../js/components.js" defer></script>
+</head>
+<body>
+
+<div id="shared-header-placeholder"></div>
+
+<main class="post-wrapper">
+  <div class="container">
+    <div class="post-header">
+      <span class="post-meta">2026-02-05 • Kredyty & AML</span>
+      <h1>Potwierdzenie legalności środków z kryptowalut dla doradcy kredytowego — jak to zrobić krok po kroku?</h1>
+    </div>
+    
+    <img src="img/Potwierdzeniele.jpeg" class="featured-image" alt="Dokumenty do potwierdzenia pochodzenia środków z kryptowalut dla doradcy kredytowego (KYC/AML, historia transakcji, potwierdzenia on-ramp)">
+
+    <article class="post-content">
+      <p>Potwierdzenie legalności środków z kryptowalut dla doradcy kredytowego to zestaw dokumentów, które pokazują pełną ścieżkę: skąd miałeś pieniądze „fiat”, jak trafiły do krypto (on-ramp), jak przebiegały transakcje na blockchainie oraz jak środki wróciły na konto bankowe. W praktyce chodzi o udowodnienie źródła pochodzenia środków (SoF/SoW) w standardzie KYC/AML, tak aby bank mógł ocenić ryzyko i zaakceptować wkład własny lub nadwyżkę finansową.</p>
+      
+      <h2>Jakie dokumenty najczęściej akceptuje doradca kredytowy i bank przy środkach z krypto?</h2>
+      <p>Z naszego doświadczenia w branży płatności wynika, że banki nie „analizują krypto” jako idei — analizują przepływ pieniędzy i ryzyko AML. Dlatego najlepiej działa podejście dowodowe: zbierasz dokumenty z trzech warstw (fiat → on-ramp → blockchain/off-ramp) i składasz je w spójny pakiet, który da się szybko zweryfikować. Najczęściej proszone są: potwierdzenia wpłat na giełdę (przelewy, potwierdzenia karty), wyciągi z konta bankowego, zestawienia transakcji z giełdy (CSV/PDF), historia wypłat z giełdy na konto (off-ramp), a przy większych kwotach także wyjaśnienie strategii inwestycyjnej oraz źródła pierwotnych dochodów (umowa o pracę, B2B, dywidendy itp.). W Rebell Pay zauważyliśmy, że największy problem mają osoby, które nie potrafią połączyć faktów w jedną „oś czasu” — a to właśnie oś czasu (timeline) jest dla analityka AML kluczowa.</p>
+
+      <h2>Jak przygotować pakiet „proof of funds” z krypto, żeby przeszedł analizę AML?</h2>
+      <ul>
+        <li><strong>Oś czasu (timeline) fiat → krypto → fiat:</strong> zrób jedną stronę podsumowania: daty, kwoty, platformy (on-ramp/off-ramp), sieć (np. Ethereum L2, Polygon), cel transakcji. Do tego dołącz wyciągi bankowe i potwierdzenia przelewów, aby było widać spójność kwot.</li>
+        <li><strong>Dowody z on-ramp/off-ramp + KYC z platformy:</strong> pobierz raporty z giełdy/kantoru: historia wpłat i wypłat, potwierdzenia wykonania transakcji, a jeśli dostępne — potwierdzenie weryfikacji KYC (poziom konta, data weryfikacji). Dla banku to sygnał, że środki przeszły kontrolę AML po stronie dostawcy.</li>
+        <li><strong>Dowody blockchain (tx hash) i „most” do tożsamości:</strong> do kluczowych przepływów dodaj hashe transakcji (TXID) i zrzuty/eksport z eksploratora (Etherscan/Polygonscan itp.). Jeśli używałeś smart contracts (DEX, staking, lending), opisz to prostym językiem i pokaż, skąd wziął się przychód (np. realizacja zysku, swap stablecoinów). W razie potrzeby dołącz raport z narzędzi analityki blockchain, które mapują adresy na podmioty (np. giełdy) — to ułatwia zamknięcie pętli AML.</li>
+      </ul>
+
+      <h2>Jak Rebell Pay pomaga uporządkować potwierdzenie legalności środków z krypto?</h2>
+      <p>W Rebell Pay podchodzimy do tematu jak do projektu compliance: najpierw porządkujemy fakty, a dopiero potem dobieramy dokumenty. Pomagamy ułożyć czytelny pakiet dla doradcy kredytowego: spójny timeline, zestawienie źródeł (SoW/SoF), komplet potwierdzeń on-ramp/off-ramp oraz wskazanie, które transakcje na blockchainie warto udokumentować (hash, sieć, adresy) — zwłaszcza gdy w grę wchodzą L2, mosty (bridges) albo operacje w smart contracts. Efekt ma być prosty: analityk AML ma widzieć logikę przepływu, a doradca kredytowy może szybko odpowiedzieć bankowi na pytania uzupełniające bez chaosu i domysłów.</p>
+
+      <p>Jeśli chcesz, przygotuj wstępnie: wyciągi bankowe, raporty z giełdy (CSV/PDF), listę adresów portfeli oraz kilka najważniejszych TXID — a potem zbudujemy z tego pakiet, który realnie zwiększa szanse na akceptację środków z kryptowalut w procesie kredytowym.</p>
+    </article>
+  </div>
+</main>
+
+<div id="shared-footer-placeholder"></div>
+
+</body>
+</html>
