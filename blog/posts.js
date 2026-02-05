@@ -1,5 +1,12 @@
 const blogPostsData = [
    {
+    "title": "Canton Coin i MiCA: co to znaczy dla rynku?",
+    "date": "2026-02-05",
+    "excerpt": "Canton Coin i MiCA: co to znaczy dla rynku? Wyjaśniamy wpływ regulacji MiCA na projekty i inwestorów, obowiązki zgodności oraz konsekwencje dla obrotu, AML/KYC i dostawców usług krypto w UE.",
+    "link": "blog/2026-02-05-canton-coin-mica-co-to-znaczy-dla-rynku.html",
+    "image": "blog/img/https://wwwcant.jpeg"
+  },
+   {
     "title": "Zgodność księgowa i audyt kryptowalut: krypto → fiat",
     "date": "2026-02-05",
     "excerpt": "Zgodność księgowa i audyt kryptowalut przy konwersji krypto na fiat: jak przygotować dokumenty, historię transakcji, SoF/SoW i dane do rozliczeń, aby przejść weryfikację i audyt bez problemów.",
