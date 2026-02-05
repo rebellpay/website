@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T64NBV4KE4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-T64NBV4KE4');
+</script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Zgodność księgowa i audyt krypto w spółce | Rebell Pay Blog</title>
+  <meta name="description" content="Rozliczaj legalnie transakcje krypto-fiat w spółce. Checklista księgowa i audytowa + źródła. Umów konsultację i uporządkuj proces.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* Style specyficzne dla treści posta */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Inter', sans-serif; color: #1e293b; line-height: 1.6; background-color: #fff; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+       
+    .post-wrapper { padding: 120px 0 60px; background: white; }
+    
+    .post-header { max-width: 800px; margin: 0 auto 40px; text-align: center; }
+    .post-header h1 { font-size: clamp(32px, 5vw, 48px); color: #0f172a; margin-bottom: 20px; letter-spacing: -0.02em; }
+    .post-meta { color: #64748b; font-size: 14px; text-transform: uppercase; font-weight: 700; margin-bottom: 10px; display: block; }
+    
+    .featured-image { width: 100%; max-height: 500px; object-fit: cover; border-radius: 32px; margin-bottom: 40px; box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.05); }
+    
+    .post-content { max-width: 750px; margin: 0 auto; font-size: 18px; color: #1e293b; }
+    .post-content p { margin-bottom: 24px; }
+    .post-content h2 { margin: 40px 0 20px; color: #0f172a; }
+    .post-content ul { margin-bottom: 24px; padding-left: 20px; }
+    .post-content li { margin-bottom: 10px; }
+
+        @media (max-width: 992px) {
+      .post-wrapper { padding-top: 100px; }
+    }
+  </style>
+
+<script src="../js/components.js" defer></script>
+</head>
+<body>
+
+<div id="shared-header-placeholder"></div>
+
+<main class="post-wrapper">
+  <div class="container">
+    <div class="post-header">
+      <span class="post-meta">2026-02-05 • Księgowość i compliance</span>
+      <h1>Zgodność księgowa i audyt kryptowalut w spółce - jak legalnie rozliczać transakcje krypto-fiat?</h1>
+    </div>
+    
+    <img src="img/Zgodnośćksięgow.jpeg" class="featured-image" alt="Zgodność księgowa i audyt transakcji kryptowalutowych w spółce: rozliczenia krypto-fiat, KYC/AML i dokumentacja">
+
+    <article class="post-content">
+      <p>Zgodne (i audytowalne) rozliczanie transakcji krypto-fiat w spółce polega na tym, że każda wymiana, wpłata i wypłata ma komplet dowodów: kontrahenta, kurs, opłaty, moment ujęcia oraz spójną ścieżkę KYC/AML. W praktyce łączysz dane z giełd/On-Rampów, blockchain (hash, adresy, smart contract), bankowość oraz politykę rachunkowości, tak aby biegły rewident mógł to odtworzyć bez zgadywania. No dobra, przejdźmy do konkretów.</p>
+      
+      <h2>Jak wygląda „audytowalne” rozliczenie krypto w spółce i dlaczego to bywa jak ping-pong z dokumentami?</h2>
+      <p>Od lat pracuję przy płatnościach i integracjach on-ramp/off-ramp oraz weryfikacjach zgodności. Najczęściej problem nie jest w samym blockchainie (tam akurat wszystko jest publiczne), tylko w dopięciu brakujących puzzli: kto był stroną transakcji, jaki kurs zastosowano, skąd wzięły się środki, gdzie jest potwierdzenie z banku, a gdzie raport z giełdy. I wtedy zaczyna się ping-pong: księgowość pyta o faktury i kursy, compliance o KYC/AML, a audyt o dowody istnienia i wyceny na dzień bilansowy.
+      
+      Żeby rozliczać legalnie transakcje krypto-fiat (np. zakup USDC za PLN, sprzedaż BTC do EUR, wpłaty z banku na giełdę, wypłaty z giełdy do banku, płatności stablecoinami w B2B), zwykle potrzebujesz trzech warstw porządku:
+      
+      Po pierwsze - polityka rachunkowości i konsekwencja ujęcia (kiedy rozpoznajesz transakcję, jak wyceniasz aktywa, jak ujmujesz prowizje i spready). Po drugie - ślady dowodowe: wyciągi bankowe, raporty z giełdy/OTC, potwierdzenia przelewów, zestawienia transakcji, potwierdzenia wykonania (trade confirmations), a od strony blockchaina: TXID, timestamp, adresy nadawcy i odbiorcy, sieć (L1/L2), opłaty gas, czasem ABI i zdarzenia ze smart contractu. Po trzecie - zgodność regulacyjna: KYC, AML, travel rule (tam gdzie ma zastosowanie), oraz wewnętrzne procedury dotyczące oceny ryzyka kontrahenta.
+      
+      Jeśli Twoja spółka korzysta z L2 (np. Arbitrum, Optimism, Base) albo z różnych sieci (Ethereum, Polygon, Tron), pamiętaj: księgowość nie musi rozumieć „jak działa rollup”, ale audyt będzie chciał rozumieć, skąd pochodzą dane i czy da się je powtórzyć. Dlatego warto mieć jasny proces: źródło danych, sposób przeliczeń, kontrola dostępu, archiwizacja oraz ślad zatwierdzeń.</p>
+
+      <h2>Jaką checklistę wdrożyć, żeby transakcje krypto-fiat były legalne i gotowe na audyt?</h2>
+      <ul>
+        <li><strong>Źródła danych i dowody (bank + giełda + blockchain):</strong> Zbieraj i archiwizuj wyciągi bankowe, potwierdzenia przelewów (fiat), raporty z giełd/On-Rampów (trades, deposits, withdrawals, fees), a dla blockchaina: TXID, sieć, adresy, opłaty oraz link do eksploratora. Dla smart contracts przydaje się też opis zdarzenia (event) i adres kontraktu. Zadbaj o spójny format eksportów i wersjonowanie, bo „CSV z wczoraj” lubi się zmieniać.</li>
+        <li><strong>Wycena i moment ujęcia (kurs, prowizje, spread, cut-off):</strong> Ustal w polityce rachunkowości, z jakiego źródła kursów korzystasz (giełda, dostawca danych, kurs NBP dla walut w tle) i kiedy mierzysz transakcję (moment wykonania zlecenia, settlement, wpływ na wallet). Uwzględnij koszty: prowizje tradingowe, network fees (gas), opłaty za wypłaty, a także różnice kursowe przy przepływach fiat. Tu najczęściej wychodzą rozjazdy w raportach, więc warto mieć prostą, powtarzalną metodę i kontrolę jakości.</li>
+        <li><strong>Compliance KYC/AML i ryzyko kontrahenta:</strong> Dokumentuj, z jakim podmiotem współpracujesz (giełda, broker, OTC, dostawca on-ramp), jakie ma licencje/rejestracje, jakie są warunki świadczenia usług, oraz jak wygląda proces KYC/AML. Jeżeli przyjmujesz krypto od kontrahentów B2B, miej procedurę oceny ryzyka (np. screening, analiza źródła środków, weryfikacja walletów tam, gdzie to zasadne). Audyt lubi proste pytania: „kto to był?” i „dlaczego uznaliście to za OK?”.</li>
+      </ul>
+
+      <h2>Jak Rebell Pay pomaga spółkom uporządkować rozliczenia krypto-fiat (bez magii, za to z dokumentami)?</h2>
+      <p>W Rebell Pay patrzymy na krypto jak na element infrastruktury płatniczej, a nie „kolejną ciekawostkę z internetu”. W praktyce oznacza to porządkowanie danych transakcyjnych i procesów tak, aby księgowość, compliance i audyt mówili tym samym językiem. Z doświadczenia przy integracjach płatniczych wiem, że najlepiej działają rozwiązania, które łączą: kontrolę przepływu (on-ramp/off-ramp), spójne raportowanie, oraz zasady KYC/AML adekwatne do ryzyka.
+      
+      Jeśli chcesz pogłębić temat od strony operacyjnej, zajrzyj też do powiązanych materiałów na naszym blogu: <a href="/blog/kyc-aml-w-fintech.html">KYC i AML w fintech - praktyczny przewodnik</a> oraz <a href="/blog/on-ramp-off-ramp-krypto-fiat.html">On-ramp i off-ramp - jak bezpiecznie łączyć krypto z fiat</a>. A od strony ram regulacyjnych i standardów rynkowych warto mieć pod ręką wiarygodne źródła: <a href="https://www.fatf-gafi.org/" rel="noopener" target="_blank">FATF (standardy AML)</a>, <a href="https://eur-lex.europa.eu/" rel="noopener" target="_blank">EUR-Lex (akty prawne UE)</a> oraz informacje dot. MiCA na stronach instytucji UE (to przydatny punkt odniesienia dla procesów i definicji, nawet jeśli Twoja spółka nie jest bezpośrednio CASP).</p>
+
+      <p>Najlepszy moment na uporządkowanie rozliczeń krypto-fiat jest zwykle „przed audytem”, a nie tydzień po mailu od biegłego rewidenta. Ten artykuł ma charakter edukacyjny i nie stanowi porady prawnej, finansowej ani podatkowej. Umów konsultację z ekspertem.</p>
+    </article>
+  </div>
+</main>
+
+<div id="shared-footer-placeholder"></div>
+
+</body>
+</html>
