@@ -1,5 +1,12 @@
 const blogPostsData = [
    {
+    "title": "Potwierdzenie legalności środków z kryptowalut dla doradcy kredytowego",
+    "date": "2026-02-05",
+    "excerpt": "Dowiedz się, jak przygotować dokumentację SoF/SoW z krypto dla banku. Praktyczny poradnik Rebell Pay o potwierdzaniu legalności środków. Sprawdź checklistę!",
+    "link": "blog/2026-02-05-potwierdzenie-legalnosci-srodkow-krypto-dla-doradcy-kredytowego-seo.html",
+    "image": "blog/img/Potwierdzeniele.jpeg"
+  },
+   {
     "title": "Jak wypłacić ponad 100000 EUR z krypto zgodnie z MiCA?",
     "date": "2026-02-05",
     "excerpt": "Jak wypłacić ponad 100000 EUR z kryptowalut zgodnie z MiCA: wymagania AML/KYC, dokumenty SoF/SoW, przygotowanie historii transakcji i najlepsze praktyki, by uniknąć blokad.",
