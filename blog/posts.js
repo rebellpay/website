@@ -1,5 +1,12 @@
 const blogPostsData = [
    {
+    "title": "Zgodność księgowa i audyt kryptowalut: krypto → fiat",
+    "date": "2026-02-05",
+    "excerpt": "Zgodność księgowa i audyt kryptowalut przy konwersji krypto na fiat: jak przygotować dokumenty, historię transakcji, SoF/SoW i dane do rozliczeń, aby przejść weryfikację i audyt bez problemów.",
+    "link": "blog/2026-02-05-zgodnosc-ksiegowa-audyt-kryptowalut-krypto-fiat.html",
+    "image": "blog/img/Zgodnośćksięgow.jpeg"
+  },
+   {
     "title": "Bezpieczny off-ramp dla HNWI i inwestorów indywidualnych",
     "date": "2026-02-05",
     "excerpt": "Bezpieczny off-ramp dla HNWI i inwestorów indywidualnych: jak wypłacać duże kwoty z krypto, jakie dokumenty SoF/SoW przygotować, jak ograniczyć ryzyko blokad AML/KYC i opóźnień.",
