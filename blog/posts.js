@@ -1,5 +1,12 @@
 const blogPostsData = [
    {
+    "title": "Banki w Europie przyjazne krypto inwestorom",
+    "date": "2026-02-05",
+    "excerpt": "Przegląd banków w Europie przyjaznych krypto inwestorom: na co zwracają uwagę w AML/KYC, jakie dokumenty SoF/SoW przygotować i jak ograniczyć ryzyko blokady przelewów.",
+    "link": "blog/2026-02-05-banki-w-europie-przyjazne-krypto-inwestorom.html",
+    "image": "blog/img/JakiebankiwEuro.jpeg"
+  },
+   {
     "title": "Zakup nieruchomości w UE za kryptowaluty: procedura",
     "date": "2026-02-04",
     "excerpt": "Krok po kroku: jak kupić nieruchomość w UE za kryptowaluty. Wyjaśniamy procedurę, wymagania AML/KYC, SoF/SoW oraz jakie dokumenty przygotować do transakcji.",
