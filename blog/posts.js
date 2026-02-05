@@ -1,5 +1,12 @@
 const blogPostsData = [
    {
+    "title": "Bezpieczny off-ramp dla HNWI i inwestorów indywidualnych",
+    "date": "2026-02-05",
+    "excerpt": "Bezpieczny off-ramp dla HNWI i inwestorów indywidualnych: jak wypłacać duże kwoty z krypto, jakie dokumenty SoF/SoW przygotować, jak ograniczyć ryzyko blokad AML/KYC i opóźnień.",
+    "link": "blog/2026-02-05-bezpieczny-off-ramp-hnwi-inwestorzy-indywidualni-seo.html",
+    "image": "blog/img/Bezpiecznyoff-r.jpeg"
+  },
+   {
     "title": "Potwierdzenie legalności środków z kryptowalut dla doradcy kredytowego",
     "date": "2026-02-05",
     "excerpt": "Dowiedz się, jak przygotować dokumentację SoF/SoW z krypto dla banku. Praktyczny poradnik Rebell Pay o potwierdzaniu legalności środków. Sprawdź checklistę!",
