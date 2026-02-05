@@ -84,7 +84,7 @@ const sharedFooter = `
         </div>
         <div class="footer-links">
             <h4>Firma</h4>
-            <a href="{BASE}index.html">O nas</a>
+            <a href="{BASE}index.html#trust">O nas</a>
             <a href="{BASE}index.html#services">Usługi</a>
         </div>
         <div class="footer-links">
@@ -138,4 +138,5 @@ if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', injectComponents);
 } else {
     injectComponents();
+
 }
