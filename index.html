@@ -521,30 +521,22 @@
         
         if (typeof blogPostsData !== 'undefined' && blogPostsData.length > 0) {
             const displayPosts = blogPostsData.slice(0, 3);
-            container.innerHTML = blogPostsData.map(post => {
-    const cleanLink = post.link.replace('blog/', '');
-    const cleanImage = post.image.replace('blog/', '');
-    
-    // Generujemy HTML dla wszystkich kategorii
-    const categoriesHtml = (post.categories || ['Nowość']).map(cat => 
-        `<span class="blog-category">${cat}</span>`
-    ).join('');
+            container.innerHTML = displayPosts.map(post => `
+                <div class="blog-card">
+                    <a href="${post.link}" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; height: 100%;">
+                        <div style="overflow: hidden; height: 180px;">
+                            <img src="${post.image}" style="width: 100%; height: 100%; object-fit: cover;" alt="${post.title}" onerror="this.src='https://via.placeholder.com/400x200?text=Rebell+Pay'">
+                        </div>
+                        <div style="padding: 24px; flex-grow: 1; display: flex; flex-direction: column;">
+                            <div style="font-size: 12px; color: var(--text-muted); font-weight: 600; margin-bottom: 8px;">${post.date}</div>
+                            <h4 style="font-size: 18px; margin-bottom: 12px; color: var(--navy);">${post.title}</h4>
+                            <p style="font-size: 14px; color: var(--text-muted); margin-bottom: 20px; flex-grow: 1;">${post.excerpt}</p>
+                            <span style="color: var(--blue); font-weight: 700; font-size: 14px;">Czytaj więcej →</span>
+                        </div>
+                    </a>
+                </div>
+            `).join('');
 
-    return `
-        <a href="${cleanLink}" class="blog-card">
-            <div style="overflow: hidden;">
-                <img src="${cleanImage}" class="blog-img" alt="${post.title}" onerror="this.src='https://via.placeholder.com/400x200?text=Rebell+Pay'">
-            </div>
-            <div class="blog-body">
-                <div class="blog-date">${post.date}</div>
-                <div class="blog-categories-wrapper">${categoriesHtml}</div>
-                <h4>${post.title}</h4>
-                <p>${post.excerpt}</p>
-                <span class="read-more">Czytaj artykuł →</span>
-            </div>
-        </a>
-    `;
-}).join('');
         }
     }
     window.addEventListener('load', loadBlogPosts);
