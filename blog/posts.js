@@ -1,5 +1,12 @@
 const blogPostsData = [
    {
+    "title": "Tether (USDT) Whitepaper: co warto wiedzieć",
+    "date": "2026-02-06",
+    "excerpt": "Tether (USDT) whitepaper w praktyce: jak działa emisja i wykup, rezerwy, ryzyka, transparentność oraz co to oznacza dla użytkowników i firm korzystających ze stablecoinów w rozliczeniach.",
+    "link": "blog/2026-02-06-tether-usdt-whitepaper-co-warto-wiedziec.html",
+    "image": "blog/img/Photo10.jpeg"
+  },
+   {
     "title": "Koszty operacyjne w EUR ze stablecoinów",
     "date": "2026-02-06",
     "excerpt": "Jak finansować koszty operacyjne w EUR ze stablecoinów: procedura off-ramp, wymagania AML/KYC, dokumenty SoF/SoW, faktury i najlepsze praktyki, aby uniknąć blokad i opóźnień.",
