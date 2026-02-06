@@ -1,5 +1,12 @@
 const blogPostsData = [
    {
+    "title": "Koszty operacyjne w EUR ze stablecoinów",
+    "date": "2026-02-06",
+    "excerpt": "Jak finansować koszty operacyjne w EUR ze stablecoinów: procedura off-ramp, wymagania AML/KYC, dokumenty SoF/SoW, faktury i najlepsze praktyki, aby uniknąć blokad i opóźnień.",
+    "link": "blog/2026-02-06-koszty-operacyjne-eur-ze-stablecoinow.html",
+    "image": "blog/img/Photo9.jpeg"
+  },
+   {
     "title": "Canton Coin i MiCA: co to znaczy dla rynku?",
     "date": "2026-02-05",
     "excerpt": "Canton Coin i MiCA: co to znaczy dla rynku? Wyjaśniamy wpływ regulacji MiCA na projekty i inwestorów, obowiązki zgodności oraz konsekwencje dla obrotu, AML/KYC i dostawców usług krypto w UE.",
