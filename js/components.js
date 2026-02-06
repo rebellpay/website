@@ -89,8 +89,8 @@ const sharedFooter = `
         </div>
         <div class="footer-links">
             <h4>Prawne</h4>
-            <a href="TermsConditions.html">Regulamin</a>
-            <a href="PrivacyPolicy.html">Polityka prywatności</a>
+            <a href="{BASE}TermsConditions.html">Regulamin</a>
+            <a href="{BASE}PrivacyPolicy.html">Polityka prywatności</a>
         </div>
         <div class="footer-links">
             <h4>Kontakt</h4>
@@ -140,4 +140,5 @@ if (document.readyState === 'loading') {
     injectComponents();
 
 }
+
 
