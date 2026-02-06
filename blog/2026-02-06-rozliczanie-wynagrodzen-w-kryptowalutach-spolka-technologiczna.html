@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T64NBV4KE4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-T64NBV4KE4');
+</script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Wynagrodzenie w kryptowalutach: rozliczenie w spółce | Rebell Pay Blog</title>
+  <meta name="description" content="Chcesz płacić pracownikom w krypto? Sprawdź model rozliczeń, ryzyka, AML/KYC i praktyczne kroki. Pobierz checklistę i wdroż to bez chaosu.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* Style specyficzne dla treści posta */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Inter', sans-serif; color: #1e293b; line-height: 1.6; background-color: #fff; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+       
+    .post-wrapper { padding: 120px 0 60px; background: white; }
+    
+    .post-header { max-width: 800px; margin: 0 auto 40px; text-align: center; }
+    .post-header h1 { font-size: clamp(32px, 5vw, 48px); color: #0f172a; margin-bottom: 20px; letter-spacing: -0.02em; }
+    .post-meta { color: #64748b; font-size: 14px; text-transform: uppercase; font-weight: 700; margin-bottom: 10px; display: block; }
+    
+    .featured-image { width: 100%; max-height: 500px; object-fit: cover; border-radius: 32px; margin-bottom: 40px; box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.05); }
+    
+    .post-content { max-width: 750px; margin: 0 auto; font-size: 18px; color: #1e293b; }
+    .post-content p { margin-bottom: 24px; }
+    .post-content h2 { margin: 40px 0 20px; color: #0f172a; }
+    .post-content ul { margin-bottom: 24px; padding-left: 20px; }
+    .post-content li { margin-bottom: 10px; }
+
+        @media (max-width: 992px) {
+      .post-wrapper { padding-top: 100px; }
+    }
+  </style>
+
+<script src="../js/components.js" defer></script>
+</head>
+<body>
+
+<div id="shared-header-placeholder"></div>
+
+<main class="post-wrapper">
+  <div class="container">
+    <div class="post-header">
+      <span class="post-meta">2026-02-06 • Fintech / Payroll / Krypto</span>
+      <h1>Rozliczanie wynagrodzeń pracowników w kryptowalutach w spółce technologicznej</h1>
+    </div>
+    
+    <img src="img/Photo11.jpeg" class="featured-image" alt="Wypłata wynagrodzeń w kryptowalutach w spółce technologicznej - model rozliczeń, stablecoiny, AML i księgowość">
+
+    <article class="post-content">
+      <p>Rozliczanie wynagrodzeń w kryptowalutach w spółce technologicznej najbezpieczniej wdraża się jako model hybrydowy: część pensji pozostaje w walucie bazowej (np. PLN/EUR), a pracownik dobrowolnie otrzymuje uzgodnioną część w krypto (najczęściej stablecoin). Kluczowe są 3 rzeczy: jasna zgoda w dokumentach kadrowych, transparentna wycena (kurs i moment fixingu) oraz proces AML/KYC i księgowy, który da się obronić w audycie.</p>
+      
+      <h2>Jak to zrobić legalnie i „audytowalnie” w praktyce, a nie tylko w teorii?</h2>
+      <p>Z perspektywy praktyka płatności widzę jeden powtarzalny wzór sukcesu: firmy, które traktują wypłaty w krypto jak produkt płatniczy (z procedurą, dowodami, logami i kontrolami), przechodzą przez compliance bez potu na czole. Te, które robią to „na szybko, bo devy chcą”, kończą z pytaniami od księgowości, banku i czasem zablokowanym off-rampem w najgorszym możliwym momencie (czyli w dzień payrollu).
+      
+      Najważniejsze założenie operacyjne: payroll to proces cykliczny, a nie jednorazowy transfer. Dlatego układasz go jak runbook w SRE: co miesiąc ma zadziałać tak samo, z minimalną liczbą wyjątków.
+
+      W praktyce najczęściej spotkasz 3 modele rozliczeń:
+      - "Fiat-first" z konwersją: spółka księguje wynagrodzenie w walucie bazowej, a następnie (po stronie spółki lub pracownika) następuje wymiana na krypto.
+      - "Crypto-split": część wynagrodzenia brutto/netto pozostaje w fiat, a część jest wypłacana w stablecoinie na wskazany adres. Ten model wymaga szczególnie precyzyjnej dokumentacji wyceny.
+      - "Bonus w krypto": najprostszy start. Pensja w fiat jak zawsze, a premia, referral bonus albo nagroda projektowa w krypto (mniej wrażliwy obszar niż wynagrodzenie zasadnicze).
+
+      Jeśli pytasz mnie o minimum ryzyka na start - zaczynaj od bonusów lub małego splitu i stablecoinów (USDT/USDC), a nie od wypłat w zmiennych aktywach. Zmienność kursu BTC na payrollu potrafi zrobić z HR-u dział tradingu, serio.</p>
+
+      <h2>Jakie elementy musi mieć proces wypłaty pensji w krypto? (checklista)</h2>
+      <ul>
+        <li><strong>Dobrowolność i dokumenty HR:</strong> Zgoda pracownika na część wynagrodzenia w krypto, jasna kwota bazowa w PLN/EUR, zapis o ryzyku kursowym i o tym, kto ponosi koszty sieci (gas) oraz opłaty dostawcy.</li>
+        <li><strong>Wycena i moment „fixingu”:</strong> Określ źródło kursu (np. kurs giełdy/regulowanego dostawcy), dokładny timestamp i metodę zaokrągleń. To jest ten detal, o który audytor pyta jako pierwszy, a zespoły lubią go „zostawić na później”.</li>
+        <li><strong>AML/KYC, travel rule i ślad księgowy:</strong> Zweryfikuj pracownika (KYC) oraz zbierz dane do oceny ryzyka, a dla transferów do/z VASP przygotuj się na obowiązki z obszaru travel rule. Zapisuj: hash transakcji, adresy, sieć, potwierdzenia oraz powiązanie z listą płac.</li>
+      </ul>
+
+      <h2>Jak Rebell Pay pomaga spółkom technologicznym w payrollu krypto?</h2>
+      <p>W Rebell Pay podchodzimy do wypłat w kryptowalutach jak do infrastruktury płatniczej, a nie ciekawostki. Pomagamy ułożyć proces end-to-end: od doboru aktywa (zwykle stablecoin), przez AML/KYC i dokumentację (SoF/SoW tam, gdzie trzeba), aż po off-ramp, księgowość i przygotowanie pakietu dowodowego do audytu.
+
+      Wdrożenia, które widziałem w spółkach technologicznych, najlepiej działają, gdy:
+      - ustalisz politykę payrollu krypto (kto może, jaki procent, jakie aktywa, jakie sieci),
+      - ograniczysz liczbę wyjątków (wyjątki zabijają operacje szybciej niż opłaty sieci),
+      - wybierzesz przewidywalne przepływy likwidności: zakup stablecoinów, wypłata, raport, archiwizacja.
+
+      Jeśli chcesz pogłębić wątki powiązane, zobacz też:
+      - <a href="../blog/2026-02-06-tether-usdt-whitepaper-co-warto-wiedziec.html">Tether (USDT) Whitepaper: co warto wiedzieć</a> (praktyka stablecoinów i ryzyka),
+      - <a href="../blog/2026-02-06-koszty-operacyjne-eur-ze-stablecoinow.html">Koszty operacyjne w EUR ze stablecoinów</a> (off-ramp i dokumenty, które ratują czas),
+      - <a href="../blog/2026-02-05-zgodnosc-ksiegowa-audyt-kryptowalut-krypto-fiat.html">Zgodność księgowa i audyt kryptowalut: krypto → fiat</a> (co musi się zgadzać w papierach i danych).
+
+      Dla kontekstu regulacyjnego w UE przydają się też źródła zewnętrzne:
+      - Treść rozporządzenia MiCA w EUR-Lex: <a href="https://eur-lex.europa.eu/" target="_blank" rel="noopener noreferrer">https://eur-lex.europa.eu/</a>
+      - Wytyczne FATF dot. podejścia opartego na ryzyku dla VASP: <a href="https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Guidance-rba-virtual-assets-virtual-asset-service-providers.html" target="_blank" rel="noopener noreferrer">https://www.fatf-gafi.org/.../Guidance-rba-virtual-assets-virtual-asset-service-providers.html</a>
+      - EBA (European Banking Authority) - materiały AML i nadzorcze: <a href="https://www.eba.europa.eu/" target="_blank" rel="noopener noreferrer">https://www.eba.europa.eu/</a>
+
+      Mała anegdota z wdrożeń: największy chaos nie bierze się z blockchaina, tylko z braku uzgodnionego momentu wyceny. Jak dwie osoby liczą „to samo” wynagrodzenie na dwóch kursach z dwóch godzin, to nagle payroll robi się filozofią. A miał być po prostu przelew.</p>
+
+      <p>Jeśli planujesz wypłaty w krypto, potraktuj je jak proces krytyczny: polityka, wycena, zgodność AML/KYC, księgowość i powtarzalny runbook, a zrobisz to szybko i spokojnie.</p>
+
+<p>Ten artykuł ma charakter edukacyjny i nie stanowi porady prawnej, finansowej ani podatkowej. Masz konkretne pytania? Zachęcamy do kontaktu.</p>
+    </article>
+  </div>
+</main>
+
+<div id="shared-footer-placeholder"></div>
+
+</body>
+</html>
