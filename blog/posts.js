@@ -1,5 +1,13 @@
 const blogPostsData = [
   {
+    "title": "Binance Whitepaper: co warto wiedzieć",
+    "categories": ["Edukacja", "Giełdy", "Wiedza"],
+    "date": "2026-02-06",
+    "excerpt": "Binance whitepaper w praktyce: co opisuje dokument, jak działa ekosystem, kluczowe pojęcia, ryzyka i na co zwracać uwagę jako użytkownik lub firma korzystająca z usług giełdy.",
+    "link": "blog/2026-02-06-binance-whitepaper-co-warto-wiedziec.html",
+    "image": "blog/img/Photo12.jpeg"
+  },
+  {
     "title": "Rozliczanie wynagrodzeń w kryptowalutach: spółka technologiczna",
     "categories": ["Biznes", "Podatki", "HR"],
     "date": "2026-02-06",
