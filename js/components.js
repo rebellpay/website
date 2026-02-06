@@ -89,8 +89,8 @@ const sharedFooter = `
         </div>
         <div class="footer-links">
             <h4>Prawne</h4>
-            <a href="https://www.rebellpay.com/en/business-terms/">Regulamin</a>
-            <a href="https://www.rebellpay.com/en/business-privacy/">Polityka prywatności</a>
+            <a href="TermsConditions.html">Regulamin</a>
+            <a href="PrivacyPolicy.html">Polityka prywatności</a>
         </div>
         <div class="footer-links">
             <h4>Kontakt</h4>
@@ -140,3 +140,4 @@ if (document.readyState === 'loading') {
     injectComponents();
 
 }
+
