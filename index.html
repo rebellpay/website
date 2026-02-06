@@ -516,12 +516,21 @@
     })();
 
     function loadBlogPosts() {
-        const container = document.getElementById('blog-container');
-        if (!container) return;
+    const container = document.getElementById('blog-container');
+    if (!container) return;
+    
+    if (typeof blogPostsData !== 'undefined' && blogPostsData.length > 0) {
+        // Pobieramy 3 najnowsze posty
+        const displayPosts = blogPostsData.slice(0, 3);
         
-        if (typeof blogPostsData !== 'undefined' && blogPostsData.length > 0) {
-            const displayPosts = blogPostsData.slice(0, 3);
-            container.innerHTML = displayPosts.map(post => `
+        container.innerHTML = displayPosts.map(post => {
+            // Mapowanie kategorii na małe taby (badge)
+            // Jeśli post nie ma kategorii, wyświetli się "Nowość"
+            const categoriesHtml = (post.categories || ['Nowość']).map(cat => 
+                `<span class="blog-category">${cat}</span>`
+            ).join('');
+
+            return `
                 <div class="blog-card">
                     <a href="${post.link}" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; height: 100%;">
                         <div style="overflow: hidden; height: 180px;">
@@ -529,20 +538,26 @@
                         </div>
                         <div style="padding: 24px; flex-grow: 1; display: flex; flex-direction: column;">
                             <div style="font-size: 12px; color: var(--text-muted); font-weight: 600; margin-bottom: 8px;">${post.date}</div>
-                            <h4 style="font-size: 18px; margin-bottom: 12px; color: var(--navy);">${post.title}</h4>
+                            
+                            <div class="blog-categories-wrapper">
+                                ${categoriesHtml}
+                            </div>
+
+                            <h4 style="font-size: 18px; margin-bottom: 12px; color: var(--navy); line-height: 1.4;">${post.title}</h4>
                             <p style="font-size: 14px; color: var(--text-muted); margin-bottom: 20px; flex-grow: 1;">${post.excerpt}</p>
                             <span style="color: var(--blue); font-weight: 700; font-size: 14px;">Czytaj więcej →</span>
                         </div>
                     </a>
                 </div>
-            `).join('');
-
-        }
+            `;
+        }).join('');
     }
+}
     window.addEventListener('load', loadBlogPosts);
 </script>
 </body>
 
 </html>
+
 
 
