@@ -1,5 +1,12 @@
 const blogPostsData = [
    {
+    "title": "Rozliczanie wynagrodzeń w kryptowalutach: spółka technologiczna",
+    "date": "2026-02-06",
+    "excerpt": "Jak rozliczać wynagrodzenia w kryptowalutach w spółce technologicznej: modele wypłat, compliance i podatki, wymagania AML/KYC, dokumentacja oraz praktyczne kroki wdrożenia bez ryzyka blokad.",
+    "link": "blog/2026-02-06-rozliczanie-wynagrodzen-w-kryptowalutach-spolka-technologiczna.html",
+    "image": "blog/img/Photo11.jpeg"
+  },
+   {
     "title": "Tether (USDT) Whitepaper: co warto wiedzieć",
     "date": "2026-02-06",
     "excerpt": "Tether (USDT) whitepaper w praktyce: jak działa emisja i wykup, rezerwy, ryzyka, transparentność oraz co to oznacza dla użytkowników i firm korzystających ze stablecoinów w rozliczeniach.",
