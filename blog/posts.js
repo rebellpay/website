@@ -1,5 +1,13 @@
 const blogPostsData = [
   {
+    "title": "Konto bankowe dla software house Web3",
+    "categories": ["Bankowość", "Biznes", "Web3"],
+    "date": "2026-02-07",
+    "excerpt": "Jak otworzyć i utrzymać konto bankowe dla software house Web3: wymagania AML/KYC, ryzyka bankowe, dokumenty SoF/SoW, proces onboardingu oraz praktyczne wskazówki, by uniknąć blokad i odmów.",
+    "link": "blog/2026-02-07-konto-bankowe-dla-software-house-web3.html",
+    "image": "blog/img/Photo13.jpeg"
+  },
+  {
     "title": "Binance Whitepaper: co warto wiedzieć",
     "categories": ["Edukacja", "Giełdy", "Wiedza"],
     "date": "2026-02-06",
