@@ -1,5 +1,13 @@
 const blogPostsData = [
   {
+    "title": "Ethereum Whitepaper: co warto wiedzieć",
+    "categories": ["Edukacja", "Blockchain", "Wiedza"],
+    "date": "2026-02-08",
+    "excerpt": "Ethereum whitepaper w praktyce: jak działa sieć, EVM i smart kontrakty, rola ETH, kluczowe założenia, ograniczenia oraz ryzyka, na które powinien zwrócić uwagę użytkownik i firma budująca w Web3.",
+    "link": "blog/2026-02-08-ethereum-whitepaper-co-warto-wiedziec.html",
+    "image": "blog/img/Photo14.jpeg"
+  },
+  {
     "title": "Konto bankowe dla software house Web3",
     "categories": ["Bankowość", "Biznes", "Web3"],
     "date": "2026-02-07",
