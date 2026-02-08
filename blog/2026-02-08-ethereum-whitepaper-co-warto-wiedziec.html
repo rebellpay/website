@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T64NBV4KE4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-T64NBV4KE4');
+</script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ethereum Whitepaper: najważniejsze wnioski | Rebell Pay Blog</title>
+  <meta name="description" content="Poznaj Ethereum whitepaper: PoW, gas, EVM i smart kontrakty. Przeczytaj praktyczne wnioski i sprawdź, co to znaczy dla płatności.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* Style specyficzne dla treści posta */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Inter', sans-serif; color: #1e293b; line-height: 1.6; background-color: #fff; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+       
+    .post-wrapper { padding: 120px 0 60px; background: white; }
+    
+    .post-header { max-width: 800px; margin: 0 auto 40px; text-align: center; }
+    .post-header h1 { font-size: clamp(32px, 5vw, 48px); color: #0f172a; margin-bottom: 20px; letter-spacing: -0.02em; }
+    .post-meta { color: #64748b; font-size: 14px; text-transform: uppercase; font-weight: 700; margin-bottom: 10px; display: block; }
+    
+    .featured-image { width: 100%; max-height: 500px; object-fit: cover; border-radius: 32px; margin-bottom: 40px; box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.05); }
+    
+    .post-content { max-width: 750px; margin: 0 auto; font-size: 18px; color: #1e293b; }
+    .post-content p { margin-bottom: 24px; }
+    .post-content h2 { margin: 40px 0 20px; color: #0f172a; }
+    .post-content ul { margin-bottom: 24px; padding-left: 20px; }
+    .post-content li { margin-bottom: 10px; }
+
+        @media (max-width: 992px) {
+      .post-wrapper { padding-top: 100px; }
+    }
+  </style>
+
+<script src="../js/components.js" defer></script>
+</head>
+<body>
+
+<div id="shared-header-placeholder"></div>
+
+<main class="post-wrapper">
+  <div class="container">
+    <div class="post-header">
+      <span class="post-meta">2026-02-08 • Edukacja / Web3</span>
+      <h1>Ethereum Whitepaper (ethereum.org): co naprawdę opisuje i dlaczego to ważne dla płatności?</h1>
+    </div>
+    
+    <img src="img/Photo14.jpeg" class="featured-image" alt="Ethereum whitepaper w praktyce - smart kontrakty, gas, EVM i bezpieczeństwo transakcji">
+
+    <article class="post-content">
+      <p>Ethereum whitepaper to dokument (autorstwa Vitalika Buterina), który wyjaśnia, jak Ethereum działa jako programowalny blockchain: globalna platforma do uruchamiania smart kontraktów, z opłatami gas i własną maszyną wirtualną (EVM). W praktyce opisuje model rozliczeń za obliczenia i przechowywanie danych w sieci, bezpieczeństwo konsensusu oraz to, jak aplikacje Web3 budują finanse, płatności i automatyzację na jednej wspólnej warstwie.</p>
+      
+      <h2>Co jest sednem Ethereum whitepaper i jak to czytać bez bólu głowy?</h2>
+      <p>Kiedy po raz pierwszy wdrażałem przepływy krypto -> fiat w produktach płatniczych, najwięcej nieporozumień brało się z jednego: ludzie mylili „Ethereum jako monetę” z „Ethereum jako komputer”. Whitepaper z ethereum.org (sekcja „Whitepaper”) właśnie to porządkuje. Ethereum nie jest tylko ledgerem transferów jak klasyczne L1, tylko platformą, na której uruchamiasz kod (smart kontrakt) i płacisz za zasoby: CPU/obliczenia, storage i przepustowość sieciową. Ta ekonomia zasobów to gas, a walutą rozliczeniową jest ETH.</p>
+
+      <h2>Jakie pojęcia z whitepaper najczęściej wracają w rozmowach o płatnościach i ryzyku?</h2>
+      <ul>
+        <li><strong>EVM (Ethereum Virtual Machine):</strong> środowisko wykonawcze, w którym działa kod smart kontraktów. Dla fintechu to oznacza, że logika rozliczeń może być „w kodzie” (np. escrow, rozdział prowizji, automatyczne rozliczenia), ale błędy w kontrakcie są jak źle podpisana umowa - tylko że nie da się ich łatwo „cofnąć”.</li>
+        <li><strong>Gas i opłaty transakcyjne:</strong> mechanizm wyceny zasobów sieci. W realnych procesach płatniczych gas jest jak dynamiczna opłata za autostradę: w godzinach szczytu rośnie i potrafi zepsuć unit economics. Dlatego w integracjach pojawiają się limity fee, symulacje (estimateGas), batchowanie i architektury typu L2.</li>
+        <li><strong>Konsensus i bezpieczeństwo (historycznie PoW, dziś PoS):</strong> whitepaper opisuje pierwotne podejście (proof-of-work), ale warto zrozumieć cel: odporność na cenzurę i finalność probabilistyczną. Dla płatności ważne są praktyczne konsekwencje: ile potwierdzeń uznajesz za „final”, jak obsługujesz reorg, oraz jak tłumaczysz to księgowości i zespołom compliance bez wywoływania paniki.</li>
+      </ul>
+
+      <h2>Co to znaczy dla Rebell Pay i firm, które chcą korzystać z Ethereum?</h2>
+      <p>Jeśli budujesz produkt płatniczy albo po prostu operujesz na krypto w firmie (rozliczenia, wynagrodzenia, faktury, treasury), Ethereum whitepaper daje Ci słownik i model mentalny: co jest transakcją, czym jest stan, skąd biorą się opłaty i dlaczego „smart” w smart kontrakcie nie znaczy „bezpieczny”. Z perspektywy płatności i zgodności (AML/KYC, SoF/SoW, audyt ścieżki środków) najważniejsze są trzy rzeczy: przewidywalność kosztów (gas), kontrola ryzyka kontraktów (audyt, uprawnienia, upgradeability) oraz dobry proces dokumentowania źródła środków i historii transakcji w łańcuchu.</p>
+
+      <p>Jeżeli chcesz przenieść teorię z whitepaper na operacyjną praktykę (banki, dokumenty, off-ramp, audyt), zacznij od poukładania procesów zanim wykonasz „pierwszy przelew”, bo później jest jak z porządkami w magazynie po Black Friday - da się, ale po co cierpieć.</p>
+
+      <p>Powiązane poradniki Rebell Pay, które pomogą Ci ogarnąć temat end-to-end: <a href="../blog/2026-02-05-zgodnosc-ksiegowa-audyt-kryptowalut-krypto-fiat.html">Zgodność księgowa i audyt kryptowalut: krypto → fiat</a>, <a href="../blog/2026-02-06-koszty-operacyjne-eur-ze-stablecoinow.html">Koszty operacyjne w EUR ze stablecoinów</a> oraz <a href="../blog/2026-02-04-czy-bank-moze-zablokowac-przelew-z-regulowanej-instytucji-vasp.html">Czy bank może zablokować przelew z regulowanej instytucji VASP?</a></p>
+
+<p>Ten artykuł ma charakter edukacyjny i nie stanowi porady prawnej, finansowej ani podatkowej. Masz konkretne pytania? Zachęcamy do kontaktu.</p>
+    </article>
+  </div>
+</main>
+
+<div id="shared-footer-placeholder"></div>
+
+</body>
+</html>
