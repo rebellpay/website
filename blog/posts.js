@@ -101,7 +101,7 @@ const blogPostsData = [
     "date": "2026-02-04",
     "excerpt": "Krok po kroku: jak kupić nieruchomość w UE za kryptowaluty. Wyjaśniamy procedurę, wymagania AML/KYC, SoF/SoW oraz jakie dokumenty przygotować do transakcji.",
     "link": "blog/2026-02-04-zakup-nieruchomosci-ue-za-kryptowaluty-procedura.html",
-    "image": "blog/img/Zakup nieruchomości .jpeg"
+    "image": "blog/img/Zakupnieruchomości.jpeg"
   },
   {
     "title": "Czy bank może zablokować przelew z regulowanej instytucji VASP?",
@@ -109,6 +109,6 @@ const blogPostsData = [
     "date": "2026-02-04",
     "excerpt": "Wyjaśniamy, kiedy bank może wstrzymać przelew z regulowanej instytucji VASP, jakie są najczęstsze powody (AML/KYC) i jak przygotować dokumenty, by uniknąć blokady.",
     "link": "blog/2026-02-04-czy-bank-moze-zablokowac-przelew-z-regulowanej-instytucji-vasp.html",
-    "image": "blog/img/Czy bank może zablok.jpeg"
+    "image": "blog/img/Czybankmozezablok.jpeg"
   }
 ];
