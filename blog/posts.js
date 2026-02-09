@@ -1,5 +1,13 @@
 const blogPostsData = [
   {
+    "title": "Ripple Protocol Consensus Algorithm (RPCA) prosto",
+    "categories": ["Edukacja", "Blockchain", "Wiedza"],
+    "date": "2026-02-09",
+    "excerpt": "RPCA (Ripple Protocol Consensus Algorithm) w praktyce: jak działa konsensus w XRP Ledger, rola walidatorów i UNL, finalność transakcji, bezpieczeństwo oraz najważniejsze ograniczenia i ryzyka dla użytkowników i firm.",
+    "link": "blog/2026-02-09-ripple-protocol-consensus-algorithm-rpca-prosto.html",
+    "image": "blog/img/Photo16.jpeg"
+  },
+  {
     "title": "Ethereum Whitepaper: co warto wiedzieć",
     "categories": ["Edukacja", "Blockchain", "Wiedza"],
     "date": "2026-02-08",
