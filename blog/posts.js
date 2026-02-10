@@ -1,5 +1,13 @@
 const blogPostsData = [
   {
+    "title": "Wymiana dużych wolumenów krypto na fiat dla firm",
+    "categories": ["Biznes", "Finanse", "Compliance"],
+    "date": "2026-02-10",
+    "excerpt": "Wymiana dużych wolumenów krypto na fiat dla firm: jak zaplanować off-ramp, wymagania AML/KYC, SoF/SoW, limity, procesy w bankach i VASP oraz najlepsze praktyki, by uniknąć blokad i opóźnień.",
+    "link": "blog/2026-02-10-wymiana-duzych-wolumenow-krypto-na-fiat-dla-firm.html",
+    "image": "blog/img/Photo17.jpeg"
+  },
+  {
     "title": "Ripple Protocol Consensus Algorithm (RPCA) prosto",
     "categories": ["Edukacja", "Blockchain", "Wiedza"],
     "date": "2026-02-09",
