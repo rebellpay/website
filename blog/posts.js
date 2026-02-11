@@ -1,5 +1,13 @@
 const blogPostsData = [
   {
+    "title": "Solana whitepaper: co warto wiedzieć (po ludzku)",
+    "categories": ["Edukacja", "Blockchain", "Płatności"],
+    "date": "2026-02-11",
+    "excerpt": "Solana whitepaper po ludzku: Proof of History, konsensus i opłaty. Zrozum, czy ta sieć pasuje do płatności i biznesu. Sprawdź!",
+    "link": "blog/2026-02-11-solana-whitepaper-co-warto-wiedziec.html",
+    "image": "blog/img/Photo20.jpeg"
+  },
+  {
     "title": "Wymiana dużych wolumenów krypto na fiat dla firm",
     "categories": ["Biznes", "Finanse", "Compliance"],
     "date": "2026-02-10",
