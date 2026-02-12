@@ -1,5 +1,13 @@
 const blogPostsData = [
   {
+    "title": "Stabilne off-ramp dla międzynarodowych platform cyfrowych: jak wypłacać bez blokad",
+    "categories": ["Płatności", "Fintech", "Compliance"],
+    "date": "2026-02-12",
+    "excerpt": "Stabilny off-ramp dla platform cyfrowych: banki, VASP, AML/KYC, SoF/SoW i procesy. Zobacz checklistę i wdrożenie. Skontaktuj się!",
+    "link": "blog/2026-02-12-stabilne-off-ramp-dla-platform-miedzynarodowych.html",
+    "image": "blog/img/Photo21.jpeg"
+  },
+  {
     "title": "Solana whitepaper: co warto wiedzieć (po ludzku)",
     "categories": ["Edukacja", "Blockchain", "Płatności"],
     "date": "2026-02-11",
