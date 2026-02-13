@@ -1,5 +1,13 @@
 const blogPostsData = [
   {
+    "title": "TRON Developers Docs po ludzku: jak działa TRON w płatnościach (i dlaczego widzisz tam USDT)",
+    "categories": ["Edukacja", "Blockchain", "Płatności"],
+    "date": "2026-02-13",
+    "excerpt": "TRON Developers Docs po ludzku. Zrozum TRC-20, adresy, opłaty, smart kontrakty i ryzyka. Sprawdź i skontaktuj się z Rebell Pay.",
+    "link": "blog/2026-02-13-tron-developers-docs-po-ludzku-platnosci.html",
+    "image": "blog/img/Photo22.jpeg"
+  },
+  {
     "title": "Stabilne off-ramp dla międzynarodowych platform cyfrowych: jak wypłacać bez blokad",
     "categories": ["Płatności", "Fintech", "Compliance"],
     "date": "2026-02-12",
