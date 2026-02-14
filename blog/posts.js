@@ -1,5 +1,13 @@
 const blogPostsData = [
   {
+    "title": "Tydzień na krypto: Bitcoin broni 70k, Ethereum szuka dna, a giełdy przypominają o ryzyku operacyjnym",
+    "categories": ["Rynek krypto", "Bitcoin", "Ethereum"],
+    "date": "2026-02-14",
+    "excerpt": "Tygodniowe podsumowanie rynku krypto: BTC przy 70k, ETH przy 2k, ryzyko giełd i nowe portfele seedless. Sprawdź wnioski.",
+    "link": "blog/2026-02-14-krypto-tydzien-btc-70k-eth-2k-operacyjne-ryzyko.html",
+    "image": "blog/img/2026-02-14.jpeg"
+  },
+  {
     "title": "Jak utrzymać płynność finansową firmy operującej na walutach cyfrowych?",
     "categories": ["Finanse", "Płatności", "Stablecoiny"],
     "date": "2026-02-14",
