@@ -1,13 +1,5 @@
 const blogPostsData = [
-  {
-    "title": "Krypto pod lupą: ETH się „zamyka”, ETF-y łapią oddech, a firmy wchodzą na łańcuch",
-    "categories": ["Podsumowanie rynku", "Ethereum", "ETF", "Solana", "Hedera"],
-    "date": "2026-02-14",
-    "excerpt": "Tygodniowe podsumowanie krypto: ETH pod presją podaży, odbicie ETF-ów BTC i ETH, płatności Solany rosną. Sprawdź, co to może oznaczać.",
-    "link": "blog/2026-02-14-krypto-tydzien-etf-eth-supply-solana-hedaera.html",
-    "image": "blog/img/2026-02-14_news.jpeg"
-  },
-  {
+    {
     "title": "Krypto tydzień: ETF-y odbijają, stablecoiny pod lupą, AI wchodzi na chain",
     "categories": ["Podsumowanie rynku", "ETF", "Stablecoiny", "AI"],
     "date": "2026-02-14",
