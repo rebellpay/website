@@ -5,7 +5,7 @@ const blogPostsData = [
     "date": "2026-02-14",
     "excerpt": "Bitcoin broni 69 tys. USD po mocnym zjeździe, memecoiny wyglądają na kapitulację, a instytucje pchają DeFi (AAVE ETF). Sprawdź najważniejsze newsy tygodnia.",
     "link": "blog/2026-02-14-tygodniowe-podsumowanie-rynku-krypto-bitcoin-xrp-defi.html",
-    "image": "blog/img/2026-02-14.jpeg"
+    "image": "blog/img/2026-02-14_news.jpeg"
   },
   {
     "title": "Jak utrzymać płynność finansową firmy operującej na walutach cyfrowych?",
