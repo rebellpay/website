@@ -168,4 +168,3 @@
     "image": "blog/img/Czybankmozezablok.jpeg"
   }
 ];
-];
