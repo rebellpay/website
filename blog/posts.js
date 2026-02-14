@@ -1,5 +1,4 @@
 const blogPostsData = [
- 
   {
     "title": "Jak utrzymać płynność finansową firmy operującej na walutach cyfrowych?",
     "categories": ["Finanse", "Płatności", "Stablecoiny"],
