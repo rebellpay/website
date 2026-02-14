@@ -1,5 +1,13 @@
 const blogPostsData = [
   {
+    "title": "Tygodniowe podsumowanie rynku krypto: Bitcoin przy 69 tys., XRP odbija, DeFi wraca do gry",
+    "categories": ["Podsumowanie rynku", "Bitcoin", "DeFi"],
+    "date": "2026-02-14",
+    "excerpt": "Bitcoin broni 69 tys. USD po mocnym zjeździe, memecoiny wyglądają na kapitulację, a instytucje pchają DeFi (AAVE ETF). Sprawdź najważniejsze newsy tygodnia.",
+    "link": "blog/2026-02-14-tygodniowe-podsumowanie-rynku-krypto-bitcoin-xrp-defi.html",
+    "image": "blog/img/2026-02-14.jpeg"
+  },
+  {
     "title": "Jak utrzymać płynność finansową firmy operującej na walutach cyfrowych?",
     "categories": ["Finanse", "Płatności", "Stablecoiny"],
     "date": "2026-02-14",
