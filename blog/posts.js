@@ -1,5 +1,13 @@
 const blogPostsData = [
   {
+    "title": "Jak utrzymać płynność finansową firmy operującej na walutach cyfrowych?",
+    "categories": ["Finanse", "Płatności", "Stablecoiny"],
+    "date": "2026-02-14",
+    "excerpt": "Poznaj praktyczny plan płynności w firmie krypto: rezerwy, cash flow, stablecoiny i off-ramp. Sprawdź i skontaktuj się z Rebell Pay.",
+    "link": "blog/2026-02-14-jak-utrzymac-plynnosc-finansowa-firmy-krypto.html",
+    "image": "blog/img/Photo23.jpeg"
+  },
+  {
     "title": "TRON Developers Docs po ludzku: jak działa TRON w płatnościach (i dlaczego widzisz tam USDT)",
     "categories": ["Edukacja", "Blockchain", "Płatności"],
     "date": "2026-02-13",
