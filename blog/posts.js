@@ -1,12 +1,4 @@
 const blogPostsData = [
-  {
-    "title": "DailyNews: co dziś naprawdę zmienia w płatnościach krypto i fintech?",
-    "categories": ["DailyNews", "Płatności", "Stablecoiny", "AML"],
-    "date": "2026-02-15",
-    "excerpt": "DailyNews po ludzku: co dziś oznaczają newsy o stablecoinach, AML i off-ramp. Sprawdź checklistę i skontaktuj się z Rebell Pay.",
-    "link": "blog/2026-02-15-dailynews-co-wazne-dla-platnosci.html",
-    "image": "blog/img/Photo24.jpeg"
-  },
     {
     "title": "Krypto tydzień: ETF-y odbijają, stablecoiny pod lupą, AI wchodzi na chain",
     "categories": ["Podsumowanie rynku", "ETF", "Stablecoiny", "AI"],
