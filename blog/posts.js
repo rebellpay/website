@@ -1,5 +1,13 @@
 const blogPostsData = [
     {
+    "title": "Dogechain - co to jest i jak działa (po ludzku)",
+    "categories": ["Edukacja", "Blockchain", "Płatności"],
+    "date": "2026-02-16",
+    "excerpt": "Dogechain po ludzku: czym jest, jak działa i jakie ma ryzyka. Zrozum L2/EVM, mosty i opłaty. Sprawdź i skontaktuj się z Rebell Pay.",
+    "link": "blog/2026-02-16-dogechain-co-to-jest-i-jak-dziala.html",
+    "image": "blog/img/Photo25.jpeg"
+  },
+    {
     "title": "Krypto tydzień: ETF-y odbijają, stablecoiny pod lupą, AI wchodzi na chain",
     "categories": ["Podsumowanie rynku", "ETF", "Stablecoiny", "AI"],
     "date": "2026-02-14",
