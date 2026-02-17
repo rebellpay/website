@@ -1,5 +1,13 @@
 const blogPostsData = [
     {
+    "title": "Krypto w tym tygodniu: makro naciska na BTC, firmy dokupują ETH, a prywatność wraca do gry",
+    "categories": ["Podsumowanie rynku", "Bitcoin", "Ethereum", "Prywatność"],
+    "date": "2026-02-17",
+    "excerpt": "Tydzień w krypto: presja makro na Bitcoin, zakupy ETH przez firmy, nowe narzędzia prywatności i ostrzeżenia o phishingu. Sprawdź skrót rynku.",
+    "link": "blog/2026-02-17-krypto-rynki-makro-treasury-prywatnosc.html",
+    "image": "blog/img/2026-02-17_news.jpeg"
+  },
+    {
     "title": "Tygodniowe podsumowanie rynku krypto: Fed, stablecoiny i narracja prywatności",
     "categories": ["Podsumowanie rynku", "Stablecoiny", "Regulacje"],
     "date": "2026-02-17",
