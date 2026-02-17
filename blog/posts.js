@@ -7,14 +7,7 @@ const blogPostsData = [
     "link": "blog/2026-02-17-krypto-rynki-makro-treasury-prywatnosc.html",
     "image": "blog/img/2026-02-17_news.jpeg"
   },
-    {
-    "title": "Tygodniowe podsumowanie rynku krypto: Fed, stablecoiny i narracja prywatności",
-    "categories": ["Podsumowanie rynku", "Stablecoiny", "Regulacje"],
-    "date": "2026-02-17",
-    "excerpt": "Bitcoin pod presją Fed i dyskusji o ryzyku kwantowym, stablecoiny rosną jako \"codzienne pieniądze\", a Polygon przegania ETH w opłatach. Sprawdź skrót tygodnia.",
-    "link": "blog/2026-02-17-tygodniowe-podsumowanie-rynku-krypto-stablecoiny-regulacje.html",
-    "image": "blog/img/2026-02-17_news.jpeg"
-  },
+    
     {
     "title": "Dogechain - co to jest i jak działa (po ludzku)",
     "categories": ["Edukacja", "Blockchain", "Płatności"],
