@@ -23,15 +23,7 @@ const blogPostsData = [
     "link": "blog/2026-02-17-krypto-rynki-makro-treasury-prywatnosc.html",
     "image": "blog/img/2026-02-17_news.jpeg"
   },
-    
-    {
-    "title": "Dogechain - co to jest i jak działa (po ludzku)",
-    "categories": ["Edukacja", "Blockchain", "Płatności"],
-    "date": "2026-02-16",
-    "excerpt": "Dogechain po ludzku: czym jest, jak działa i jakie ma ryzyka. Zrozum L2/EVM, mosty i opłaty. Sprawdź i skontaktuj się z Rebell Pay.",
-    "link": "blog/2026-02-16-dogechain-co-to-jest-i-jak-dziala.html",
-    "image": "blog/img/Photo25.jpeg"
-  },
+ 
   {
     "title": "Stabilne off-ramp dla międzynarodowych platform cyfrowych: jak wypłacać bez blokad",
     "categories": ["Płatności", "Fintech", "Compliance"],
@@ -64,14 +56,7 @@ const blogPostsData = [
     "link": "blog/2026-02-07-konto-bankowe-dla-software-house-web3.html",
     "image": "blog/img/Photo13.jpeg"
   },
-  {
-    "title": "Koszty operacyjne w EUR ze stablecoinów",
-    "categories": ["Finanse", "Biznes", "Stablecoiny"],
-    "date": "2026-02-06",
-    "excerpt": "Jak finansować koszty operacyjne w EUR ze stablecoinów: procedura off-ramp, wymagania AML/KYC, dokumenty SoF/SoW, faktury i najlepsze praktyki, aby uniknąć blokad i opóźnień.",
-    "link": "blog/2026-02-06-koszty-operacyjne-eur-ze-stablecoinow.html",
-    "image": "blog/img/Photo9.jpeg"
-  },
+
   {
     "title": "Bezpieczny off-ramp dla HNWI i inwestorów indywidualnych",
     "categories": ["Inwestycje", "Finanse", "Bezpieczeństwo"],
