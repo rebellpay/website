@@ -1,5 +1,13 @@
 const blogPostsData = [
     {
+    "title": "Cardano whitepaper: co warto wiedzieć (po ludzku)",
+    "categories": ["Edukacja", "Blockchain", "Płatności"],
+    "date": "2026-02-18",
+    "excerpt": "Cardano whitepaper po ludzku: Ouroboros, warstwy, bezpieczeństwo i ryzyka. Sprawdź, czy ADA pasuje do płatności i biznesu.",
+    "link": "blog/2026-02-18-cardano-whitepaper-co-warto-wiedziec.html",
+    "image": "blog/img/Photo27.jpeg"
+  },
+    {
     "title": "Krypto w tym tygodniu: makro naciska na BTC, firmy dokupują ETH, a prywatność wraca do gry",
     "categories": ["Podsumowanie rynku", "Bitcoin", "Ethereum", "Prywatność"],
     "date": "2026-02-17",
