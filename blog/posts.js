@@ -1,5 +1,13 @@
 const blogPostsData = [
     {
+    "title": "Usługi concierge przy wyjściu z krypto do walut tradycyjnych (dla firm i inwestorów)",
+    "categories": ["Fintech", "Compliance"],
+    "date": "2026-02-18",
+    "excerpt": "Concierge off-ramp: bezpieczna konwersja krypto na fiat dla firm i inwestorów. Sprawdź proces, dokumenty i uniknij blokad. Skontaktuj się.",
+    "link": "blog/2026-02-18-uslugi-concierge-off-ramp-krypto-fiat-dla-firm.html",
+    "image": "blog/img/Photo28.jpeg"
+  },
+    {
     "title": "Cardano whitepaper: co warto wiedzieć (po ludzku)",
     "categories": ["Edukacja", "Blockchain", "Płatności"],
     "date": "2026-02-18",
