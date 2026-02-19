@@ -1,5 +1,13 @@
 const blogPostsData = [
   {
+    "title": "Jak wypłacić pieniądze z krypto do banku bez blokady (2026)",
+    "categories": ["Bezpieczeństwo", "Bankowość", "Fintech"],
+    "date": "2026-02-19",
+    "excerpt": "Wypłata krypto do banku bez blokady: AML/KYC, SoF/SoW, dokumenty i proces. Zobacz checklistę i skontaktuj się z Rebell Pay.",
+    "link": "blog/2026-02-19-jak-wyplacic-krypto-do-banku-bez-blokady.html",
+    "image": "blog/img/Photo30.jpeg"
+  },
+  {
     "title": "Rynek krypto dziś: Bitcoin między Fed a Warsh, HBAR i Gemini pod presją",
     "categories": ["Podsumowanie rynku", "Bitcoin", "Regulacje", "Altcoiny"],
     "date": "2026-02-19",
