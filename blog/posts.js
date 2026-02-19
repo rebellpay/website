@@ -1,5 +1,13 @@
 const blogPostsData = [
   {
+    "title": "Rynek krypto dziś: Bitcoin w napięciu, Cardano szuka odbicia, a AI wchodzi do portfeli",
+    "categories": ["Podsumowanie rynku", "Bitcoin", "Makro", "Altcoiny", "AI"],
+    "date": "2026-02-19",
+    "excerpt": "Bitcoin w konsolidacji, Cardano walczy o $0.30, a portfele testują AI-agentów. Zobacz najważniejsze wątki i poziomy na tydzień.",
+    "link": "blog/2026-02-19-krypto-rynek-bitcoin-makro-cardano-ai-wallet.html",
+    "image": "blog/img/2026-02-19_news.jpeg"
+  },
+  {
     "title": "Off-ramp krypto: co to jest i jak wypłacić do banku (2026)",
     "categories": ["Fintech"],
     "date": "2026-02-19",
