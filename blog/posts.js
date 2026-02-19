@@ -15,22 +15,6 @@ const blogPostsData = [
     "link": "blog/2026-02-19-co-to-jest-off-ramp-krypto-i-jak-wyplacic-do-banku.html",
     "image": "blog/img/Photo30.jpeg"
   },
-  {
-    "title": "Jak wypłacić pieniądze z krypto do banku bez blokady (2026)",
-    "categories": ["Bezpieczeństwo", "Bankowość", "Fintech"],
-    "date": "2026-02-19",
-    "excerpt": "Wypłata krypto do banku bez blokady: AML/KYC, SoF/SoW, dokumenty i proces. Zobacz checklistę i skontaktuj się z Rebell Pay.",
-    "link": "blog/2026-02-19-jak-wyplacic-krypto-do-banku-bez-blokady.html",
-    "image": "blog/img/Photo30.jpeg"
-  },
-  {
-    "title": "Rynek krypto dziś: Bitcoin między Fed a Warsh, HBAR i Gemini pod presją",
-    "categories": ["Podsumowanie rynku", "Bitcoin", "Regulacje", "Altcoiny"],
-    "date": "2026-02-19",
-    "excerpt": "Co porusza rynek krypto: jastrzębie minutes Fed i zmiana szefa, ustawa CLARITY Act, spadki Gemini, ryzyko short squeeze na HBAR. Sprawdź podsumowanie.",
-    "link": "blog/2026-02-19-krypto-rynek-fed-warsh-hbar-gemini-clarity.html",
-    "image": "blog/img/2026-02-19_news.jpeg"
-  },
     {
     "title": "Usługi concierge przy wyjściu z krypto do walut tradycyjnych (dla firm i inwestorów)",
     "categories": ["Fintech", "Compliance"],
