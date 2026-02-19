@@ -1,5 +1,13 @@
 const blogPostsData = [
   {
+    "title": "Off-ramp krypto: co to jest i jak wypłacić do banku (2026)",
+    "categories": ["Fintech"],
+    "date": "2026-02-19",
+    "excerpt": "Dowiedz się, czym jest off-ramp krypto i jak bezpiecznie wypłacić środki do banku bez blokady. Sprawdź checklistę i skontaktuj się z Rebell Pay.",
+    "link": "blog/2026-02-19-co-to-jest-off-ramp-krypto-i-jak-wyplacic-do-banku.html",
+    "image": "blog/img/Photo30.jpeg"
+  },
+  {
     "title": "Jak wypłacić pieniądze z krypto do banku bez blokady (2026)",
     "categories": ["Bezpieczeństwo", "Bankowość", "Fintech"],
     "date": "2026-02-19",
