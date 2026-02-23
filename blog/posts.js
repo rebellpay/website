@@ -1,5 +1,13 @@
 const blogPostsData = [
   {
+    "title": "Jak udowodnić pochodzenie środków z krypto? SoF i SoW po ludzku (2026)",
+    "categories": ["Compliance"],
+    "date": "2026-02-23",
+    "excerpt": "Pochodzenie środków z krypto? Wyjaśniamy SoF/SoW i dajemy checklistę dokumentów. Przygotuj się i skontaktuj z Rebell Pay bez stresu.",
+    "link": "blog/2026-02-23-jak-udowodnic-pochodzenie-srodkow-z-krypto-sof-sow.html",
+    "image": "blog/img/Photo34.jpeg"
+  },
+  {
     "title": "Jak wypłacić krypto do banku bez blokady? Prosty plan na 2026",
     "categories": ["Fintech"],
     "date": "2026-02-23",
