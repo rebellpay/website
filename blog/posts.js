@@ -3,8 +3,8 @@ const blogPostsData = [
     "title": "Jak udowodnić pochodzenie środków z krypto? SoF i SoW po ludzku (2026)",
     "categories": ["Compliance"],
     "date": "2026-02-23",
-    "excerpt": "Pochodzenie środków z krypto? Wyjaśniamy SoF/SoW i dajemy checklistę dokumentów. Przygotuj się i skontaktuj z Rebell Pay bez stresu.",
-    "link": "blog/2026-02-23-jak-udowodnic-pochodzenie-srodkow-z-krypto-sof-sow.html",
+    "excerpt": "SoF i SoW z krypto bez stresu. Poznaj checklistę dokumentów, które akceptują banki i VASP. Skontaktuj się z Rebell Pay i przygotuj się.",
+    "link": "blog/2026-02-23-jak-udowodnic-pochodzenie-srodkow-z-krypto.html",
     "image": "blog/img/Photo34.jpeg"
   },
   {
