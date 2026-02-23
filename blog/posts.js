@@ -1,11 +1,11 @@
 const blogPostsData = [
   {
-    "title": "Jak wypłacić krypto do banku bez blokady? Prosty plan (2026)",
+    "title": "Jak wypłacić krypto do banku bez blokady? Prosty plan na 2026",
     "categories": ["Fintech"],
     "date": "2026-02-23",
     "excerpt": "Wypłacasz krypto do banku? Poznaj prosty plan: off-ramp, AML/KYC, SoF/SoW i checklistę dokumentów, by uniknąć blokady. Skontaktuj się z Rebell Pay.",
-    "link": "blog/2026-02-23-jak-wyplacic-krypto-do-banku-bez-blokady.html",
-    "image": "blog/img/Photo32.jpeg"
+    "link": "blog/2026-02-23-jak-wyplacic-krypto-do-banku-bez-blokady-plan.html",
+    "image": "blog/img/Photo33.jpeg"
   },
   {
     "title": "Rynek krypto dziś: Bitcoin w napięciu, Cardano szuka odbicia, a AI wchodzi do portfeli",
