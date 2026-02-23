@@ -1,5 +1,13 @@
 const blogPostsData = [
   {
+    "title": "Bitcoin Whitepaper po ludzku: o co chodzi w bitcoinie?",
+    "categories": ["Edukacja", "Blockchain", "Wiedza"],
+    "date": "2026-02-23",
+    "excerpt": "Bitcoin whitepaper po ludzku: jak działa sieć, blockchain i proof-of-work. Zrozum w 7 minut i sprawdź, co to znaczy dla Twoich pieniędzy.",
+    "link": "blog/2026-02-23-bitcoin-whitepaper-co-to-jest.html",
+    "image": "blog/img/Photo35.jpeg"
+  },
+  {
     "title": "Rynek krypto dziś: Bitcoin w napięciu, Cardano szuka odbicia, a AI wchodzi do portfeli",
     "categories": ["Podsumowanie rynku", "Bitcoin", "Makro", "Altcoiny", "AI"],
     "date": "2026-02-19",
