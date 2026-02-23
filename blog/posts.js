@@ -1,21 +1,5 @@
 const blogPostsData = [
   {
-    "title": "Jak udowodnić pochodzenie środków z krypto? SoF i SoW po ludzku (2026)",
-    "categories": ["Compliance"],
-    "date": "2026-02-23",
-    "excerpt": "SoF i SoW z krypto bez stresu. Poznaj checklistę dokumentów, które akceptują banki i VASP. Skontaktuj się z Rebell Pay i przygotuj się.",
-    "link": "blog/2026-02-23-jak-udowodnic-pochodzenie-srodkow-z-krypto.html",
-    "image": "blog/img/Photo34.jpeg"
-  },
-  {
-    "title": "Jak wypłacić krypto do banku bez blokady? Prosty plan na 2026",
-    "categories": ["Fintech"],
-    "date": "2026-02-23",
-    "excerpt": "Wypłacasz krypto do banku? Poznaj prosty plan: off-ramp, AML/KYC, SoF/SoW i checklistę dokumentów, by uniknąć blokady. Skontaktuj się z Rebell Pay.",
-    "link": "blog/2026-02-23-jak-wyplacic-krypto-do-banku-bez-blokady-plan.html",
-    "image": "blog/img/Photo33.jpeg"
-  },
-  {
     "title": "Rynek krypto dziś: Bitcoin w napięciu, Cardano szuka odbicia, a AI wchodzi do portfeli",
     "categories": ["Podsumowanie rynku", "Bitcoin", "Makro", "Altcoiny", "AI"],
     "date": "2026-02-19",
