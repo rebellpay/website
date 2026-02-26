@@ -1,5 +1,13 @@
 const blogPostsData = [
   {
+    "title": "Rynek krypto: Bitcoin odbija pod 70 tys. USD, ale „podłoga” wciąż trzeszczy",
+    "categories": ["Podsumowanie rynku", "Bitcoin", "ETF", "Stablecoiny", "Makro"],
+    "date": "2026-02-26",
+    "excerpt": "Bitcoin wraca pod 70 tys. USD, ETF-y znów łapią inflow, ale opcje i on-chain mówią: ostrożnie. Sprawdź podsumowanie i bądź na bieżąco.",
+    "link": "blog/2026-02-26-rynek-krypto-bitcoin-70k-stabilizacja-stablecoiny.html",
+    "image": "blog/img/2026-02-26_news.jpeg"
+  },
+  {
     "title": "Bitcoin Whitepaper po ludzku: o co chodzi w bitcoinie?",
     "categories": ["Edukacja", "Blockchain", "Wiedza"],
     "date": "2026-02-23",
