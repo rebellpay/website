@@ -1,5 +1,13 @@
 const blogPostsData = [
   {
+    "title": "Dyskrecja i prywatność w bankowości krypto: jak chronić dane przy dużych transferach?",
+    "categories": ["Prywatność i bezpieczeństwo"],
+    "date": "2026-03-02",
+    "excerpt": "Duży przelew z krypto? Chroń dane i unikaj ryzyk AML. Poznaj zasady dyskrecji, SoF/SoW i praktyczną checklistę. Skontaktuj się z Rebell Pay.",
+    "link": "blog/2026-03-02-dyskrecja-prywatnosc-bankowosc-krypto-duze-transfery.html",
+    "image": "blog/img/Photo37.jpeg"
+  },
+  {
     "title": "Rynek krypto: Bitcoin odbija pod 70 tys. USD, ale „podłoga” wciąż trzeszczy",
     "categories": ["Podsumowanie rynku", "Bitcoin", "ETF", "Stablecoiny", "Makro"],
     "date": "2026-02-26",
