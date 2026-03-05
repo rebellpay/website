@@ -1,5 +1,13 @@
 const blogPostsData = [
   {
+    "title": "TRON Developers Docs: co to jest i jak zacząć (bez żargonu)",
+    "categories": ["Edukacja", "Blockchain", "Płatności"],
+    "date": "2026-03-05",
+    "excerpt": "Poznaj TRON Developers Docs: czym jest TRON, TRC-20 i stablecoiny (USDT). Zobacz jak zacząć integrację płatności. Sprawdź i działaj.",
+    "link": "blog/2026-03-05-tron-developers-docs-co-to-jest-i-jak-zaczac.html",
+    "image": "blog/img/Photo38.jpeg"
+  },
+  {
     "title": "Dyskrecja i prywatność w bankowości krypto: jak chronić dane przy dużych transferach?",
     "categories": ["Prywatność i bezpieczeństwo"],
     "date": "2026-03-02",
