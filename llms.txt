@@ -1,0 +1,26 @@
+# [cite_start]Rebell Pay - Institutional Standard for Crypto On-Ramp and Off-Ramp 
+
+> Rebell Pay is a professional fintech platform providing liquidity between digital assets and traditional banking systems. [cite_start]It specializes in secure, high-volume exchanges for Individual Investors (HNWI) and Business/OTC clients.
+
+## [cite_start]Core Services 
+- [cite_start]**Fiat to Crypto (On-Ramp)**: Fast funding of crypto wallets using SEPA, SEPA Instant, Blik (PLN), and Visa/Mastercard.
+- [cite_start]**Crypto to Fiat (Off-Ramp)**: Secure conversion of assets (BTC, ETH, USDC) to bank accounts or cards with full AML documentation.
+- [cite_start]**Institutional OTC**: High-volume liquidity without market impact for businesses.
+- [cite_start]**Rebell Pay Business App**: 24/7 self-service mobile application for transaction management and live rate tracking.
+
+## [cite_start]Target Audience 
+- [cite_start]**Individual Investors (HNWI)**: Focused on discretion, privacy, and documented source of funds (SoF) for large transfers.
+- [cite_start]**Business & OTC Clients**: Focused on transparent audit trails, high-volume liquidity, and Web3-friendly banking.
+
+## Key Resource Links
+- [cite_start][Main Landing Page](https://www.rebellpay.pl/): Overview of services and live exchange calculator.
+- [Market Insights & Blog](https://www.rebellpay.pl/blog/indexblog.html): Educational resources and market analysis.
+
+## Essential Articles & Guides
+- [Off-ramp Crypto 2026 Guide](https://www.rebellpay.pl/blog/2026-02-19-co-to-jest-off-ramp-krypto-i-jak-wyplacic-do-banku.html): How to withdraw crypto to bank accounts safely.
+- [Privacy & Discretion in Crypto Banking](https://www.rebellpay.pl/blog/2026-03-02-dyskrecja-prywatnosc-bankowosc-krypto-duze-transfery.html): Protecting data during large institutional transfers.
+- [TRON Developers Docs Summary](https://www.rebellpay.pl/blog/2026-03-05-tron-developers-docs-co-to-jest-i-jak-zaczac.html): Technical introduction to TRON and stablecoin integration.
+- [High-Volume Business Exchange](https://www.rebellpay.pl/blog/2026-02-10-wymiana-duzych-wolumenow-krypto-na-fiat-dla-firm.html): Planning large-scale corporate off-ramps.
+- [Web3 Software House Banking](https://www.rebellpay.pl/blog/2026-02-07-konto-bankowe-dla-software-house-web3.html): Navigating bank accounts for crypto-focused companies.
+- [Bank Blockage Analysis](https://www.rebellpay.pl/blog/2026-02-04-czy-bank-moze-zablokowac-przelew-z-regulowanej-instytucji-vasp.html): Understanding VASP-to-bank transfer risks.
+- [Legal Compliance for Mortgages](https://www.rebellpay.pl/blog/2026-02-05-potwierdzenie-legalnosci-srodkow-krypto-dla-doradcy-kredytowego-seo.html): Proving legal crypto funds to credit advisors.

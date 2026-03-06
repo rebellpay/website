@@ -1,0 +1,26 @@
+# Robots.txt for www.rebellpay.pl
+# Updated: 2026-03-06
+
+User-agent: *
+
+# Allow access to JS and CSS for proper page rendering
+Allow: /js/
+Allow: /app/
+
+# Block access to internal asset directories and logos
+Disallow: /logoex/
+
+# Block cache-busting and versioning parameters
+Disallow: /*?t=
+Disallow: /*?v=
+
+# Ensure SEO-critical sections are indexed
+Allow: /blog/
+Allow: /blog/indexblog.html
+
+# Link to your sitemap
+Sitemap: https://www.rebellpay.pl/sitemap.xml
+
+# Specialized rules for ad-bots
+User-agent: Mediapartners-Google
+Allow: /
