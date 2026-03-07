@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <link rel="canonical" href="https://www.rebellpay.pl/" />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-T64NBV4KE4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-T64NBV4KE4');
+  </script>
+
+  
+  
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <title>Rebell Pay | Profesjonalny On-Ramp i Off-Ramp BTC, ETH, USDC</title>
+  <meta name="description" content="Rebell Pay to instytucjonalny standard wymiany kryptowalut. Oferujemy szybki i bezpieczny On-Ramp oraz Off-Ramp dla BTC, ETH, USDC i walut FIAT. Sprawdź nas!">
+  
+  <link rel="alternate" hreflang="pl-PL" href="https://rebellpay.pl" />
+  <link rel="alternate" hreflang="en-US" href="https://rebellpay.com" />
+  <link rel="alternate" hreflang="x-default" href="https://rebellpay.com" />
+
+  <link rel="stylesheet" href="style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "FinancialService",
+        "@id": "https://rebellpay.com/#organization",
+        "name": "Rebell Pay",
+        "url": "https://rebellpay.com",
+        "logo": "https://rebellpay.com/logo.png",
+        "image": "https://rebellpay.com/app/RPBusiness.jpg",
+        "description": "Profesjonalny On-Ramp i Off-Ramp dla kryptowalut. Instytucjonalny standard wymiany BTC, ETH, USDC i innych na waluty FIAT.",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "PL"
+        },
+        "serviceType": [
+          "Crypto On-Ramp",
+          "Crypto Off-Ramp",
+          "Wymiana kryptowalut"
+        ],
+        "offers": {
+          "@type": "Offer",
+          "description": "Prowizja od 0,5% przy wymianie krypto-fiat"
+        }
+      },
+      {
+        "@type": "SoftwareApplication",
+        "name": "Rebell Pay Business",
+        "operatingSystem": "iOS, Android",
+        "applicationCategory": "FinanceApplication",
+        "description": "Zarządzaj transakcjami kryptowalutowymi, śledź kursy i generuj raporty bezpośrednio z telefonu.",
+        "installUrl": [
+          "https://play.google.com/store/apps/details?id=com.elixirgroup.rebellpaybusiness",
+          "https://apps.apple.com/pl/app/rebell-pay-business/id6744999878"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://rebellpay.com/#website",
+        "url": "https://rebellpay.com",
+        "name": "Rebell Pay",
+        "publisher": {
+          "@id": "https://rebellpay.com/#organization"
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+<div id="shared-header-placeholder"></div>
+
+<main>
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <span class="section-tag">Zaufany Partner On & Off-Ramp</span>
+        <h1>Instytucjonalny standard wymiany On-Ramp i Off-Ramp.</h1>
+        <p>Zapewniamy profesjonalną płynność między światem kryptowalut (USDC, BTC, ETH) a tradycyjnym systemem bankowym (FIAT). Bezpiecznie, szybko i zgodnie z regulacjami.</p>
+        <div class="hero-cta-wrapper mt-40">
+          <a href="https://calendly.com/pawel-karczewski-rebellpay/30min" class="btn btn-primary hero-btn-large">Bezpłatna konsultacja (30 min)</a>
+        </div>
+      </div>
+      
+      <div class="hero-visual">
+        <div class="calc-card">
+          <div class="calc-header">
+            <span>Konwerter walut Live</span>
+            <span id="rate-status" class="text-success">● Kursy w czasie rzeczywistym</span>
+          </div>
+          
+          <div class="input-group">
+            <span class="input-label">Wpłacasz aktywa cyfrowe</span>
+            <div class="input-row">
+              <input type="number" id="calc-pay" class="input-val-field" value="100000">
+              <div class="currency-pill"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/USD_Coin_logo_%28cropped%29.png/960px-USD_Coin_logo_%28cropped%29.png" width="18" alt="Logo USDC - Stablecoin"> USDC</div>
+            </div>
+          </div>
+          
+          <div class="spacer-10"></div>
+          
+          <div class="input-group">
+            <span class="input-label">Otrzymujesz FIAT (szacunkowo)</span>
+            <div class="input-row">
+              <input type="number" id="calc-receive" class="input-val-field">
+              <div class="currency-pill"><span class="color-blue fw-900">€</span> EUR</div>
+            </div>
+          </div>
+
+          <div class="text-center mb-15">
+            <p class="fs-11 color-muted">
+                Obsługiwane waluty: <strong>BTC, ETH, USDC, LTC, USDT </strong> i wiele innych.
+            </p>
+          </div>
+          
+          <a href="https://calendly.com/pawel-karczewski-rebellpay/30min" class="btn btn-primary w-100 p-16">Zapytaj o wycenę indywidualną OTC</a>
+          
+          <div class="mt-15 text-center">
+            <p id="current-rate-info" class="fs-12 color-navy fw-700">Kurs: -- USDC / EUR</p>
+            <p class="fs-10 color-muted mt-5">Cennik orientacyjny. Uwzględnia prowizję instytucjonalną 0,5%.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container text-center pt-60">
+    <span class="section-tag">Globalny Ekosystem Płynności</span>
+    <h2 class="mb-10 fs-28 fw-800 color-navy">Obsługujemy kluczowe giełdy kryptowalut</h2>
+    <p class="color-muted max-w-600 mx-auto mb-20">Zapewniamy wsparcie we wpłacie (On-Ramp) i wypłacie (Off-Ramp) środków dla użytkowników giełd globalnych.</p>
+  </div>
+
+  <div class="carousel-container">
+    <div class="carousel-track">
+      <div class="exchange-logo"><img src="logoex/logo-binance.svg" alt="Binance - Giełda Kryptowalut"></div>
+      <div class="exchange-logo"><img src="logoex/logo-coinbase.svg" alt="Coinbase - Portfel i Giełda"></div>
+      <div class="exchange-logo"><img src="logoex/logo-zondacrypto.svg" alt="Zondacrypto - Polska Giełda"></div>
+      <div class="exchange-logo"><img src="logoex/logo-kraken.svg" alt="Kraken - Wymiana FIAT"></div>
+      <div class="exchange-logo"><img src="logoex/logo-bingx.svg" alt="BingX Exchange"></div>
+      <div class="exchange-logo"><img src="logoex/logo-bybit.svg" alt="Bybit - Trading Kryptowalut"></div>
+      <div class="exchange-logo"><img src="logoex/logo-bitget.svg" alt="Bitget Exchange"></div>
+      <div class="exchange-logo"><img src="logoex/logo-okx.svg" alt="OKX Global"></div>
+      <div class="exchange-logo"><img src="logoex/logo-kucoin.svg" alt="KuCoin Exchange"></div>
+      <div class="exchange-logo"><img src="logoex/logo-binance.svg" alt="Binance On-Ramp"></div>
+      <div class="exchange-logo"><img src="logoex/logo-coinbase.svg" alt="Coinbase Off-Ramp"></div>
+      <div class="exchange-logo"><img src="logoex/logo-zondacrypto.svg" alt="Zondacrypto Transfer"></div>
+      <div class="exchange-logo"><img src="logoex/logo-kraken.svg" alt="Kraken Payout"></div>
+      <div class="exchange-logo"><img src="logoex/logo-bingx.svg" alt="BingX Payout"></div>
+      <div class="exchange-logo"><img src="logoex/logo-bybit.svg" alt="Bybit Transfer"></div>
+      <div class="exchange-logo"><img src="logoex/logo-bitget.svg" alt="Bitget Payout"></div>
+      <div class="exchange-logo"><img src="logoex/logo-okx.svg" alt="OKX Payout"></div>
+      <div class="exchange-logo"><img src="logoex/logo-kucoin.svg" alt="KuCoin Payout"></div>
+    </div>
+  </div>
+
+  <section id="segments" class="bg-light-bg">
+    <div class="container">
+      <span class="section-tag">Rozwiązania Szyte na Miarę</span>
+      <h2 class="section-title">Dla kogo przygotowaliśmy Rebell Pay?</h2>
+      <div class="grid-2">
+        <div class="card">
+            <div class="fs-32 mb-20">👤</div>
+            <h3>Inwestorzy Indywidualni (HNWI)</h3>
+            <p class="color-muted">Zabezpiecz swoje zyski kapitałowe i przenieś środki do tradycyjnego systemu bankowego bez obaw o blokadę konta czy dodatkowe wyjaśnienia.</p>
+            <ul>
+              <li><span class="text-success">✓</span> <div><strong>Dyskrecja i Bezpieczeństwo:</strong><br>Pełna ochrona bankowa i prywatność transakcji.</div></li>
+              <li><span class="text-success">✓</span> <div><strong>Dokumentacja AML:</strong><br>Oficjalne potwierdzenie źródła środków akceptowane przez banki.</div></li>
+              <li><span class="text-success">✓</span> <div><strong>Obsługa White-Glove:</strong><br>Dedykowany opiekun klienta dla Twoich kluczowych transakcji.</div></li>
+            </ul>
+        </div>
+        <div class="card">
+            <div class="fs-32 mb-20">🏢</div>
+            <h3>Klienci Biznesowi & OTC</h3>
+            <p class="color-muted">Zoptymalizuj przepływy finansowe swojej firmy dzięki nowoczesnej infrastrukturze płynności kryptowalutowej.</p>
+            <ul>
+              <li><span class="text-success">✓</span> <div><strong>Wysokie wolumeny OTC:</strong><br>Płynność bez wpływu na kurs rynkowy przy dużych wymianach.</div></li>
+              <li><span class="text-success">✓</span> <div><strong>Szybki On-Ramp:</strong><br>Możliwość zasilenia portfeli firmowych bezpośrednio z konta fiat.</div></li>
+              <li><span class="text-success">✓</span> <div><strong>Transparentny Audyt:</strong><br>Pełna zgodność księgowa i raportowanie transakcyjne.</div></li>
+            </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="container">
+      <span class="section-tag">Pełen Zakres Usług Finansowych</span>
+      <h2 class="section-title">Kompleksowa obsługa On-Ramp i Off-Ramp dla firm i osób</h2>
+      <div class="grid-2">
+        <div class="card">
+          <h4>📥 Fiat to Crypto (On-Ramp)</h4>
+          <p class="color-muted mb-20">Zasilaj swoje portfele kryptowalutowe błyskawicznie:</p>
+          <ul>
+            <li><span class="color-blue">⚡</span> <div><strong>SEPA Instant & SEPA:</strong><br>Przelewy w EUR realizowane w czasie rzeczywistym.</div></li>
+            <li><span class="color-blue">⚡</span> <div><strong>Blik & Szybkie Przelewy:</strong><br>Błyskawiczne płatności mobilne w PLN.</div></li>
+            <li><span class="color-blue">⚡</span> <div><strong>Karty Visa i Mastercard:</strong><br>Kupuj kryptowaluty w kilka sekund za pomocą karty.</div></li>
+          </ul>
+        </div>
+        <div class="card">
+          <h4>📤 Crypto to Fiat (Off-Ramp)</h4>
+          <p class="color-muted mb-20">Bezpieczna zamiana aktywów cyfrowych na waluty:</p>
+          <ul>
+            <li><span class="color-blue">⚡</span> <div><strong>Przelewy SEPA / IBAN:</strong><br>Wypłata na dowolne konto bankowe w Europie.</div></li>
+            <li><span class="color-blue">⚡</span> <div><strong>PayOut directly to Card:</strong><br>Środki wysyłane bezpośrednio na Twoją kartę płatniczą.</div></li>
+            <li><span class="color-blue">⚡</span> <div><strong>Pełna dokumentacja:</strong><br>Szczegółowe raporty AML akceptowane przez instytucje.</div></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="process" class="bg-light-bg">
+    <div class="container">
+      <span class="section-tag">Przejrzysty Proces</span>
+      <h2 class="section-title">Jak wygląda współpraca z Rebell Pay?</h2>
+      <div class="process-grid">
+        <div class="process-step">
+          <div class="step-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="process-icon"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+          </div>
+          <h3>Krok 1: <br> Umowa ramowa + KYC/KYB</h3><br>
+          <p>Podpisujemy bezpieczną umowę ramową i przeprowadzamy weryfikację tożsamości, aby zapewnić pełne bezpieczeństwo transakcji zgodnie z wymogami prawnymi i ustawą AML.</p>
+        </div>
+        <div class="process-step">
+          <div class="step-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="process-icon"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+          </div>
+          <h3>Krok 2: <br> Weryfikacja źródła (SoF)</h3><br>
+          <p>Wspólnie weryfikujemy źródło pochodzenia środków (Source of Funds) w niezbędnym zakresie – dbamy o zgodność z bankami, nie utrudniając przy tym procesu wymiany.</p>
+        </div>
+        <div class="process-step">
+          <div class="step-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="process-icon"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+          </div>
+          <h3>Krok 3: <br> Depozyt Aktywów</h3><br>
+          <p>Przesyłasz nam środki, które chcesz wymienić (Fiat lub Kryptowaluty), na nasze dedykowane, zabezpieczone rachunki bankowe lub portfele powiernicze.</p>
+        </div>
+        <div class="process-step">
+          <div class="step-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="process-icon"><polyline points="20 6 9 17 4 12"></polyline></svg>
+          </div>
+          <h3>Krok 4: <br> Finalizacja i Rozliczenie</h3><br>
+          <p>Wysyłamy wymienione środki bezpośrednio na Twój wskazany adres portfela krypto, rachunek bankowy IBAN lub kartę płatniczą w czasie rzeczywistym.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="trust">
+    <div class="container">
+      <span class="section-tag">Skala działalności operacyjnej</span>
+      <h2 class="section-title">Nasze zaufanie w liczbach</h2>
+      <div class="stats-grid">
+        <div class="stat-item"><span class="stat-value">2 450+</span><span class="stat-label">Obsłużonych Klientów Globalnie</span></div>
+        <div class="stat-item"><span class="stat-value" id="volume-counter">1 310 000 €</span><span class="stat-label">Wolumen Transakcyjny 2026</span></div>
+        <div class="stat-item"><span class="stat-value">4 lata</span><span class="stat-label">Doświadczenia na rynku krypto</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="app">
+    <div class="container">
+      <div class="app-section">
+        <div class="app-content">
+          <span class="section-tag">Self-Service 24/7</span>
+          <h2>Aplikacja Mobilna Rebell Business</h2>
+          <p class="color-muted app-margin">Zarządzaj swoimi transakcjami On-Ramp, śledź kursy live i generuj raporty księgowe bezpośrednio z telefonu.</p>
+          <div class="app-cta-group">
+            <a href="https://play.google.com/store/apps/details?id=com.elixirgroup.rebellpaybusiness&hl=pl" target="_blank">
+                <img src="app/GooglePlay.svg" width="170" alt="Pobierz Rebell Pay Business z Google Play">
+            </a>
+            <a href="https://apps.apple.com/pl/app/rebell-pay-business/id6744999878" target="_blank">
+                <img src="app/AppleStore.svg" width="170" alt="Pobierz Rebell Pay Business z App Store">
+            </a>
+          </div>
+        </div>
+        <div class="app-preview">
+          <img src="app/RPBusiness.jpg" alt="Aplikacja Rebell Pay Business - Interfejs wymiany">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="consultation">
+    <div class="container">
+      <div class="pricing-box">
+        <div class="consult-grid">
+          <div class="consult-content">
+            <span class="section-tag accent-color">Dedykowana Konsultacja OTC</span>
+            <h2 class="white-text mb-20">Poznaj swoje indywidualne warunki wymiany</h2>
+            <div class="price-tag">Porozmawiajmy</div>
+            <a href="https://calendly.com/pawel-karczewski-rebellpay/30min" class="btn btn-primary accent-btn">Zarezerwuj termin rozmowy online</a>
+          </div>
+          <div class="consult-photo-container">
+            <img src="app/contact.png" alt="Paweł Karczewski - Kontakt Rebell Pay">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="blog" class="blog-bg">
+    <div class="container">
+      <div class="blog-header blog-header-flex">
+        <div>
+          <span class="section-tag">Aktualności i Wiedza</span>
+          <h2 class="section-title no-margin-b">Rynek kryptowalut pod lupą</h2>
+        </div>
+        <a href="blog/indexblog.html" class="btn btn-outline">Zobacz wszystkie wpisy blogowe</a>
+      </div>
+      <div class="blog-grid" id="blog-container">
+        <p>Ładowanie najnowszych wiadomości...</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div id="shared-footer-placeholder"></div>
+
+<script src="js/components.js?v=2026-02-04"></script>
+<script>
+  const script = document.createElement('script');
+  script.src = 'blog/posts.js?t=' + new Date().getTime();
+  document.head.appendChild(script);
+</script>
+<script src="blog/posts.js"></script>
+<script>
+    function updateVolume() {
+        const base = 1310000;
+        const now = new Date();
+        const start = new Date(2026, 0, 1);
+        const hours = Math.floor((now - start) / 3600000);
+        const growth = hours * 12500;
+        const subGrowth = ( (now.getMinutes() * 60) + now.getSeconds() ) / 3600 * 12500;
+        const el = document.getElementById('volume-counter');
+        if(el) el.innerText = Math.floor(base + growth + subGrowth).toLocaleString('pl-PL') + " €";
+    }
+    setInterval(updateVolume, 3000);
+    updateVolume();
+
+    (function() {
+        const payInput = document.getElementById('calc-pay');
+        const receiveInput = document.getElementById('calc-receive');
+        const rateInfo = document.getElementById('current-rate-info');
+        let currentMarketRate = 0.9250;
+        const COMMISSION = 0.005;
+
+        async function fetchRate() {
+            try {
+                const response = await fetch('https://api.kraken.com/0/public/Ticker?pair=USDCEUR');
+                const data = await response.json();
+                if (data.result) {
+                    const pairKey = Object.keys(data.result)[0];
+                    currentMarketRate = parseFloat(data.result[pairKey].c[0]);
+                    updateUI();
+                }
+            } catch (e) {
+                try {
+                    const resp = await fetch('https://api.binance.com/api/v3/ticker/price?symbol=USDCEUR');
+                    const d = await resp.json();
+                    currentMarketRate = parseFloat(d.price);
+                    updateUI();
+                } catch (err) { console.error("Rate error"); }
+            }
+        }
+
+        function updateUI() {
+            rateInfo.innerText = `Kurs: ${currentMarketRate.toFixed(4)} USDC / EUR`;
+            updateReceive();
+        }
+
+        function updateReceive() {
+            const val = parseFloat(payInput.value);
+            if (!isNaN(val) && val > 0) {
+                receiveInput.value = (val * currentMarketRate * (1 - COMMISSION)).toFixed(2);
+            } else { receiveInput.value = ''; }
+        }
+
+        function updatePay() {
+            const val = parseFloat(receiveInput.value);
+            if (!isNaN(val) && val > 0) {
+                payInput.value = ((val / (currentMarketRate * (1 - COMMISSION)))).toFixed(2);
+            } else { payInput.value = ''; }
+        }
+
+        payInput.addEventListener('input', updateReceive);
+        receiveInput.addEventListener('input', updatePay);
+
+        fetchRate();
+        setInterval(fetchRate, 60000);
+    })();
+
+    function loadBlogPosts() {
+        const container = document.getElementById('blog-container');
+        if (!container) return;
+        if (typeof blogPostsData !== 'undefined' && blogPostsData.length > 0) {
+            const displayPosts = blogPostsData.slice(0, 3);
+            container.innerHTML = displayPosts.map(post => {
+                const categoriesHtml = (post.categories || ['Nowość']).map(cat => `<span class="blog-category">${cat}</span>`).join('');
+                return `<div class="blog-card"><a href="${post.link}" class="blog-card-link"><div class="blog-img-container"><img src="${post.image}" class="blog-img" alt="${post.title}" onerror="this.src='https://via.placeholder.com/400x200?text=Rebell+Pay'"></div><div class="blog-content"><div class="blog-date">${post.date}</div><div class="blog-categories-wrapper">${categoriesHtml}</div><h4 class="blog-title">${post.title}</h4><p class="blog-excerpt">${post.excerpt}</p><span class="read-more">Czytaj więcej →</span></div></a></div>`;
+            }).join('');
+        }
+    }
+    window.addEventListener('load', loadBlogPosts);
+</script>
+</body>
+</html>
