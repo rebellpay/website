@@ -1,5 +1,13 @@
 const blogPostsData = [
   {
+    "title": "Chainlink Whitepaper po ludzku: po co są oracles i czemu to ważne?",
+    "categories": ["Edukacja", "Fintech", "Blockchain"],
+    "date": "2026-03-09",
+    "excerpt": "Chainlink Whitepaper w prostych słowach: czym jest oracle, jak łączy blockchain z realnym światem i co to zmienia w finansach. Sprawdź!",
+    "link": "blog/2026-03-09-chainlink-whitepaper-wyjasnienie-oracle.html",
+    "image": "blog/img/Photo39.jpeg"
+  },
+  {
     "title": "TRON Developers Docs: co to jest i jak zacząć (bez żargonu)",
     "categories": ["Edukacja", "Blockchain", "Płatności"],
     "date": "2026-03-05",
