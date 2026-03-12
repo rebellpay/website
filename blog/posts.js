@@ -1,5 +1,13 @@
 const blogPostsData = [
   {
+    "title": "Krypto w pigułce: stablecoiny wchodzą do banków, a rynek testuje odporność",
+    "categories": ["Podsumowanie rynku"],
+    "date": "2026-03-12",
+    "excerpt": "Tydzień w krypto: ETF-y, stablecoiny banków, bezpieczeństwo portfeli i kluczowe poziomy BTC i ETH. Sprawdź szybkie podsumowanie.",
+    "link": "blog/2026-03-12-rynki-krypto-stablecoiny-etf-bezpieczenstwo.html",
+    "image": "blog/img/2026-03-12_news.jpeg"
+  },
+  {
     "title": "Chainlink Whitepaper po ludzku: po co są oracles i czemu to ważne?",
     "categories": ["Edukacja", "Fintech", "Blockchain"],
     "date": "2026-03-09",
