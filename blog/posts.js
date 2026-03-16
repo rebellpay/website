@@ -1,5 +1,13 @@
 const blogPostsData = [
   {
+    "title": "Handel OTC vs. giełda krypto: jak sprzedać duże ilości Bitcoina bez wpływu na kurs?",
+    "categories": ["Fintech", "OTC", "Bitcoin"],
+    "date": "2026-03-16",
+    "excerpt": "Sprzedajesz dużo BTC? Zobacz różnice OTC vs giełda, jak ograniczyć poślizg ceny (slippage) i przejść AML/KYC. Sprawdź i skontaktuj się.",
+    "link": "blog/2026-03-16-handel-otc-vs-gielda-jak-sprzedac-duzo-bitcoin.html",
+    "image": "blog/img/Photo41.jpeg"
+  },
+  {
     "title": "Krypto w pigułce: stablecoiny wchodzą do banków, a rynek testuje odporność",
     "categories": ["Podsumowanie rynku"],
     "date": "2026-03-12",
