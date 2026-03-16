@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T64NBV4KE4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T64NBV4KE4');
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://rebellpay.com/blog/2026-03-16-handel-otc-vs-gielda-jak-sprzedac-duzo-bitcoin.html#post",
+      "headline": "OTC czy giełda? Jak sprzedać duże ilości BTC bez wpływu na cenę",
+      "description": "Sprzedajesz dużo BTC? Porównanie OTC vs giełda, slippage, TWAP/VWAP, dyskrecja oraz AML/KYC/SoF. Praktyczna mapa decyzji i FAQ.",
+      "datePublished": "2026-03-16",
+      "dateModified": "2026-03-16",
+      "author": {
+        "@type": "Organization",
+        "name": "Rebell Pay",
+        "url": "https://rebellpay.com"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Rebell Pay",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://rebellpay.com/logo.png"
+        }
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://rebellpay.com/blog/img/Photo41.jpeg"
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://rebellpay.com/blog/2026-03-16-handel-otc-vs-gielda-jak-sprzedac-duzo-bitcoin.html"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Strona główna",
+          "item": "https://rebellpay.com"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://rebellpay.com/blog/indexblog.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "OTC czy giełda: sprzedaż dużej ilości BTC",
+          "item": "https://rebellpay.com/blog/2026-03-16-handel-otc-vs-gielda-jak-sprzedac-duzo-bitcoin.html"
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>OTC czy giełda? Sprzedaż dużej ilości BTC</title>
+  <meta name="description" content="Jak sprzedać duży wolumen BTC bez slippage? OTC vs giełda, TWAP/VWAP, dyskrecja i ryzyka. Plus AML/KYC/SoF oraz FAQ i checklista.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* Style Rebell Pay Blog */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Inter', sans-serif; color: #1e293b; line-height: 1.6; background-color: #fff; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+    .post-wrapper { padding: 120px 0 60px; background: white; }
+    .post-header { max-width: 860px; margin: 0 auto 40px; text-align: center; }
+    .post-header h1 { font-size: clamp(32px, 5vw, 48px); color: #0f172a; margin-bottom: 20px; letter-spacing: -0.02em; }
+    .post-meta { color: #64748b; font-size: 14px; text-transform: uppercase; font-weight: 700; margin-bottom: 10px; display: block; }
+    .featured-image { width: 100%; max-height: 500px; object-fit: cover; border-radius: 32px; margin-bottom: 40px; box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.05); }
+    .post-content { max-width: 780px; margin: 0 auto; font-size: 18px; color: #1e293b; }
+    .post-content p { margin-bottom: 24px; }
+    .post-content h2 { margin: 44px 0 18px; color: #0f172a; letter-spacing: -0.01em; }
+    .post-content h3 { margin: 28px 0 12px; color: #0f172a; letter-spacing: -0.01em; font-size: 20px; }
+    .post-content ul { margin-bottom: 24px; padding-left: 20px; }
+    .post-content li { margin-bottom: 10px; }
+    .post-content a { color: #0b4aa2; text-decoration: underline; text-underline-offset: 3px; }
+    .post-content a:hover { text-decoration-thickness: 2px; }
+
+    /* Definition blocks */
+    .defbox {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 18px;
+      padding: 18px 18px;
+      margin: 18px 0 26px;
+    }
+    .defbox strong { color: #0f172a; }
+    .defbox .tag {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #334155;
+      background: #e2e8f0;
+      padding: 6px 10px;
+      border-radius: 999px;
+      margin-bottom: 10px;
+    }
+
+    /* Summary bullets */
+    .summary {
+      background: linear-gradient(180deg, #f8fafc, #ffffff);
+      border: 1px solid #e2e8f0;
+      border-radius: 22px;
+      padding: 18px 20px;
+      margin: 18px 0 30px;
+    }
+    .summary h2 {
+      margin: 6px 0 12px;
+      font-size: 20px;
+    }
+    .summary ul { margin-bottom: 0; }
+
+    /* Comparison table */
+    .table-wrap { overflow-x: auto; margin: 16px 0 26px; }
+    table.compare {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 720px;
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 16px;
+      overflow: hidden;
+    }
+    table.compare th, table.compare td {
+      padding: 14px 14px;
+      border-bottom: 1px solid #e2e8f0;
+      vertical-align: top;
+      text-align: left;
+      font-size: 16px;
+    }
+    table.compare th {
+      background: #f1f5f9;
+      color: #0f172a;
+      font-weight: 800;
+    }
+    table.compare tr:last-child td { border-bottom: none; }
+
+    /* Quote style */
+    blockquote.quote {
+      margin: 18px 0 26px;
+      padding: 18px 18px 16px;
+      border-left: 5px solid #0b4aa2;
+      background: #f8fafc;
+      border-radius: 16px;
+      box-shadow: 0 10px 15px -10px rgba(15, 23, 42, 0.18);
+    }
+    blockquote.quote p {
+      margin-bottom: 10px;
+      font-size: 18px;
+      color: #0f172a;
+    }
+    blockquote.quote footer {
+      font-size: 14px;
+      color: #475569;
+      font-weight: 700;
+    }
+    blockquote.quote cite {
+      font-style: normal;
+      font-weight: 800;
+      color: #0f172a;
+    }
+
+    /* FAQ */
+    .faq {
+      border: 1px solid #e2e8f0;
+      border-radius: 22px;
+      padding: 10px 16px;
+      background: #ffffff;
+      margin: 12px 0 30px;
+    }
+    details.faq-item {
+      padding: 14px 8px;
+      border-bottom: 1px solid #e2e8f0;
+    }
+    details.faq-item:last-child { border-bottom: none; }
+    details.faq-item summary {
+      cursor: pointer;
+      font-weight: 800;
+      color: #0f172a;
+      list-style: none;
+    }
+    details.faq-item summary::-webkit-details-marker { display: none; }
+    details.faq-item p { margin: 12px 0 0; color: #334155; font-size: 16px; }
+
+    /* Small print */
+    .disclaimer {
+      font-size: 14px;
+      color: #64748b;
+    }
+
+    @media (max-width: 992px) { .post-wrapper { padding-top: 100px; } }
+  </style>
+
+<script src="../js/components.js" defer></script>
+</head>
+<body>
+
+<div id="shared-header-placeholder"></div>
+
+<main class="post-wrapper">
+  <div class="container">
+    <div class="post-header">
+      <span class="post-meta">16 MAR 2026 • Fintech / OTC / Bitcoin</span>
+      <h1>Handel OTC vs. giełda krypto: jak sprzedać dużą ilość Bitcoin bez wpływu na kurs rynkowy?</h1>
+    </div>
+    
+    <img src="img/Photo41.jpeg" class="featured-image" alt="Handel OTC vs giełda krypto - jak sprzedać duży wolumen BTC bez slippage i paniki na rynku">
+
+    <article class="post-content">
+
+      <div class="summary">
+        <h2>W skrócie: co musisz wiedzieć, zanim sprzedasz duży wolumen BTC</h2>
+        <ul>
+          <li><strong>Największy „ukryty koszt” to slippage</strong> (poślizg ceny) i reakcja rynku, a nie kliknięcie w aplikacji.</li>
+          <li><strong>OTC (Over-The-Counter)</strong> zwykle wygrywa, gdy liczy się <strong>cena, dyskrecja i przewidywalne rozliczenie</strong> dużego bloku.</li>
+          <li><strong>Giełda może być OK</strong> przy mniejszych kwotach, ale przy dużych zleceniach wchodzą w grę: płytka głębokość order booka, spread i boty „polujące” na sygnały.</li>
+          <li><strong>Alternatywa pośrodku</strong>: egzekucja algorytmiczna (TWAP/VWAP) rozłożona w czasie, czasem realizowana przez prime brokera / desk instytucjonalny.</li>
+          <li><strong>Najczęstszy błąd</strong>: myślenie, że problem kończy się w momencie sprzedaży. W praktyce „ostatnia mila” to wypłata fiat i zgodność AML/KYC + SoF/SoW.</li>
+        </ul>
+      </div>
+
+      <p>Wyobraź sobie, że chcesz sprzedać nie jedną, a kilkadziesiąt lub kilkaset sztuk złota w małym kantorze na rogu. Co się stanie? Kolejka, nerwy, a cena zacznie się ruszać, bo wszyscy zobaczą, że „ktoś duży” sprzedaje. Z Bitcoinem bywa identycznie. I jeśli planujesz sprzedaż dużej ilości BTC, to wcale nie chodzi o to, czy klikniesz „Sprzedaj”, tylko: <strong>jak zrobić to tak, żeby nie zapłacić ukrytego podatku w postaci gorszej ceny</strong>.</p>
+
+      <p>Dlaczego temat jest aktualny właśnie teraz? Bo rynek krypto dojrzewa, ale nadal ma cechy „młodej giełdy”: płynność jest <em>rozproszona</em> między wieloma platformami, a przy większych zleceniach wciąż łatwo niechcący zrobić hałas. Instytucjonalne standardy wykonania transakcji (best execution) dopiero doganiają oczekiwania znane z akcji czy FX — co zresztą jest mocnym wątkiem w analizach Fidelity Digital Assets.</p>
+
+      <div class="defbox">
+        <div class="tag">Definicje (bez żargonu)</div>
+        <p><strong>Sprzedaż dużej ilości BTC „bez wpływu na kurs”</strong> oznacza taką egzekucję zlecenia, która minimalizuje:</p>
+        <ul>
+          <li><strong>slippage</strong> (poślizg między oczekiwaną a finalną ceną wykonania),</li>
+          <li><strong>sygnalizację</strong> (że „wieloryb sprzedaje”, co zaprasza front-running),</li>
+          <li><strong>ryzyko rozliczenia</strong> (czyli czy i kiedy fiat realnie trafi na konto),</li>
+          <li><strong>ryzyko bankowe i compliance</strong> (AML/KYC oraz dokumenty źródła środków/majątku).</li>
+        </ul>
+        <p>Najczęściej osiąga się to przez <strong>handel OTC (Over-The-Counter)</strong>, czyli transakcję poza publiczną księgą zleceń, po wcześniej uzgodnionej cenie/warunkach i wolumenie. Drugą ścieżką jest <strong>egzekucja algorytmiczna</strong> (TWAP/VWAP) rozłożona w czasie na wielu miejscach obrotu.</p>
+      </div>
+
+      <h2>Dlaczego cena z wykresu to nie jest cena, którą dostaniesz (przy dużym wolumenie)?</h2>
+      <p>W codziennej pracy z większymi konwersjami widzę powtarzalny schemat: ktoś patrzy na cenę BTC na wykresie i zakłada, że „mniej więcej tyle dostanę”. A potem przychodzi rzeczywistość, czyli <strong>order book</strong> (księga zleceń), <strong>spread</strong>, <strong>głębokość rynku</strong> i <strong>slippage</strong>. To trochę jak kupno biletów lotniczych dla jednej osoby vs. dla całej firmy w ostatniej chwili. Teoretycznie to „ten sam lot”, praktycznie cena potrafi odlecieć.</p>
+
+      <h3>Co się dzieje na giełdzie, gdy wchodzisz z dużą sprzedażą?</h3>
+      <p><strong>Giełda (trading publiczny)</strong> dopasowuje Twoje zlecenie do już istniejących zleceń po drugiej stronie rynku. Jeśli sprzedajesz „rynkowo” albo agresywnie, Twoje zlecenie <strong>zjada kolejne poziomy</strong> popytu. A każdy kolejny poziom jest zwykle po niższej cenie. To jest klasyczna mechanika mikrostruktury rynku.</p>
+
+      <div class="defbox">
+        <div class="tag">Szybki słownik</div>
+        <p><strong>Spread</strong> – różnica między najlepszą ofertą kupna (bid) a sprzedaży (ask). Im szerszy spread, tym więcej oddajesz „na wejściu”.</p>
+        <p><strong>Głębokość rynku</strong> – ile realnego popytu stoi w order booku w pobliżu aktualnej ceny (np. w granicy 0,5% / 1% / 2%).</p>
+        <p><strong>Slippage</strong> – średnia cena wykonania pogorszona przez to, że część wolumenu realizuje się po coraz gorszych poziomach.</p>
+        <p><strong>Front-running</strong> – gdy inni uczestnicy (często algorytmy) „wyczuwają” duże zlecenie i próbują je uprzedzić, pogarszając Twoją cenę.</p>
+      </div>
+
+      <p>Warto dodać jedną nieoczywistą rzecz: <strong>widoczna płynność bywa złudzeniem</strong>. Coinbase Institutional zwraca uwagę, że część „płynności” w order booku to krótkoterminowy kapitał HFT, który potrafi zniknąć, gdy tylko wykryje dużą agresywną sprzedaż. Czyli widzisz ścianę zleceń, a potem… puff, ściana znika.</p>
+
+      <h2>OTC vs giełda: co realnie różni te dwa światy (i gdzie „ucieka” Twoja cena)?</h2>
+
+      <div class="table-wrap">
+        <table class="compare" aria-label="Porównanie OTC vs giełda krypto dla sprzedaży dużego wolumenu BTC">
+          <thead>
+            <tr>
+              <th>Kryterium</th>
+              <th>Giełda (order book)</th>
+              <th>OTC (desk / RFQ)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Cena i slippage</strong></td>
+              <td>Ryzyko slippage rośnie wraz z wolumenem; średnia cena zależy od głębokości księgi i zmienności w trakcie egzekucji.</td>
+              <td>Typowo dostajesz <strong>jedną wycenę</strong> dla całego bloku lub formułę (np. indeks ± marża). W praktyce przenosisz ryzyko egzekucji na desk.</td>
+            </tr>
+            <tr>
+              <td><strong>Dyskrecja</strong></td>
+              <td>Zlecenia są widoczne (lub dają się wykryć po przepływach), co może prowokować reakcje botów i innych traderów.</td>
+              <td>Lepsza prywatność pre-trade: brak publicznego „wystawienia się” na rynek. To kluczowe przy większych blokach.</td>
+            </tr>
+            <tr>
+              <td><strong>Płynność</strong></td>
+              <td>Oparta o jedną platformę (chyba że używasz własnych routerów/prime brokera). Płynność w krypto jest <em>rozproszona</em>.</td>
+              <td>Desk może agregować płynność z wielu miejsc (giełdy + market makerzy), co podkreślają analizy instytucjonalne (Fidelity, Coinbase).</td>
+            </tr>
+            <tr>
+              <td><strong>Ryzyko rozliczenia</strong></td>
+              <td>Ryzyka operacyjne po Twojej stronie (wypłaty, limity, ryzyko konta, banku, compliance).</td>
+              <td>OTC ogranicza ryzyko wykonania ceny, ale pojawia się <strong>ryzyko kontrahenta/settlement</strong>. CFA Institute zwraca uwagę, że to obszar wymagający due diligence.</td>
+            </tr>
+            <tr>
+              <td><strong>Najlepszy przypadek użycia</strong></td>
+              <td>Mniejsze kwoty, szybka sprzedaż, gdy akceptujesz potencjalny slippage i ryzyko „hałasu”.</td>
+              <td>Duże bloki, potrzeba przewidywalności, dyskrecji i uporządkowanego procesu AML/KYC/SoF.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>Krótko mówiąc: różnica sprowadza się do czterech słów, które warto zapamiętać: <strong>poślizg, widoczność, rozliczenie, ryzyko</strong>. Jeśli sprzedajesz mało — giełda bywa OK. Jeśli sprzedajesz dużo — giełda potrafi być głośna i droga. Czasem nawet bardzo.</p>
+
+      <h2>Kiedy OTC zaczyna mieć sens: czy istnieje „próg”, od którego giełda przestaje wystarczać?</h2>
+      <p>Instytucjonalne opracowania (np. Kraken Intelligence) opisują OTC jako naturalny wybór dla transakcji rzędu <strong>100 tys. USD+</strong>, a w praktyce „prawdziwe” deski instytucjonalne często koncentrują się na blokach <strong>wielomilionowych</strong>. To nie jest sztywny limit, bardziej zdroworozsądkowa granica: im większa kwota względem typowej płynności w order booku w pobliżu ceny, tym większy sens ma tryb OTC lub algorytmiczny.</p>
+
+      <p>Druga rzecz, często pomijana: slippage nie rośnie liniowo. Badania akademickie publikowane m.in. na SSRN pokazują, że wpływ cenowy dużych zleceń ma tendencję do <strong>nieliniowości</strong> (tzw. „convexity” order booka) — czyli zlecenie 10× większe potrafi spowodować koszt większy niż 10×. W praktyce: duży wolumen może zaboleć bardziej, niż „intuicja” podpowiada.</p>
+
+      <h2>Co konkretnie daje handel OTC przy sprzedaży dużej ilości BTC? (checklista, ale taka życiowa)</h2>
+      <ul>
+        <li><strong>Kontrola warunków i redukcja slippage:</strong> zamiast „wgryzać się” w order book i oddawać procenty na poślizgu, negocjujesz warunki dla całego bloku (albo dostajesz cenę typu all-in). Kraken Intelligence opisuje OTC jako model „dealerowy”: jedna wycena dla całej transakcji, bez ryzyka częściowych wypełnień po gorszych poziomach.</li>
+        <li><strong>Dyskrecja (brak sygnału dla rynku):</strong> Fidelity Digital Assets podkreśla, że przy dużych wolumenach anonimowość przedtransakcyjna bywa równie ważna jak sama cena, bo „wyczute” zlecenie potrafi ściągnąć predatory trading. OTC pomaga uniknąć wrażenia, że „ktoś duży właśnie sprzedaje”.</li>
+        <li><strong>Agregacja płynności:</strong> krypto to rynek rozproszony. Instytucjonalne rozwiązania (OTC/prime broker) potrafią łączyć płynność z wielu miejsc naraz, zamiast opierać się na jednej giełdzie.</li>
+        <li><strong>Spójny proces compliance:</strong> przy dużych kwotach liczy się nie tylko „sprzedać”, ale też <strong>bezpiecznie rozliczyć</strong> i wypłacić fiat. Dobrze poukładany proces OTC ułatwia przygotowanie KYC/AML i dokumentów źródła środków.</li>
+      </ul>
+
+      <h2>A może jednak nie OTC, tylko algorytmy? Co to jest TWAP/VWAP i kiedy to działa?</h2>
+      <p>To nie jest zawsze wybór „albo giełda, albo OTC”. Coinbase Institutional opisuje podejście hybrydowe: <strong>algorytmiczna egzekucja</strong> (np. TWAP/VWAP) rozkłada zlecenie na mniejsze fragmenty i realizuje je w czasie, często na wielu miejscach obrotu. W spokojnym rynku i przy elastycznym horyzoncie czasowym, taka strategia potrafi być konkurencyjna wobec spreadu OTC — bo „płacisz” czasem, a nie marżą.</p>
+
+      <div class="defbox">
+        <div class="tag">Definicje: TWAP i VWAP</div>
+        <p><strong>TWAP (Time Weighted Average Price)</strong> – algorytm sprzedaje równo „w czasie” (np. co minutę), dążąc do średniej ceny z okresu egzekucji.</p>
+        <p><strong>VWAP (Volume Weighted Average Price)</strong> – algorytm dopasowuje tempo sprzedaży do wolumenu na rynku (sprzedaje więcej, gdy na rynku jest większy obrót), dążąc do średniej ważonej wolumenem.</p>
+        <p><strong>Plus:</strong> potencjalnie lepsza średnia cena przy stabilnym rynku. <strong>Minus:</strong> ryzyko, że w trakcie 24–48 godzin rynek spadnie szybciej, niż zdążysz „dawkować” sprzedaż.</p>
+      </div>
+
+      <p>W praktyce algorytmy wymagają dyscypliny i warunków: stabilniejszej zmienności oraz realizacji w okresach większej płynności. W literaturze akademickiej pojawia się też pojęcie <strong>resilience</strong> (odporność rynku) — jak szybko order book się odbudowuje po dużym uderzeniu. Ta odporność bywa niższa w weekendy i poza godzinami nakładania się sesji Europa–USA. Innymi słowy: czasem nie chodzi o „czy”, tylko „kiedy”.</p>
+
+      <blockquote class="quote">
+        <p>„We bought $425 million worth of Bitcoin. We did it over the course of... about 70-something hours of trading... We were patient. We just chipped away at it. We didn't want to move the market. We used some very advanced algorithmic trading strategies to buy it without moving the market.”</p>
+        <footer><cite>Michael Saylor</cite>, Executive Chairman (MicroStrategy) — przykład instytucjonalnej egzekucji bez poruszania rynku (mechanika analogiczna przy sprzedaży). Źródło: <a href="https://youtu.be/2g8NfMh9ZtI?t=1450" target="_blank" rel="noopener">wywiad (YouTube)</a>.</footer>
+      </blockquote>
+
+      <p>Ten cytat jest ważny nie dlatego, że „Saylor powiedział”, tylko dlatego, że pokazuje standard: <strong>dużych kwot nie robi się jednym kliknięciem</strong>. Nawet jeśli finalnie część przepływu idzie przez giełdy, to jest to zwykle starannie sterowana egzekucja, a nie pojedyncze zlecenie rynkowe.</p>
+
+      <h2>OTC nie jest magiczną różdżką: na jakie ryzyka trzeba uważać (żeby nie zamienić slippage na kłopoty)?</h2>
+      <p>OTC rozwiązuje problem wpływu na kurs, ale może wprowadzać inne ryzyka. I to są ryzyka „dorosłe”: kontrahent, settlement, operacje, bankowość. CFA Institute zwraca uwagę na <strong>ryzyko rozliczenia</strong> i potrzebę selekcji kontrahentów z porządnymi relacjami bankowymi i kontrolami operacyjnymi, bo w krypto niektóre transakcje są nieodwracalne, a „pomyłki” bywają kosztowne.</p>
+
+      <h3>Najczęstsze punkty zapalne w praktyce</h3>
+      <ul>
+        <li><strong>Ryzyko kontrahenta (counterparty risk):</strong> kto jest po drugiej stronie, jakie ma licencje/standardy, jak wygląda segregacja środków i polityka rozliczeń.</li>
+        <li><strong>Ryzyko settlement (kolejność: BTC vs fiat):</strong> czy jest escrow, DvP-like proces (delivery-versus-payment), jakie są zasady potwierdzeń on-chain.</li>
+        <li><strong>Ryzyko bankowe „po sprzedaży”:</strong> przelew fiat może zostać opóźniony, jeśli dokumentacja SoF/SoW lub opis transakcji jest niejasny. I to bywa najbardziej frustrujący moment, bo krypto już sprzedane, a pieniądze „w drodze”.</li>
+        <li><strong>Ryzyko operacyjne:</strong> błędny adres, nieprawidłowa sieć, pomylony asset (BTC vs WBTC), niezgodność danych KYC między kontami.</li>
+      </ul>
+
+      <blockquote class="quote">
+        <p>„Activity on crypto exchanges is often characterized by low liquidity and high volatility, especially during periods of stress. To avoid price slippage, large investors often rely on over-the-counter (OTC) brokers to execute block trades. These trades are negotiated bilaterally and are not immediately visible on public order books.”</p>
+        <footer><cite>Bank for International Settlements (BIS)</cite> — instytucjonalne potwierdzenie, że OTC bywa standardem dla dużych bloków, zwłaszcza w okresach stresu rynkowego. Źródło: <a href="https://www.bis.org/publ/bisbull41.pdf" target="_blank" rel="noopener">BIS Bulletin No. 41 (PDF)</a>.</footer>
+      </blockquote>
+
+      <p>Warto tę obserwację BIS czytać „od końca”: <em>nie jest widoczne w order booku</em>. To jest dokładnie to, co chcesz osiągnąć, gdy sprzedajesz duży wolumen, ale jednocześnie to sygnał, że dobór partnera i proces rozliczenia muszą być poukładane lepiej niż „na słowo honoru”.</p>
+
+      <h2>Jak myśleć o OTC jak o zwykłej sytuacji z życia (żeby nie dać się wkręcić w żargon)?</h2>
+      <p>Jeśli sprzedajesz rower na OLX, to wystawiasz ogłoszenie publicznie i ktoś przyjedzie, obejrzy, ponegocjuje. To jest giełda. Ale jeśli sprzedajesz flotę 50 rowerów, to raczej nie robisz 50 ogłoszeń i nie umawiasz 50 „oglądających”. Dzwonisz do hurtownika i zamykasz transakcję jednym ruchem. To jest OTC.</p>
+      <p>W krypto jest jeszcze jeden twist: publiczna sprzedaż dużego wolumenu nie tylko zajmuje czas, ale realnie wpływa na cenę, którą dostajesz. A różnica 0,5% przy dużych kwotach to nie „drobna niedogodność”. To bywa koszt równy nowemu samochodowi. (Tak, brzmi jak przesada — dopóki nie policzysz.)</p>
+
+      <h2>Jak sprzedać duże BTC w praktyce: prosta mapa decyzji (bez udawania, że ryzyka nie istnieją)</h2>
+      <p>Jeśli chcesz podjąć decyzję bez korpo-mowy, odpowiedz sobie na kilka pytań. Takich, które faktycznie coś zmieniają:</p>
+      <ul>
+        <li><strong>Czy mój wolumen „zmieści się” w order booku bez straty?</strong> Nie patrz na kapitalizację BTC, patrz na realny popyt blisko ceny (np. w 1–2%). Jeśli nie masz pewności, to już jest sygnał, że warto rozważyć OTC lub algorytmy.</li>
+        <li><strong>Czy ważniejsza jest dla mnie pewność ceny teraz, czy potencjalnie lepsza średnia w czasie?</strong> OTC daje przewidywalność; TWAP/VWAP daje szansę na „lepszą średnią”, ale bierze na klatę ryzyko ruchu rynku w trakcie.</li>
+        <li><strong>Czy zależy mi na dyskrecji?</strong> Jeśli tak, OTC zwykle ogranicza sygnalizację, a algorytmy na giełdach muszą być prowadzone ostrożnie (tempo, venue selection, maskowanie intencji).</li>
+        <li><strong>Czy mam gotowe dokumenty pod wypłatę fiat?</strong> Jeżeli nie, problem może zacząć się dopiero po sprzedaży, czyli w najgorszym możliwym momencie.</li>
+      </ul>
+
+      <div class="defbox">
+        <div class="tag">Praktyczna checklista przed sprzedażą dużego BTC</div>
+        <ul>
+          <li><strong>Plan egzekucji:</strong> OTC block vs TWAP/VWAP, horyzont czasowy, akceptowany widełkowy koszt (spread/slippage).</li>
+          <li><strong>Plan rozliczenia:</strong> gdzie ma trafić fiat, jakie są limity i procedury banku, jaki opis przelewu.</li>
+          <li><strong>AML/KYC:</strong> aktualne dane, beneficjent rzeczywisty (jeśli firma), zgodność danych na kontach.</li>
+          <li><strong>SoF/SoW:</strong> przygotowane dokumenty potwierdzające źródło środków i/lub majątku (np. historia zakupów, potwierdzenia transferów, raporty podatkowe — zależnie od sytuacji).</li>
+          <li><strong>Operacje on-chain:</strong> testowy transfer, weryfikacja adresu, sieci, liczby potwierdzeń, polityki fee.</li>
+        </ul>
+      </div>
+
+      <h2>Co banki i compliance „lubią” widzieć przy dużej wypłacie fiat (a co je drażni)?</h2>
+      <p>Tu nie chodzi o to, żeby „komuś coś udowadniać”, tylko żeby nie utknąć w ślimaczym tempie procesów. Przy dużych kwotach banki często działają według procedur, które są zaskakująco mało romantyczne: dokumenty, spójność i brak luk.</p>
+      <p>Z mojego doświadczenia: <strong>najbardziej boli brak narracji</strong>. Czyli sytuacja, gdy środki przeszły przez wiele portfeli, giełd i mostów, a potem ktoś oczekuje, że przelew „po prostu przejdzie”. Może przejdzie. A może nie — i wtedy koszt jest nie w procentach, tylko w czasie, stresie i tłumaczeniach.</p>
+
+      <h2>FAQ: pytania, które ludzie naprawdę zadają (8–10 konkretów)</h2>
+      <div class="faq">
+        <details class="faq-item">
+          <summary>Czy mogę sprzedać 50–200 BTC na giełdzie „bez wpływu na cenę”?</summary>
+          <p>Technicznie możesz, ale „bez wpływu” jest tu rzadko realistyczne. Nawet jeśli rozbijesz zlecenie, ryzyko slippage i reakcji rynku pozostaje. Przy takich wolumenach zwykle rozważa się OTC albo egzekucję algorytmiczną (TWAP/VWAP) z agregacją płynności.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>Co jest tańsze: OTC czy TWAP/VWAP na giełdach?</summary>
+          <p>Zależy od warunków. OTC daje cenę „all-in” i przenosi ryzyko egzekucji na desk, ale płacisz spread/marżę. Algorytmy na giełdach mogą dać lepszą średnią cenę, ale bierzesz ryzyko, że rynek w trakcie ucieknie (i płacisz ukryte koszty: slippage, opłaty, ryzyko front-runningu).</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>Jaki jest sens OTC, skoro cena OTC „nie musi być taka jak na giełdzie”?</summary>
+          <p>Właśnie o to chodzi: OTC to inny mechanizm wykonania. Cena jest negocjowana/kwotowana dla konkretnego bloku i może być oparta o indeks (np. średnia z wybranych venue) ± marża. Zyskujesz przewidywalność i prywatność kosztem spreadu. BIS i instytucjonalne raporty podkreślają, że to typowy kompromis przy dużych blokach.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>Czy OTC jest „bezpieczniejsze” niż giełda?</summary>
+          <p>Nie automatycznie. OTC zmniejsza ryzyko wpływu na kurs, ale zwiększa wagę due diligence kontrahenta i procesu rozliczenia (settlement). To jest inny zestaw ryzyk. W praktyce liczy się: reputacja, procedury, bankowe rails i jasne zasady delivery-versus-payment.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>Czy duża sprzedaż zawsze przyciąga boty i front-running?</summary>
+          <p>Jeśli rynek „widzi” Twoją intencję, rośnie ryzyko, że część uczestników zareaguje oportunistycznie. Fidelity Digital Assets zwraca uwagę, że dla dużych graczy anonimowość pre-trade bywa kluczowa. OTC ogranicza sygnał, a algorytmy muszą go maskować.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>Jakie godziny są najlepsze na sprzedaż na giełdzie (jeśli wybiorę algorytm)?</summary>
+          <p>Zwykle wtedy, gdy globalna płynność jest najwyższa (nakładanie się aktywności Europa–USA). Badania akademickie wskazują też, że „odporność” order booka bywa słabsza poza szczytem i w weekendy, co może zwiększać wpływ cenowy.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>Czy mogę „sprawdzić” slippage przed sprzedażą?</summary>
+          <p>Możesz oszacować go analizując głębokość order booka i symulując egzekucję (ile popytu stoi w 0,5% / 1% / 2% od ceny). Tylko pamiętaj: widoczna płynność potrafi zniknąć, a rynek reaguje na przepływy, więc symulacja nie jest gwarancją.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>Co to jest SoF i SoW i czemu w ogóle mnie to obchodzi przy sprzedaży BTC?</summary>
+          <p><strong>SoF (Source of Funds)</strong> to źródło konkretnych środków w transakcji (np. skąd pochodzi BTC). <strong>SoW (Source of Wealth)</strong> to źródło Twojego majątku (np. dochody, działalność, inwestycje). Przy dużych kwotach te elementy wpływają na to, czy wypłata fiat przejdzie gładko, czy będzie wymagała dodatkowych wyjaśnień.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>Czy OTC gwarantuje „zero slippage”?</summary>
+          <p>W sensie wykonania w ramach uzgodnionej wyceny — zwykle tak (dostajesz jedną cenę dla bloku). Ale nadal istnieją koszty w postaci spreadu oraz ryzyka settlement. „Zero slippage” nie znaczy „zero ryzyka”, tylko inny profil ryzyk.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>Co jest najczęstszą przyczyną problemów po sprzedaży (już po fakcie)?</summary>
+          <p>Najczęściej: nieprzygotowana dokumentacja i niespójność informacji (KYC/AML, SoF/SoW) oraz niedoszacowanie wymogów banku po stronie wypłaty fiat. Sama sprzedaż bywa łatwiejsza niż „dowiezienie” środków na konto w przewidywalnym czasie.</p>
+        </details>
+      </div>
+
+      <h2>Gdzie pogłębić temat (linki wewnętrzne, które realnie pomagają)</h2>
+      <p>Jeśli chcesz domknąć temat „od A do Z”, te materiały ułatwią Ci przygotowanie się do większej transakcji:</p>
+      <ul>
+        <li><a href="../blog/2026-02-19-co-to-jest-off-ramp-krypto-i-jak-wyplacic-do-banku.html">Off-ramp krypto - jak wypłacić do banku (2026)</a> - praktycznie o wypłacie fiat i typowych ryzykach.</li>
+        <li><a href="../blog/2026-02-10-wymiana-duzych-wolumenow-krypto-na-fiat-dla-firm.html">Wymiana dużych wolumenów krypto na fiat dla firm</a> - procesy, limity i co banki lubią widzieć.</li>
+        <li><a href="../blog/2026-02-05-bezpieczny-off-ramp-hnwi-inwestorzy-indywidualni-seo.html">Bezpieczny off-ramp dla HNWI i inwestorów indywidualnych</a> - podejście „bez paniki” przy dużych kwotach.</li>
+        <li><a href="../blog/2026-03-02-dyskrecja-prywatnosc-bankowosc-krypto-duze-transfery.html">Dyskrecja i prywatność przy dużych transferach</a> - jak chronić dane i nie robić sobie kłopotów.</li>
+        <li><a href="../blog/2026-02-04-czy-bank-moze-zablokowac-przelew-z-regulowanej-instytucji-vasp.html">Czy bank może zablokować przelew z VASP?</a> - kiedy i dlaczego pojawiają się wstrzymania.</li>
+        <li><a href="../blog/2026-02-05-potwierdzenie-legalnosci-srodkow-krypto-dla-doradcy-kredytowego-seo.html">Potwierdzenie legalności środków z krypto (SoF/SoW)</a> - checklista dokumentów, które robią różnicę.</li>
+      </ul>
+
+      <h2>Jak Rebell Pay pomaga przy sprzedaży dużych wolumenów BTC (OTC i off-ramp)</h2>
+      <p>W Rebell Pay podchodzimy do tematu jak praktycy, nie jak „sprzedawcy wykresów”. Jeśli sprzedajesz duży wolumen BTC, Twoim celem zwykle nie jest emocjonujący trading. Twoim celem jest: <strong>zamknąć transakcję w przewidywalnej cenie, bez niepotrzebnego rozgłosu, i bez niespodzianek po stronie banku</strong>.</p>
+      <p>Dlatego łączymy rozmowę o OTC z przygotowaniem procesu pod AML/KYC oraz dokumentację SoF/SoW, żeby „ostatnia mila” — czyli wypłata fiat — nie była loterią. Jeśli chcesz, możemy przejść z Tobą przez scenariusz: wolumen, oczekiwana cena, harmonogram (jedna transakcja czy kilka), oraz wymagania formalne. Bez udawania, że ryzyka nie istnieją. One istnieją. My pomagamy je uporządkować.</p>
+
+      <p><strong>Miękki CTA (bez presji):</strong> jeśli stoisz przed sprzedażą większego wolumenu BTC i chcesz porównać wariant OTC vs algorytmiczna egzekucja na giełdach — przygotuj orientacyjny wolumen, preferowany termin i informację, dokąd ma trafić fiat. To trzy rzeczy, które na starcie robią największą różnicę w doborze bezpiecznej ścieżki.</p>
+
+      <p><strong>Podsumowując:</strong> Jeśli sprzedajesz dużą ilość Bitcoina i zależy Ci na cenie, dyskrecji oraz spokojnym rozliczeniu w banku, handel OTC zwykle lepiej chroni Cię przed slippage i „efektem tłumu” niż publiczna giełda. Ale OTC to nie czary: wymaga dobrego kontrahenta, jasnego settlement i porządku w dokumentach. A jeśli masz czas i stabilny rynek, algorytmy (TWAP/VWAP) mogą być rozsądną alternatywą — pod warunkiem, że wiesz, jakie ryzyko bierzesz na siebie.</p>
+
+      <hr style="margin: 40px 0; border: 0; border-top: 1px solid #e2e8f0;">
+
+      <h2>Zewnętrzne źródła i materiały (pełna lista cytowanych publikacji)</h2>
+      <ul>
+        <li>Kraken Intelligence (Kraken Institutional Research) — materiały o rynku OTC i płynności: <a href="https://www.kraken.com/institutional/research" target="_blank" rel="noopener">https://www.kraken.com/institutional/research</a></li>
+        <li>Fidelity Digital Assets — Research & Insights (best execution, instytucjonalna mikrostruktura): <a href="https://www.fidelitydigitalassets.com/research-and-insights" target="_blank" rel="noopener">https://www.fidelitydigitalassets.com/research-and-insights</a></li>
+        <li>Coinbase Institutional — Insights / Market structure (OTC, smart order routing, TWAP/VWAP): <a href="https://www.coinbase.com/institutional/insights" target="_blank" rel="noopener">https://www.coinbase.com/institutional/insights</a></li>
+        <li>CFA Institute — Research on cryptoassets market integrity & market structure: <a href="https://www.cfainstitute.org/en/research/industry-research/cryptoassets-market-integrity" target="_blank" rel="noopener">https://www.cfainstitute.org/en/research/industry-research/cryptoassets-market-integrity</a></li>
+        <li>SSRN — prace naukowe o płynności i price impact na rynkach BTC (zbiór publikacji): <a href="https://papers.ssrn.com/" target="_blank" rel="noopener">https://papers.ssrn.com/</a></li>
+        <li>Bank for International Settlements (BIS) — BIS Bulletin No. 41 „A fisheye view of the crypto world” (PDF): <a href="https://www.bis.org/publ/bisbull41.pdf" target="_blank" rel="noopener">https://www.bis.org/publ/bisbull41.pdf</a></li>
+        <li>Michael Saylor (MicroStrategy) — opis egzekucji dużych zakupów bez poruszania rynku (YouTube, timestamp): <a href="https://youtu.be/2g8NfMh9ZtI?t=1450" target="_blank" rel="noopener">https://youtu.be/2g8NfMh9ZtI?t=1450</a></li>
+      </ul>
+
+      <p class="disclaimer">Ten artykuł ma charakter edukacyjny i nie stanowi porady prawnej, finansowej ani podatkowej. Masz konkretną sytuację (firma/indywidualnie, kraj rezydencji, bank, historia środków)? Warto skonsultować plan egzekucji i rozliczenia z doradcą oraz zespołem compliance.</p>
+    </article>
+  </div>
+</main>
+
+<div id="shared-footer-placeholder"></div>
+
+</body>
+</html>
