@@ -1,5 +1,13 @@
 const blogPostsData = [
   {
+    "title": "Najlepsze rozwiązania off-ramp dla funduszy i klientów korporacyjnych (2026)",
+    "categories": ["Fintech", "Compliance"],
+    "date": "2026-03-19",
+    "excerpt": "Off-ramp dla funduszy i firm: jak bezpiecznie zamienić krypto na fiat bez blokad. Checklisty AML/KYC, proces i CTA do wdrożenia.",
+    "link": "blog/2026-03-19-off-ramp-dla-funduszy-i-korporacji.html",
+    "image": "blog/img/Photo42.jpeg"
+  },
+  {
     "title": "Handel OTC vs. giełda krypto: jak sprzedać duże ilości Bitcoina bez wpływu na kurs?",
     "categories": ["Fintech", "OTC", "Bitcoin"],
     "date": "2026-03-16",
