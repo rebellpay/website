@@ -1,5 +1,13 @@
 const blogPostsData = [
   {
+    "title": "Ripple Protocol Consensus Algorithm (RPCA) po ludzku: jak XRPL ustala prawdę bez kopania?",
+    "categories": ["Edukacja", "Blockchain", "Płatności"],
+    "date": "2026-03-23",
+    "excerpt": "Wyjaśniamy RPCA i konsensus w XRP Ledger prosto. Zrozum szybkość, finalność i ryzyka. Przeczytaj i sprawdź, co to znaczy dla płatności.",
+    "link": "blog/2026-03-23-ripple-protocol-consensus-algorithm-xrpl-po-ludzku.html",
+    "image": "blog/img/Photo43.jpeg"
+  },
+  {
     "title": "Najlepsze rozwiązania off-ramp dla funduszy i klientów korporacyjnych (2026)",
     "categories": ["Fintech", "Compliance"],
     "date": "2026-03-19",
