@@ -1,5 +1,13 @@
 const blogPostsData = [
   {
+    "title": "Jak zintegrować płatności fiat i krypto w firmie? Przewodnik po infrastrukturze on-ramp",
+    "categories": ["Fintech"],
+    "date": "2026-03-30",
+    "excerpt": "Zintegruj płatności fiat i krypto: on-ramp, KYC/AML, stablecoiny, rozliczenia i ryzyka. Sprawdź checklistę i zaplanuj wdrożenie.",
+    "link": "blog/2026-03-30-integracja-platnosci-fiat-krypto-onramp.html",
+    "image": "blog/img/Photo44.jpeg"
+  },
+  {
     "title": "Ripple Protocol Consensus Algorithm (RPCA) po ludzku: jak XRPL ustala prawdę bez kopania?",
     "categories": ["Edukacja", "Blockchain", "Płatności"],
     "date": "2026-03-23",
