@@ -11,8 +11,8 @@ Allow: /app/
 Disallow: /logoex/
 
 # Block cache-busting and versioning parameters
-Disallow: /*?t=
-Disallow: /*?v=
+Allow: /*?t=
+Allow: /*?v=
 
 # Ensure SEO-critical sections are indexed
 Allow: /blog/
