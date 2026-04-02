@@ -1,5 +1,13 @@
 const blogPostsData = [
   {
+    "title": "Tether (USDT) whitepaper po ludzku: co to jest i jak działa",
+    "categories": ["Stablecoiny", "Fintech"],
+    "date": "2026-04-02",
+    "excerpt": "Zrozum Tether (USDT) w 7 minut. Jak działa stablecoin, na czym polega „1 USDT = 1 USD”, ryzyka i checklista. Sprawdź teraz.",
+    "link": "blog/2026-04-02-tether-whitepaper-usdt-po-ludzku.html",
+    "image": "blog/img/Photo45.jpeg"
+  },
+  {
     "title": "Jak zintegrować płatności fiat i krypto w firmie? Przewodnik po infrastrukturze on-ramp",
     "categories": ["Fintech"],
     "date": "2026-03-30",
