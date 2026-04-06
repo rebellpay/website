@@ -1,5 +1,13 @@
 const blogPostsData = [
   {
+    "title": "Rynek krypto w tym tygodniu: BTC na krawędzi, ETH w klinczu, a AI agenci pukają do drzwi giełd",
+    "categories": ["Podsumowanie rynku"],
+    "date": "2026-04-06",
+    "excerpt": "Podsumowanie rynku krypto: Bitcoin, Ethereum, altcoiny i makro. Sprawdź poziomy ryzyka i najważniejsze newsy - przeczytaj teraz.",
+    "link": "blog/2026-04-06-rynek-krypto-btc-eth-ai-agenci-makro.html",
+    "image": "blog/img/2026-04-06_news.jpeg"
+  },
+  {
     "title": "Tether (USDT) whitepaper po ludzku: co to jest i jak działa",
     "categories": ["Stablecoiny", "Fintech"],
     "date": "2026-04-02",
