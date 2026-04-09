@@ -1,5 +1,13 @@
 const blogPostsData = [
   {
+    "title": "MakerDAO (DAI) whitepaper po ludzku: jak działa „cyfrowy dolar” bez banku?",
+    "categories": ["Stablecoiny", "DeFi"],
+    "date": "2026-04-09",
+    "excerpt": "Wyjaśniamy MakerDAO i stablecoin DAI prosto: jak działa, skąd bierze stabilność i jakie są ryzyka. Przeczytaj i działaj świadomie.",
+    "link": "blog/2026-04-09-makerdao-dai-whitepaper-po-ludzku.html",
+    "image": "blog/img/Photo47.jpeg"
+  },
+  {
     "title": "Rynek krypto w tym tygodniu: BTC na krawędzi, ETH w klinczu, a AI agenci pukają do drzwi giełd",
     "categories": ["Podsumowanie rynku"],
     "date": "2026-04-06",
