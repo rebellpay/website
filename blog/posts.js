@@ -1,5 +1,13 @@
 const blogPostsData = [
   {
+    "title": "Gold Paper po ludzku: tokenizowane złoto, które działa jak pieniądz",
+    "categories": ["Tokenizacja aktywów"],
+    "date": "2026-04-13",
+    "excerpt": "Czym jest tokenizowane złoto z Gold Paper i jak działa? Zrozum korzyści, ryzyka i checklistę. Przeczytaj i działaj świadomie.",
+    "link": "blog/2026-04-13-gold-paper-tokenizowane-zloto-po-ludzku.html",
+    "image": "blog/img/Photo48.jpeg"
+  },
+  {
     "title": "MakerDAO (DAI) whitepaper po ludzku: jak działa „cyfrowy dolar” bez banku?",
     "categories": ["Stablecoiny", "DeFi"],
     "date": "2026-04-09",
