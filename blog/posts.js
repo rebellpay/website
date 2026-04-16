@@ -1,5 +1,13 @@
 const blogPostsData = [
   {
+    "title": "Gold Paper (WLF) po ludzku: co to jest i jak działa tokenizowane złoto?",
+    "categories": ["Tokenizacja aktywów"],
+    "date": "2026-04-16",
+    "excerpt": "Poznaj Gold Paper: tokenizowane złoto krok po kroku, korzyści i ryzyka. Przeczytaj i sprawdź checklistę zanim zaufasz „złotu w sieci”.",
+    "link": "blog/2026-04-16-gold-paper-co-to-jest-tokenizowane-zloto.html",
+    "image": "blog/img/Photo48.jpeg"
+  },
+  {
     "title": "Gold Paper po ludzku: tokenizowane złoto, które działa jak pieniądz",
     "categories": ["Tokenizacja aktywów"],
     "date": "2026-04-13",
