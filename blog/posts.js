@@ -1,5 +1,13 @@
 const blogPostsData = [
   {
+    "title": "MiCA i USDC (Circle) po ludzku: co to zmienia w praktyce?",
+    "categories": ["Stablecoiny", "Compliance"],
+    "date": "2026-04-20",
+    "excerpt": "MiCA i USDC po ludzku: co oznacza zgodność Circle z UE, jakie są ryzyka i jak używać stablecoinów świadomie. Sprawdź teraz.",
+    "link": "blog/2026-04-20-mica-usdc-co-to-znaczy-dla-uzytkownika.html",
+    "image": "blog/img/Photo49.jpeg"
+  },
+  {
     "title": "Gold Paper (WLF) po ludzku: co to jest i jak działa tokenizowane złoto?",
     "categories": ["Tokenizacja aktywów"],
     "date": "2026-04-16",
