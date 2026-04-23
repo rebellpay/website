@@ -1,5 +1,13 @@
 const blogPostsData = [
   {
+    "title": "Krypto w tym tygodniu: Bitcoin pod makro, ETH ETF-y na fali, a giełdy wchodzą w AI na serio",
+    "categories": ["Podsumowanie rynku"],
+    "date": "2026-04-23",
+    "excerpt": "Tygodniowe podsumowanie rynku krypto: Bitcoin i makro, napływy do ETF ETH, regulacje w Rosji, DeFi po exploitach i wyścig AI na giełdach. Sprawdź kluczowe fakty i źródła.",
+    "link": "blog/2026-04-23-krypto-tydzien-btc-etf-ai-regulacje.html",
+    "image": "blog/img/2026-04-23_news.jpeg"
+  },
+  {
     "title": "MiCA i USDC (Circle) po ludzku: co to zmienia w praktyce?",
     "categories": ["Stablecoiny", "Compliance"],
     "date": "2026-04-20",
