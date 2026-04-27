@@ -1,5 +1,13 @@
 const blogPostsData = [
   {
+    "title": "BitcoinCash.org: co to jest i czy to bezpieczne źródło?",
+    "categories": ["Edukacja", "Płatności"],
+    "date": "2026-04-27",
+    "excerpt": "Poznaj BitcoinCash.org po ludzku: do czego służy, jak rozpoznać oficjalne linki i bezpiecznie zacząć z Bitcoin Cash. Sprawdź teraz.",
+    "link": "blog/2026-04-27-bitcoincash-org-co-to-jest.html",
+    "image": "blog/img/Photo51.jpeg"
+  },
+  {
     "title": "Krypto w tym tygodniu: Bitcoin pod makro, ETH ETF-y na fali, a giełdy wchodzą w AI na serio",
     "categories": ["Podsumowanie rynku"],
     "date": "2026-04-23",
