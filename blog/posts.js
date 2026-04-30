@@ -1,5 +1,13 @@
 const blogPostsData = [
   {
+    "title": "LEOcoin whitepaper po ludzku: co obiecuje i na co uważać?",
+    "categories": ["Edukacja", "Fintech"],
+    "date": "2026-04-30",
+    "excerpt": "LEOcoin whitepaper (2017) po ludzku: model, obietnice i ryzyka. Sprawdź checklistę i podejmij świadomą decyzję - przeczytaj teraz.",
+    "link": "blog/2026-04-30-leocoin-whitepaper-po-ludzku.html",
+    "image": "blog/img/Photo52.jpeg"
+  },
+  {
     "title": "BitcoinCash.org: co to jest i czy to bezpieczne źródło?",
     "categories": ["Edukacja", "Płatności"],
     "date": "2026-04-27",
