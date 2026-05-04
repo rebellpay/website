@@ -1,5 +1,13 @@
 const blogPostsData = [
   {
+    "title": "Canton Coin i MiCA po ludzku: o co chodzi w tym whitepaperze?",
+    "categories": ["Stablecoiny", "Compliance"],
+    "date": "2026-05-04",
+    "excerpt": "Canton Coin (MiCA) w prostych słowach: co to jest, jak ma działać i na co uważać. Przeczytaj i sprawdź checklistę przed użyciem.",
+    "link": "blog/2026-05-04-canton-coin-mica-whitepaper-po-ludzku.html",
+    "image": "blog/img/Photo53.jpeg"
+  },
+  {
     "title": "LEOcoin whitepaper po ludzku: co obiecuje i na co uważać?",
     "categories": ["Edukacja", "Fintech"],
     "date": "2026-04-30",
